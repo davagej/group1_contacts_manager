@@ -14,6 +14,60 @@ img.logo
     left: 40;
 }
 
+button.navText
+{
+    border: none;
+    background-color: inherit;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: -3.3%;
+    cursor: pointer;
+}
+
+button.navBorder /*come up with better name*/
+{
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: -3.3%;
+    padding: 5px;
+    width: 6%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button.navText:hover 
+{
+    color: #FD8083;
+}
+
+button.navBorder:hover
+{
+    background-color: #30C0B7;
+    color: #FFFFFF;
+}
+
+#signInBut
+{
+    position: fixed;
+    left: 1750;
+}
+
+#aboutBut
+{
+    position: fixed;
+    left: 750;
+}
+
+#settingBut
+{
+    position: fixed;
+    left: 1110;
+}
+
 #title 
 {
     font-size: 20px;
@@ -28,6 +82,8 @@ img.logo
 
 #loginDiv
 {
+    border-style: solid;
+    border-color: #30C0B7;
     border-radius: 25px;
     font-size: 30px;
     width:93%;
@@ -37,6 +93,17 @@ img.logo
     padding: 25px;
     /*background-color: #b2b2b2;*/
     background-color: rgba(104,90,210,0.5);
+}
+
+#circleDiv
+{
+    border-radius: 50%;
+    background-color: #EE227D;
+    margin: auto;
+    margin-top: 2%;
+    width: 600px;
+    height: 600px;
+
 }
 
 #loggedInDiv
@@ -59,26 +126,48 @@ img.logo
 
 .buttons
 {
+    position: fixed;
     font-size: 30px;
     border-radius: 25px;
-    width: 50%;
-    margin-left: 25%;
+    width: 10%;
+    /*margin-left: 35%;*/
+    left: 50%;
+    transform: translateX(-50%);
     font-family: 'Ubuntu', sans-serif;
 }
 
 .buttons:hover{
-    background-color: #00d5124f;
+    background-color: #30C0B7;
     color: #FFFFFF;
-    opacity: 50%;
+    /*opacity: 50%;*/
+}
+
+.center 
+{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#loginButton
+{
+    margin-top: 10%;
 }
 
 #loginName
 {
 	font-size: 30px;
+    width: 25%;
+    bottom: 500;
+    margin: 0;
+
 }
 #loginPassword
 {
 	font-size: 30px;
+    width: 25%;
+    bottom: 400;
+    margin: 0;
 }
 #searchText
 {
@@ -100,13 +189,13 @@ input[type="text"],input[type="password"]{
 
 #inner-title{
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 1em;
     width: 90%;
     text-align: center;
     margin-left: 5%;
-    margin-bottom: 2%;
-    font-family: 'Ubuntu', sans-serif;
-    color: #3b0855;
+    margin-top: 20%;
+    font-family: 'Poppins', sans-serif;
+    color: black;
 }
 
 #loginResult{
