@@ -1,9 +1,16 @@
 const urlBase = 'http://COP4331-5.com/LAMPAPI';
 const extension = 'php';
 
+// Miami code
+
 let userId = 0;
 let firstName = "";
 let lastName = "";
+
+function goToSignIn()
+{
+	window.location.href = "Miami_SignIn.html";
+}
 
 function doLogin()
 {
@@ -91,7 +98,7 @@ function readCookie()
 	
 	if( userId < 0 )
 	{
-		window.location.href = "index.html";
+		window.location.href = "Miami_HomePage.html";
 	}
 	else
 	{
@@ -105,7 +112,7 @@ function doLogout()
 	firstName = "";
 	lastName = "";
 	document.cookie = "firstName= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
-	window.location.href = "index.html";
+	window.location.href = "Miami_HomePage.html";
 }
 
 function addColor()
