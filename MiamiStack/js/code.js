@@ -12,6 +12,11 @@ function goToSignIn()
 	window.location.href = "Miami_SignIn.html";
 }
 
+function goToSignUp()
+{
+	window.location.href = "Miami_SignUp.html";
+}
+
 function doLogin()
 {
 	userId = 0;
