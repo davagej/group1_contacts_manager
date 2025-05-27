@@ -5,13 +5,17 @@ body
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;	
+    font-size: 100%;
 }
 
 img.logo 
 {
     position: fixed;
-    top: 22;
-    left: 40;
+    margin-top: 1.4%;
+    /*top: 2.5%;*/
+    left: 2.5%;
+    width: 4%;
+    height: 7%;
 }
 
 button.navText
@@ -21,7 +25,7 @@ button.navText
     color: white;
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
-    margin-top: -3.3%;
+    margin-top: 2%;
     cursor: pointer;
 }
 
@@ -32,7 +36,7 @@ button.navBorder /*come up with better name*/
     color: black;
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
-    margin-top: -3.3%;
+    margin-top: 2%;
     padding: 5px;
     width: 6%;
     border-radius: 15px;
@@ -50,66 +54,102 @@ button.navBorder:hover
     color: #FFFFFF;
 }
 
+.wrapper-main
+{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.disable-scrolling 
+{
+    height: 100%;
+    overflow-x: hidden;
+}
+
 #signInBut
 {
     position: fixed;
-    left: 1750;
+    left: 91.5%;
 }
 
 #aboutBut
 {
     position: fixed;
-    left: 750;
+    left: 35%;
 }
 
 #settingBut
 {
     position: fixed;
-    left: 1110;
+    left: 59%;
 }
 
 #title 
 {
+    position: fixed;
     font-size: 20px;
     font-weight: 900;
     width: 100%;
-    margin: 2% 6%;
+    margin: 2% 7%;
     text-align: left;
     /*font-family: 'Ubuntu', sans-serif;*/
     font-family: 'Poppins', sans-serif; 
-    color: #FFFFFF
-;}
+    color: #FFFFFF;
+}
 
 #loginDiv
 {
+    position: fixed;
     border-style: solid;
     border-color: #30C0B7;
     border-radius: 25px;
     font-size: 30px;
-    width:93%;
-    height: 75%;
+    width:91.5%;
+    height: 70vh;
     margin-left: 2%;
-    margin-top: 3%;
+    margin-top: 6%;
     padding: 25px;
     /*background-color: #b2b2b2;*/
     background-color: rgba(104,90,210,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #circleDiv
 {
+    position: fixed;
     border-radius: 50%;
     background-color: #EE227D;
     margin: auto;
-    margin-top: 2%;
-    width: 600px;
-    height: 600px;
+    word-wrap: break-word;
+    width: 35%;
+    height: 60vh;
+}
+
+#circleDivReg
+{
+    position: fixed;
+    border-radius: 50%;
+    background-color: #EE227D;
+    margin: auto;
+    word-wrap: break-word;
+    width: 35%;
+    height: 60vh;
+    padding: 2%;
+}
+
+#HP-descript
+{
+    text-align: center;
+    font-size: 0.8em;
 
 }
 
 #loggedInDiv
 {
     font-size: 30px;
-    width: 70%;
+    width: 40%;
     margin-left: 15%;
     padding: 25px;
     background-color: #b2b2b2;
@@ -151,22 +191,53 @@ button.navBorder:hover
 
 #loginButton
 {
-    margin-top: 10%;
+    /*margin-top: 13%;*/
+    bottom: 25%;
 }
 
 #loginName
 {
 	font-size: 30px;
     width: 25%;
-    bottom: 500;
+    bottom: 48%;
     margin: 0;
 
 }
+
+#enterFirstName
+{
+    font-size: 30px;
+    width: 25%;
+    bottom: 59%;
+    margin: 0;
+}
+#enterLastName
+{
+    font-size: 30px;
+    width: 25%;
+    bottom: 49%;
+    margin: 0;
+}
+#enterEmail
+{
+    font-size: 30px;
+    width: 25%;
+    bottom: 39%;
+    margin: 0;
+}
+#enterPhoneNum
+{
+    font-size: 30px;
+    width: 25%;
+    bottom: 29%;
+    margin: 0;
+}
+
 #loginPassword
 {
 	font-size: 30px;
     width: 25%;
-    bottom: 400;
+    bottom: 37%;
     margin: 0;
 }
 #searchText
@@ -189,7 +260,7 @@ input[type="text"],input[type="password"]{
 
 #inner-title{
     display: inline-block;
-    font-size: 1em;
+    font-size: 1.5em;
     width: 90%;
     text-align: center;
     margin-left: 5%;
@@ -198,7 +269,32 @@ input[type="text"],input[type="password"]{
     color: black;
 }
 
-#loginResult{
+#inner-title-HP
+{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 20%;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+#inner-title-reg
+{
+    display: inline-block;
+    font-size: 1.5em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+#loginResult
+{
     display: inline-block;
     font-size: 0.8em;
     width: 90%;
@@ -209,16 +305,23 @@ input[type="text"],input[type="password"]{
     color: #95060a;
 }
 
-#userName{
+#userName
+{
     display: inline-block;
     width: 80%;
     margin-left: 10%;
     text-align: center;
 }
 
-#logoutButton{
+#logoutButton
+{
     width: 20%;
     margin-left: 40%;
+}
+
+#signUpButton
+{
+    bottom: 20%;
 }
 
 select{
