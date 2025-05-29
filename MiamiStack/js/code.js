@@ -17,9 +17,14 @@ function goToSignUp()
 	window.location.href = "Miami_SignUp.html";
 }
 
-function goToSignOut()
+function goToHomePage()
 {
 	window.location.href = "Miami_HomePage.html";
+}
+
+function goToContactsPage()
+{
+	window.location.href = "Miami_ContactsPage.html"
 }
 
 function doLogin()
