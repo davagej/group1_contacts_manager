@@ -1,4 +1,4 @@
-const urlBase = 'http://COP4331-5.com/LAMPAPI';
+const urlBase = 'http://managemymiami4331.xyz/LAMPAPI'
 const extension = 'php';
 
 // Miami code
@@ -27,19 +27,74 @@ function goToContactsPage()
 	window.location.href = "Miami_ContactsPage.html"
 }
 
-function doLogin()
+function register()
 {
 	userId = 0;
-	firstName = "";
-	lastName = "";
+	FirstName = "";
+	LastName = "";
 	
-	let login = document.getElementById("loginName").value;
-	let password = document.getElementById("loginPassword").value;
+	let username = document.getElementById("createUsername").value;
+
+  document.getElementById("loginResult").innerHTML = "This is a test";
+
+  let tmp = {username:username};
+//	var tmp = {login:login,password:hash};
+	let jsonPayload = JSON.stringify( tmp );
+	
+	let url = urlBase + '/Register.' + extension;
+
+	let xhr = new XMLHttpRequest();
+	xhr.open("POST", url, true);
+	xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+	try
+	{
+		xhr.onreadystatechange = function() 
+		{
+			if (this.readyState == 4 && this.status == 200) 
+			{
+				let jsonObject = JSON.parse( xhr.responseText );
+				userId = jsonObject.ID;
+		
+				if( userId > 0 )
+				{		
+					document.getElementById("loginResult").innerHTML = "Username Already Taken";
+					return;
+				}
+
+				document.getElementById("loginResult").innerHTML = "Username Created";
+		
+				// FirstName = jsonObject.FirstName;
+				// LastName = jsonObject.LastName;
+
+				// saveCookie();
+	
+				// window.location.href = "color.html";
+			}
+
+			document.getElementById("loginResult").innerHTML = "womp womp";
+		};
+		xhr.send(jsonPayload);
+	}
+	catch(err)
+	{
+		document.getElementById("loginResult").innerHTML = err.message;
+	}
+
+}
+
+function doLogin()
+{
+	let ID = 0;
+	FirstName = "";
+	LastName = "";
+	
+	let Login = document.getElementById("loginName").value;
+	let Password = document.getElementById("loginPassword").value;
 //	var hash = md5( password );
 	
-	document.getElementById("loginResult").innerHTML = "";
+	document.getElementById("loginResult").innerHTML = Password;
 
-	let tmp = {login:login,password:password};
+	let tmp = {Login:Login,Password:Password};
 //	var tmp = {login:login,password:hash};
 	let jsonPayload = JSON.stringify( tmp );
 	
@@ -54,21 +109,26 @@ function doLogin()
 		{
 			if (this.readyState == 4 && this.status == 200) 
 			{
+				document.getElementById("loginResult").innerHTML = "In if statement";
 				let jsonObject = JSON.parse( xhr.responseText );
-				userId = jsonObject.id;
+				ID = jsonObject.ID;
 		
-				if( userId < 1 )
+				if( ID < 1 )
 				{		
 					document.getElementById("loginResult").innerHTML = "User/Password combination incorrect";
 					return;
 				}
 		
-				firstName = jsonObject.firstName;
-				lastName = jsonObject.lastName;
+				FirstName = jsonObject.FirstName;
+				LastName = jsonObject.LastName;
 
 				saveCookie();
 	
-				window.location.href = "color.html";
+				window.location.href = "Miami_HomePage.html";
+			}
+			else
+			{
+				document.getElementById("loginResult").innerHTML = "womp womp";
 			}
 		};
 		xhr.send(jsonPayload);
