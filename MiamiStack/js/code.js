@@ -75,7 +75,7 @@ function register()
 
 				saveCookie();
 	
-				window.location.href = "Miami_tempContact.html";
+				window.location.href = "Miami_ContactsPage.html";
 			}
 			else
 			{
@@ -123,18 +123,18 @@ function doLogin()
 
 				document.getElementById("loginResult").innerHTML = jsonObject.ID;
 		
-				// if( ID < 1 )
-				// {		
-				// 	document.getElementById("loginResult").innerHTML = "User/Password combination incorrect";
-				// 	return;
-				// }
+				if( ID < 1 )
+				{		
+					document.getElementById("loginResult").innerHTML = "User/Password combination incorrect";
+					return;
+				}
 		
-				// FirstName = jsonObject.FirstName;
-				// LastName = jsonObject.LastName;
+				FirstName = jsonObject.FirstName;
+				LastName = jsonObject.LastName;
 
-				// saveCookie();
+				saveCookie();
 	
-				// window.location.href = "Miami_tempContact.html";
+				window.location.href = "Miami_ContactsPage.html";
 			}
 		};
 		xhr.send(jsonPayload);
