@@ -1,3 +1,4 @@
+//const urlBase = 'http://142.93.51.19/LAMPAPI'; // Change to domain name
 const urlBase = 'http://managemymiami4331.xyz/LAMPAPI'
 const extension = 'php';
 
@@ -29,15 +30,19 @@ function goToContactsPage()
 
 function register()
 {
-	userId = 0;
+	//let ID = 0;
 	FirstName = "";
 	LastName = "";
 	
-	let username = document.getElementById("createUsername").value;
 
   document.getElementById("loginResult").innerHTML = "This is a test";
+	FirstName = document.getElementById("enterFirstName").value;
+	LastName = document.getElementById("enterLastName").value;
+	let UserName = document.getElementById("createUsername").value;
+	let Password = document.getElementById("createPassword").value;
 
-  let tmp = {username:username};
+
+  let tmp = {FirstName:FirstName,LastName:LastName,UserName:UserName,Password:Password};
 //	var tmp = {login:login,password:hash};
 	let jsonPayload = JSON.stringify( tmp );
 	
@@ -53,9 +58,11 @@ function register()
 			if (this.readyState == 4 && this.status == 200) 
 			{
 				let jsonObject = JSON.parse( xhr.responseText );
-				userId = jsonObject.ID;
+				//ID = jsonObject.ID;
+
+				document.getElementById("loginResult").innerHTML = jsonObject.error;
 		
-				if( userId > 0 )
+				if( jsonObject.error != "" )
 				{		
 					document.getElementById("loginResult").innerHTML = "Username Already Taken";
 					return;
@@ -63,15 +70,17 @@ function register()
 
 				document.getElementById("loginResult").innerHTML = "Username Created";
 		
-				// FirstName = jsonObject.FirstName;
-				// LastName = jsonObject.LastName;
+				FirstName = jsonObject.FirstName;
+				LastName = jsonObject.LastName;
 
-				// saveCookie();
+				saveCookie();
 	
-				// window.location.href = "color.html";
+				window.location.href = "Miami_tempContact.html";
 			}
-
-			document.getElementById("loginResult").innerHTML = "womp womp";
+			else
+			{
+				document.getElementById("loginResult").innerHTML = "womp womp";
+			}
 		};
 		xhr.send(jsonPayload);
 	}
@@ -92,7 +101,7 @@ function doLogin()
 	let Password = document.getElementById("loginPassword").value;
 //	var hash = md5( password );
 	
-	document.getElementById("loginResult").innerHTML = Password;
+	document.getElementById("loginResult").innerHTML = "";
 
 	let tmp = {Login:Login,Password:Password};
 //	var tmp = {login:login,password:hash};
@@ -111,23 +120,21 @@ function doLogin()
 			{
 				let jsonObject = JSON.parse( xhr.responseText );
 				ID = jsonObject.ID;
-		
-				if( ID < 1 )
-				{		
-					document.getElementById("loginResult").innerHTML = "User/Password combination incorrect";
-					return;
-				}
-		
-				FirstName = jsonObject.FirstName;
-				LastName = jsonObject.LastName;
 
-				saveCookie();
+				document.getElementById("loginResult").innerHTML = jsonObject.ID;
+		
+				// if( ID < 1 )
+				// {		
+				// 	document.getElementById("loginResult").innerHTML = "User/Password combination incorrect";
+				// 	return;
+				// }
+		
+				// FirstName = jsonObject.FirstName;
+				// LastName = jsonObject.LastName;
+
+				// saveCookie();
 	
-				window.location.href = "Miami_HomePage.html";
-			}
-			else
-			{
-				document.getElementById("loginResult").innerHTML = "womp womp";
+				// window.location.href = "Miami_tempContact.html";
 			}
 		};
 		xhr.send(jsonPayload);
