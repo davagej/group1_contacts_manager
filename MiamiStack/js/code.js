@@ -4,8 +4,8 @@ const extension = 'php';
 // Miami code
 
 let userId = 0;
-let firstName = "";
-let lastName = "";
+let FirstName = "";
+let LastName = "";
 
 function goToSignIn()
 {
@@ -145,7 +145,7 @@ function saveCookie()
 	let minutes = 20;
 	let date = new Date();
 	date.setTime(date.getTime()+(minutes*60*1000));	
-	document.cookie = "firstName=" + firstName + ",lastName=" + lastName + ",userId=" + userId + ";expires=" + date.toGMTString();
+	document.cookie = "FirstName=" + FirstName + ",LastName=" + LastName + ",userId=" + userId + ";expires=" + date.toGMTString();
 }
 
 function readCookie()
@@ -157,13 +157,13 @@ function readCookie()
 	{
 		let thisOne = splits[i].trim();
 		let tokens = thisOne.split("=");
-		if( tokens[0] == "firstName" )
+		if( tokens[0] == "FirstName" )
 		{
-			firstName = tokens[1];
+			FirstName = tokens[1];
 		}
-		else if( tokens[0] == "lastName" )
+		else if( tokens[0] == "LastName" )
 		{
-			lastName = tokens[1];
+			LastName = tokens[1];
 		}
 		else if( tokens[0] == "userId" )
 		{
@@ -177,16 +177,16 @@ function readCookie()
 	}
 	else
 	{
-		document.getElementById("userName").innerHTML = "Logged in as " + firstName + " " + lastName;
+		document.getElementById("userName").innerHTML = "Logged in as " + FirstName + " " + LastName;
 	}
 }
 
 function doLogout()
 {
 	userId = 0;
-	firstName = "";
-	lastName = "";
-	document.cookie = "firstName= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
+	FirstName = "";
+	LastName = "";
+	document.cookie = "FirstName= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
 	window.location.href = "Miami_HomePage.html";
 }
 
