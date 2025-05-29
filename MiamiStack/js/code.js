@@ -109,7 +109,6 @@ function doLogin()
 		{
 			if (this.readyState == 4 && this.status == 200) 
 			{
-				document.getElementById("loginResult").innerHTML = "In if statement";
 				let jsonObject = JSON.parse( xhr.responseText );
 				ID = jsonObject.ID;
 		
