@@ -34,13 +34,28 @@ function register()
 	FirstName = "";
 	LastName = "";
 	
-
-  document.getElementById("loginResult").innerHTML = "This is a test";
 	FirstName = document.getElementById("enterFirstName").value;
 	LastName = document.getElementById("enterLastName").value;
 	let UserName = document.getElementById("createUsername").value;
 	let Password = document.getElementById("createPassword").value;
 
+	let letter = document.getElementById("lowerCaseReq");
+	let capital = document.getElementById("upperCaseReq");
+	let number = document.getElementById("numberSpecialCharReq");
+	let length = document.getElementById("charRangeReq");
+
+	let letterInvalid = letter.classList.contains("invalid");
+	let capitalInvalid = capital.classList.contains("invalid");
+	let numberInvalid = number.classList.contains("invalid");
+	let lengthInvalid = length.classList.contains("invalid");
+
+	if (letterInvalid | capitalInvalid | numberInvalid | lengthInvalid)
+	{
+		document.getElementById("loginResult").innerHTML = "Invalid Password";
+		return;
+	}
+
+	document.getElementById("loginResult").innerHTML = "";
 
   let tmp = {FirstName:FirstName,LastName:LastName,UserName:UserName,Password:Password};
 //	var tmp = {login:login,password:hash};
@@ -59,8 +74,6 @@ function register()
 			{
 				let jsonObject = JSON.parse( xhr.responseText );
 				//ID = jsonObject.ID;
-
-				document.getElementById("loginResult").innerHTML = jsonObject.error;
 		
 				if( jsonObject.error != "" )
 				{		
@@ -120,8 +133,6 @@ function doLogin()
 			{
 				let jsonObject = JSON.parse( xhr.responseText );
 				ID = jsonObject.ID;
-
-				document.getElementById("loginResult").innerHTML = jsonObject.ID;
 		
 				if( ID < 1 )
 				{		
