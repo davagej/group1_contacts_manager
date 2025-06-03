@@ -374,10 +374,12 @@ button.navBorder:hover
     bottom: 37%;
     margin: 0;
 }
+
 #searchText
 {
 	font-size: 30px;
 }
+
 #colorText
 {
 	font-size: 30px;
@@ -425,6 +427,18 @@ input[type="text"],input[type="password"]{
     margin-top: 5%;
     font-family: 'Poppins', sans-serif;
     color: black;
+}
+
+#contact-welcome
+{
+    display: inline-block;
+    font-size: 1.5em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    color: white;	
 }
 
 #loginResult
