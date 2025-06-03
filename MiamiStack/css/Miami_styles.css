@@ -252,7 +252,8 @@ button.navBorder:hover
 {
     position: fixed;
     border-radius: 50%;
-    background-color: #EE227D;
+/*     background-color: #EE227D; */
+	background-image: linear-gradient(#FD8083, #EE227D);
     margin: auto;
     word-wrap: break-word;
     width: 35%;
@@ -263,7 +264,8 @@ button.navBorder:hover
 {
     position: fixed;
     border-radius: 50%;
-    background-color: #EE227D;
+/*     background-color: #EE227D; */
+	background-image: linear-gradient(#FD8083, #EE227D);
     margin: auto;
     word-wrap: break-word;
     width: 35%;
