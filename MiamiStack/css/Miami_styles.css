@@ -222,8 +222,8 @@ button.navBorder:hover
     font-size: 30px;
     width: 85%;
     height: 55vh;
-    margin-left: 0.75%;
-    margin-top: 4.5%;
+    margin-left: 0.25%;
+    margin-top: 2.25%;
     padding: 25px;
     background-color: rgba(255,255,255,0.65);
     display: flex;
