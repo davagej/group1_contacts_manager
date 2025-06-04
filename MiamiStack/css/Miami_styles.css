@@ -181,6 +181,12 @@ button.navBorder:hover
     left: 59%;
 }
 
+#addBut
+{
+	position: fixed;
+}
+
+
 #title 
 {
     position: fixed;
