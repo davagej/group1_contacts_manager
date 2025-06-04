@@ -157,13 +157,6 @@ function doLogin()
 
 }
 
-// FINISH TONIGHT
-function addContactPopup()
-{
-	var popup = document.getElementById("addContactPopup");
-  	popup.classList.toggle("show");
-}
-
 function saveCookie()
 {
 	let minutes = 20;
