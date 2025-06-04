@@ -158,9 +158,10 @@ function doLogin()
 }
 
 // FINISH TONIGHT
-function addContact()
+function addContactPopup()
 {
-	
+	var popup = document.getElementById("addContactPopup");
+  	popup.classList.toggle("show");
 }
 
 function saveCookie()
