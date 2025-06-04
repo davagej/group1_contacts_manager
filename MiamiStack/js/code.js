@@ -157,6 +157,12 @@ function doLogin()
 
 }
 
+// FINISH TONIGHT
+function addContact()
+{
+	
+}
+
 function saveCookie()
 {
 	let minutes = 20;
