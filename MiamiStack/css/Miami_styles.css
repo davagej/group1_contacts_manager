@@ -188,7 +188,7 @@ button.navBorder:hover
 	cursor: pointer;
 }
 
-.popup.addContact {
+.popup .addContact {
   visibility: hidden;
   width: 160px;
   background-color: #555;
