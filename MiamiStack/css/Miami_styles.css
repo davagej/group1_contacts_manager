@@ -345,6 +345,7 @@ button.navBorder:hover
     bottom: 59%;
     margin: 0;
 }
+
 #enterLastName
 {
     font-size: 30px;
@@ -359,6 +360,7 @@ button.navBorder:hover
     bottom: 39%;
     margin: 0;
 }
+
 #createPassword
 {
     font-size: 30px;
@@ -507,4 +509,64 @@ select{
     margin-bottom: 1%;
     font-family: 'Ubuntu', sans-serif;
     color: #95060a;
+}
+
+#headerFirst
+{
+	display: inline-block;
+    font-size: 20px;
+    width: 90%;
+    text-align: left;
+	margin-right: 9.75%;
+	margin-bottom: 36%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#headerLast
+{
+	display: inline-block;
+    font-size: 20px;
+    width: 90%;
+    text-align: left;
+	margin-right: 9.75%;
+	margin-bottom: 36%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#headerEmail
+{
+	display: inline-block;
+    font-size: 20px;
+    width: 90%;
+    text-align: left;
+	margin-right: 9.75%;
+	margin-bottom: 36%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#headerPhone
+{
+	display: inline-block;
+    font-size: 20px;
+    width: 90%;
+    text-align: left;
+	margin-right: 9.75%;
+	margin-bottom: 36%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#headerOptions
+{
+	display: inline-block;
+    font-size: 20px;
+    width: 90%;
+    text-align: left;
+	margin-right: 9.75%;
+	margin-bottom: 36%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
