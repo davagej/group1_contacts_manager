@@ -336,6 +336,12 @@ button.navBorder:hover
     margin-top: 5%;
 }
 
+#loginButton
+{
+    /*margin-top: 13%;*/
+    bottom: 15%;
+}
+
 #loginName
 {
     position: relative;
