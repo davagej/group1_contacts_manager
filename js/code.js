@@ -239,7 +239,7 @@ function readCookie()
 	}
 	else
 	{
-		document.getElementById("userName").innerHTML = "Logged in as " + FirstName + " " + LastName;
+		document.getElementById("userName").innerHTML = FirstName + " " + LastName;
 	}
 }
 
