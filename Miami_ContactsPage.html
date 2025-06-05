@@ -11,6 +11,13 @@
 	<script type="text/javascript" src="js/code.js"></script>
     <link href="css/Miami_styles.css" rel="stylesheet">	
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+	<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', function() 
+	{
+		readCookie();
+	}, false);
+	</script>
 </head>
 <body>
 
@@ -27,6 +34,7 @@
 	
 <!-- loginDiv is the "workspace" for the user -->
 <div id="loginDiv">
+	<span id="userName"></span><br />
 	<p id="contact-welcome"> Hello <getRequestInfo();> ,<br />Welcome to your contacts!
 	<div id="bodyTransDiv">
 		<button id="myBtn">Add</button>
