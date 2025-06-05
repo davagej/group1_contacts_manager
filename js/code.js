@@ -18,6 +18,11 @@ function goToSignUp()
 	window.location.href = "Miami_SignUp.html";
 }
 
+function goToAbout()
+{
+	window.location.href = "Miami_AboutPage.html";
+}
+
 function goToHomePage()
 {
 	window.location.href = "Miami_HomePage.html";
