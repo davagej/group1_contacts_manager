@@ -28,9 +28,43 @@ function goToContactsPage()
 	window.location.href = "Miami_ContactsPage.html"
 }
 
+function checkField(UserName, Password)
+{
+	//FirstName = document.getElementById("enterFirstName").value;
+	let flag = 0;
+
+	if (FirstName == "")
+	{
+    document.getElementById("firstNamePosition").classList.add("invalid");
+    flag = 1;
+	}
+
+	if (LastName == "")
+	{
+    document.getElementById("lastNamePosition").classList.add("invalid");
+    flag = 1;
+	}
+
+	if (UserName == "")
+	{
+    document.getElementById("usernamePosition").classList.add("invalid");
+    flag = 1;
+	}
+
+	if (Password == "")
+	{
+    document.getElementById("passwordPosition").classList.add("invalid");
+    flag = 1;
+	}
+
+	return flag;
+}
+
+
 function register()
 {
-	//let ID = 0;
+	//document.getElementById("loginResult").innerHTML = "Test";
+	let ID = 0;
 	FirstName = "";
 	LastName = "";
 	
@@ -48,6 +82,12 @@ function register()
 	let capitalInvalid = capital.classList.contains("invalid");
 	let numberInvalid = number.classList.contains("invalid");
 	let lengthInvalid = length.classList.contains("invalid");
+
+	if (checkField(UserName, Password) == 1)
+	{
+		document.getElementById("loginResult").innerHTML = "Please Fill in Empty Fields";
+		return;
+	}
 
 	if (letterInvalid | capitalInvalid | numberInvalid | lengthInvalid)
 	{
