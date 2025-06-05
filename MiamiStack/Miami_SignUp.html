@@ -23,15 +23,29 @@
 <div id="loginDiv">
   <div id="circleDivReg">
   <span id="inner-title-reg">Register</span>
-  <input type="text" id="enterFirstName" class="center borderInvalid" placeholder="Enter First Name " 
-      title="Please Fill out Field" /><br />
-  <input type="text" id="enterLastName" class="center" placeholder="Enter Last Name"
-      title="Please Fill out Field"/><br />
-  <input type="text" id="createUsername" class="center" placeholder="Create Username"
-      title="Must Be 3-13 Characters Long and Have Least One Uppercase Letter" /><br />
-  <input type="password" id="createPassword" class="center" placeholder="Create Password"
-      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,32}" title="Must be 8-32 Characters Long,
-      Have One Uppercase & Lowercase Letter, and Have One Number & Special Character"/><br />
+
+    <div id="firstNamePosition" class="inputDiv center">
+      <input type="text" id="enterFirstName" class="centerInDiv" placeholder="Enter First Name " 
+        title="Please Fill out Field" /><br />
+    </div>
+
+    <div id="lastNamePosition" class="inputDiv center">
+      <input type="text" id="enterLastName" class="centerInDiv" placeholder="Enter Last Name"
+        title="Please Fill out Field"/><br />
+    </div>
+
+    <div id="usernamePosition" class="inputDiv center">
+      <input type="text" id="createUsername" class="centerInDiv" placeholder="Create Username"
+        title="Must Be 3-13 Characters Long and Have Least One Uppercase Letter" /><br />
+    </div>
+
+    <div id="passwordPosition" class="inputDiv center">
+      <input type="password" id="createPassword" class="centerInDiv" placeholder="Create Password"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,32}" title="Must be 8-32 
+        Characters Long,Have One Uppercase & Lowercase Letter, 
+        and Have One Number & Special Character"/><br />
+    </div>
+
   <button type="button" id="signUpButton" class="buttons" onclick="register();"> Sign Up </button>
 
   <span id="loginResult"></span>
@@ -46,30 +60,62 @@
 </div>
 
 <script>
-let myInput = document.getElementById("createPassword");
+let firstNameInput = document.getElementById("enterFirstName");
+let lastNameInput = document.getElementById("enterLastName");
+let usernameInput = document.getElementById("createUsername");
+let passwordInput = document.getElementById("createPassword");
 let letter = document.getElementById("lowerCaseReq");
 let capital = document.getElementById("upperCaseReq");
 let number = document.getElementById("numberSpecialCharReq");
 let length = document.getElementById("charRangeReq");
 
-//When the user clicks on the password field, show the message box
-myInput.onfocus = function() 
+firstNameInput.onfocus = function() 
 {
+  if (document.getElementById("firstNamePosition").classList.contains("invalid"))
+  {
+    document.getElementById("firstNamePosition").classList.remove("invalid");
+  }
+}
+
+lastNameInput.onfocus = function() 
+{
+  if (document.getElementById("lastNamePosition").classList.contains("invalid"))
+  {
+    document.getElementById("lastNamePosition").classList.remove("invalid");
+  }
+}
+
+usernameInput.onfocus = function() 
+{
+  if (document.getElementById("usernamePosition").classList.contains("invalid"))
+  {
+    document.getElementById("usernamePosition").classList.remove("invalid");
+  }
+}
+
+//When the user clicks on the password field, show the message box
+passwordInput.onfocus = function() 
+{
+  if (document.getElementById("passwordPosition").classList.contains("invalid"))
+  {
+    document.getElementById("passwordPosition").classList.remove("invalid");
+  }
+
   document.getElementById("textBox").style.display = "block";
 }
 
 // When the user clicks outside of the password field, hide the message box
-myInput.onblur = function() 
+passwordInput.onblur = function() 
 {
   document.getElementById("textBox").style.display = "none";
 }
 
 //When the user starts to type something inside the password field
-myInput.onkeyup = function() 
+passwordInput.onkeyup = function() 
 {
   // Validate lowercase letters
   let lowerCaseLetters = /[a-z]/g;
-  if(myInput.value.match(lowerCaseLetters)) 
+  if(passwordInput.value.match(lowerCaseLetters)) 
   {
     letter.classList.remove("invalid");
     letter.classList.add("valid");
@@ -82,7 +128,7 @@ myInput.onkeyup = function()
 
   // Validate capital letters
   let upperCaseLetters = /[A-Z]/g;
-  if(myInput.value.match(upperCaseLetters)) 
+  if(passwordInput.value.match(upperCaseLetters)) 
   {
     capital.classList.remove("invalid");
     capital.classList.add("valid");
@@ -96,7 +142,7 @@ myInput.onkeyup = function()
   // Validate numbers
   let numbers = /[0-9]/g;
   let specialChar = /[!@#$%]/g;
-  if(myInput.value.match(numbers) && myInput.value.match(specialChar)) 
+  if(passwordInput.value.match(numbers) && passwordInput.value.match(specialChar)) 
   {
     number.classList.remove("invalid");
     number.classList.add("valid");
@@ -108,7 +154,7 @@ myInput.onkeyup = function()
   }
 
   // Validate length
-  if(myInput.value.length >= 8 && myInput.value.length <= 32) 
+  if(passwordInput.value.length >= 8 && passwordInput.value.length <= 32) 
   {
     length.classList.remove("invalid");
     length.classList.add("valid");
