@@ -414,6 +414,27 @@ button.navBorder:hover
     font-size: 30px;
 }
 
+#addFirstName
+{
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+#addLastName
+{
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+#addEmailAddress
+{
+    font-size: 30px;
+    margin-top: 5%;
+}
+#addPhoneNumber
+{
+    font-size: 30px;
+    margin-top: 10%;
+}
+
 #searchText
 {
 	font-size: 30px;
