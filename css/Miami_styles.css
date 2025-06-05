@@ -648,12 +648,23 @@ select{
 
 #myBtn
 {
-	border: none;
+/* 	border: none;
     background-color: inherit;
     color: white;
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
     margin-top: 2%;
+    cursor: pointer; */
+
+	border: none;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 0%;
+    padding: 0px;
+    width: 6%;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -663,10 +674,12 @@ select{
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
 	left: 0;
+	right: 0;
 	top: 0;
+	bottom: 0;
 	width: 100%; /* Full width */
 	height: 100%; /* Full height */
 	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: #30C0B7; /* Fallback color */
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
