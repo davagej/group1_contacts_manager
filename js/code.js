@@ -252,9 +252,19 @@ function doLogout()
 	window.location.href = "Miami_HomePage.html";
 }
 
-function addColor()
+function addContact() /**/
 {
-	let newColor = document.getElementById("colorText").value;
+	addFirstName="";
+	addLastName="";
+	addPhoneNumber="";
+	addEmailAddress="";
+
+	addFirstName = document.getElementByID("addFirstName").value;
+	addLastName = document.getElementByID("addLastName").value;
+	addPhoneNumber = document.getElementByID("addPhoneNumber").value;
+	addEmailAddress = document.getElementByID("addEmailAddress").value;
+	
+	// let newColor = document.getElementById("colorText").value;
 	document.getElementById("colorAddResult").innerHTML = "";
 
 	let tmp = {color:newColor,userId,userId};
