@@ -254,8 +254,8 @@ function readCookie()
 		}
 		else
 		{
-			document.getElementById("userName").innerHTML = "Hello" + FirstName + " " + LastName;
-			document.getElementById("contactAddResult").innerHTML = userId;
+			// document.getElementById("userName").innerHTML = "Hello" + FirstName + " " + LastName;
+			document.getElementById("userName").innerHTML = userId;
 		}	
 
 		document.getElementById("logo").onclick = function() {doLogout()};
