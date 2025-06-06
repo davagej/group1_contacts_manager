@@ -69,7 +69,7 @@ function checkField(UserName, Password)
 function register()
 {
 	//document.getElementById("loginResult").innerHTML = "Test";
-	let ID = 0;
+	userId = 0;
 	FirstName = "";
 	LastName = "";
 	
