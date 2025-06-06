@@ -285,7 +285,7 @@ function addContact()
 	// let newColor = document.getElementById("colorText").value;
 	document.getElementById("contactAddResult").innerHTML = "";
 
-	let tmp = {FirstName:addFirstName, LastName:addLastName, Phone:addPhoneNumber, Email:addEmailAddress, userId:userId};
+	let tmp = {FirstName:addFirstName, LastName:addLastName, Phone:addPhoneNumber, Email:addEmailAddress, UserID:userId};
 	let jsonPayload = JSON.stringify( tmp );
 
 	let url = urlBase + '/AddContact.' + extension;
