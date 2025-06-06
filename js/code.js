@@ -323,10 +323,10 @@ function addContact()
 			}
 		};
 		xhr.send(jsonPayload);
-		document.getElementById("addFirstName").reset();
-		document.getElementById("addLastName").reset();
-		document.getElementById("addPhoneNumber").reset();
-		document.getElementById("addEmailAddress").reset();
+		document.getElementById("addFirstName").value = "";
+		document.getElementById("addLastName").value = "";
+		document.getElementById("addPhoneNumber").value = "";
+		document.getElementById("addEmailAddress").value = "";
 	}
 	catch(err)
 	{
