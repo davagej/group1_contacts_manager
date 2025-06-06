@@ -24,7 +24,7 @@ button.navText
     border: none;
     background-color: inherit;
     color: white;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-family: 'Poppins', sans-serif; 
     margin-top: 2%;
     cursor: pointer;
@@ -251,7 +251,7 @@ button.navBorder:hover
     align-items: center;
 }
 
-#circleDiv
+#circleDiv /**/
 {
     position: absolute;
     border-radius: 50%;
@@ -259,11 +259,11 @@ button.navBorder:hover
 	background-image: linear-gradient(#FD8083, #EE227D);
     margin: auto;
     word-wrap: break-word;
-    width: 35%;
+    width: 30vw; /**/
     height: 60vh;
 }
 
-#circleDivReg
+#circleDivReg /**/
 {
     position: absolute; /*was "fixed"*/
     border-radius: 50%;
@@ -271,7 +271,7 @@ button.navBorder:hover
 	background-image: linear-gradient(#FD8083, #EE227D);
     margin: auto;
     word-wrap: break-word;
-    width: 35%;
+    width: 30vw;/**/
     height: 60vh;
     padding: 2%;
 }
@@ -344,18 +344,18 @@ button.navBorder:hover
     bottom: 15%;
 }
 
-#loginName
+#loginName/**/
 {
     position: relative;
-    font-size: 30px;
+    font-size: 2vw;/**/
     width: 50%;
     top: 5%;
     margin: 0;
 }
 
-#loginPassword
+#loginPassword/**/
 {
-    font-size: 30px;
+    font-size: 2vw;/**/
     width: 50%;
     top: 15%;
     margin: 0;
@@ -399,21 +399,21 @@ button.navBorder:hover
     position: absolute;
 }
 
-#enterFirstName
+#enterFirstName/**/
 {
-    font-size: 30px;
+    font-size: 2vw;
 }
-#enterLastName
+#enterLastName/**/
 {
-    font-size: 30px;
+    font-size: 2vw;
 }
-#createUsername
+#createUsername/**/
 {
-    font-size: 30px;
+    font-size: 2vw;
 }
-#createPassword
+#createPassword/**/
 {
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 #addFirstName
@@ -456,9 +456,9 @@ input[type="text"],input[type="password"]{
     font-family: 'Ubuntu', sans-serif;
 }
 
-#inner-title{
+#inner-title{/**/
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 2.5vw;/**/
     width: 90%;
     text-align: center;
     margin-left: 5%;
@@ -479,10 +479,10 @@ input[type="text"],input[type="password"]{
     color: black;
 }
 
-#inner-title-reg
+#inner-title-reg/**/
 {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 2.5vw;/**/
     width: 90%;
     text-align: center;
     margin-left: 5%;
