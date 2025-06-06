@@ -277,7 +277,7 @@ button.navBorder:hover
     padding: 2%;
 }
 
-.circleAbout /**/
+.circleAbout 
 {
     position: relative;
     border-radius: 50%;
@@ -288,42 +288,42 @@ button.navBorder:hover
     height: 38vh;
 }
 
-#circleAboutPosition1 /**/
+#circleAboutPosition1 
 {
     position: absolute;
     margin-bottom: 20%;
     margin-right: 70%;
 }
 
-#circleAboutPosition2 /**/
+#circleAboutPosition2 
 {
     position: absolute;
     margin: auto;
     margin-bottom: 20%;
 }
 
-#circleAboutPosition3 /**/
+#circleAboutPosition3 
 {
     position: absolute;
     margin-bottom: 20%;
     margin-left: 70%;
 }
 
-#circleAboutPosition4 /**/
+#circleAboutPosition4 
 {
     position: absolute;
     margin-top: 20%;
     margin-right: 35%;
 }
 
-#circleAboutPosition5 /**/
+#circleAboutPosition5 
 {
     position: absolute;
     margin-top: 20%;
     margin-left: 35%;
 }
 
-#About-descript /**/
+#About-descript 
 {
     font-family: 'Poppins', sans-serif; 
     font-weight: 900;
@@ -333,7 +333,7 @@ button.navBorder:hover
     text-decoration: none;
 }
 
-#aboutRole-descript /**/
+#aboutRole-descript 
 {
     text-align: center;
     font-size: 1.0em;
@@ -341,7 +341,7 @@ button.navBorder:hover
     text-decoration: none;
 }
 
-img.aboutImage /**/
+img.aboutImage 
 {
     position: absolute;
     margin-bottom: auto;
@@ -378,7 +378,7 @@ img.aboutImage /**/
     background-color: #b2b2b2;
 }
 
-.buttons /**/
+.buttons 
 {
     position: absolute;
     font-size: 1.6vw;
@@ -421,18 +421,18 @@ img.aboutImage /**/
     bottom: 15%;
 }
 
-#loginName/**/
+#loginName
 {
     position: relative;
-    font-size: 2vw;/**/
+    font-size: 2vw;
     width: 50%;
     top: 5%;
     margin: 0;
 }
 
-#loginPassword/**/
+#loginPassword
 {
-    font-size: 2vw;/**/
+    font-size: 2vw;
     width: 50%;
     top: 15%;
     margin: 0;
@@ -476,44 +476,44 @@ img.aboutImage /**/
     position: absolute;
 }
 
-#enterFirstName/**/
+#enterFirstName
 {
     font-size: 2vw;
 }
-#enterLastName/**/
+#enterLastName
 {
     font-size: 2vw;
 }
-#createUsername/**/
+#createUsername
 {
     font-size: 2vw;
 }
-#createPassword/**/
+#createPassword
 {
     font-size: 2vw;
 }
 
 #addFirstName
 {
-	position: relative; /**/
+	position: relative; 
     font-size: 30px;
     margin-bottom: 2.5%;
 }
 #addLastName
 {
-	position: relative; /**/
+	position: relative; 
     font-size: 30px;
     margin-bottom: 2.5%;
 }
 #addEmailAddress
 {
-	position: relative; /**/
+	position: relative; 
     font-size: 30px;
     margin-top: 2.5%;
 }
 #addPhoneNumber
 {
-	position: relative; /**/
+	position: relative;
     font-size: 30px;
     margin-top: 2.5%;
 }
@@ -537,9 +537,9 @@ input[type="text"],input[type="password"]{
     font-family: 'Ubuntu', sans-serif;
 }
 
-#inner-title{/**/
+#inner-title{
     display: inline-block;
-    font-size: 2.5vw;/**/
+    font-size: 2.5vw;
     width: 90%;
     text-align: center;
     margin-left: 5%;
@@ -560,10 +560,10 @@ input[type="text"],input[type="password"]{
     color: black;
 }
 
-#inner-title-reg/**/
+#inner-title-reg
 {
     display: inline-block;
-    font-size: 2.5vw;/**/
+    font-size: 2.5vw;
     width: 90%;
     text-align: center;
     margin-left: 5%;
