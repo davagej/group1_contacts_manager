@@ -12,15 +12,16 @@
 <body>
 
 <!--<h1 id="title">COP 4331 MIAMI LAMP STACK</h1>-->
-<h1 id="title">Manage My Miami</h1> <!-- Make a button to link to home page or github?-->
+<h1 id="title">Manage My Miami</h1> 
 
-<img class="logo" src="images/MiamiLogo.png" alt="logo" onclick="goToHomePage();">
+<img id="logo" src="images/MiamiLogo.png" alt="logo" onclick="goToHomePage();"> <!---->
 
 <button class="navText" id="aboutBut" type="button" onclick="goToAbout();"> About </button>
 <button class="navText" id="settingBut"> Settings </button>
 <button class="navBorder" id="signInBut" type="button" onclick="goToSignUp();"> Sign Up </button>
 
 <div id="loginDiv">
+  <img id="palmtrees" src="images/palmtreesBlack.png" alt="palm trees"> <!---->
   <div id="circleDiv">
   <span id="inner-title">Welcome Back!</span>
   <input type="text" id="loginName" class="center" placeholder="Username" /><br />
