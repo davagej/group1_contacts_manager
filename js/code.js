@@ -259,8 +259,8 @@ function readCookie()
 		}
 		else
 		{
-			//document.getElementById("userName").innerHTML = "Hello " + FirstName + " " + LastName + "," + "<br>Welcome to your contacts!";
-			document.getElementById("userName").innerHTML = userId;
+			document.getElementById("userName").innerHTML = "Hello " + FirstName + " " + LastName + "," + "<br>Welcome to your contacts!";
+			//document.getElementById("userName").innerHTML = userId;
 		}	
 
 		document.getElementById("logo").onclick = function() {doLogout()};
@@ -286,8 +286,7 @@ function addContact()
 
 	//userId = readCookie();
 
-	document.getElementById("contactAddResult").innerHTML = userId;
-	return;
+	//document.getElementById("contactAddResult").innerHTML = userId;
 
 	let addFirstName = document.getElementById("addFirstName").value;
 	let addLastName = document.getElementById("addLastName").value;
