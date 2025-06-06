@@ -30,7 +30,7 @@
 <div id="loginDiv">
 	<img id="palmtrees" src="images/palmtreesBlack.png" alt="palm trees"> <!---->
 
-	<p id="contact-welcome"> Hello <span id="userName"></span>,<br />Welcome to your contacts!
+	<p id="contact-welcome"><span id="userName"></span>
 
 	<button id="myBtn">Add</button>
 
@@ -54,8 +54,10 @@
 				title="Please Fill out Field" /><br />
 
 				<input type="text" id="addEmailAddress" class="centerInDiv" placeholder="Enter Email Address" 
-				pattern="(?=.*[@.]).{8,32}"
+				
 				title="Must be in the format of name@mail.something" /><br />
+
+				<!-- pattern="(?=.*[@.]).{8,32}" -->
 
 				<button class="navBorder" id="myBtn" type="button" onclick="addContact();"> Add </button>
 				<span id="contactAddResult"></span>
