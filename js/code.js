@@ -272,15 +272,15 @@ function doLogout()
 
 function addContact() 
 {
-	addFirstName="";
-	addLastName="";
-	addPhoneNumber="";
-	addEmailAddress="";
+	// let addFirstName="";
+	// let addLastName="";
+	// let addPhoneNumber="";
+	// let addEmailAddress="";
 
-	addFirstName = document.getElementByID("addFirstName").value;
-	addLastName = document.getElementByID("addLastName").value;
-	addPhoneNumber = document.getElementByID("addPhoneNumber").value;
-	addEmailAddress = document.getElementByID("addEmailAddress").value;
+	let addFirstName = document.getElementByID("addFirstName").value;
+	let addLastName = document.getElementByID("addLastName").value;
+	let addPhoneNumber = document.getElementByID("addPhoneNumber").value;
+	let addEmailAddress = document.getElementByID("addEmailAddress").value;
 	
 	// let newColor = document.getElementById("colorText").value;
 	document.getElementById("contactAddResult").innerHTML = "";
