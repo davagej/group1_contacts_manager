@@ -210,7 +210,7 @@ function saveCookie()
 	document.cookie = "FirstName=" + FirstName + ",LastName=" + LastName + ",userId=" + userId + ";expires=" + date.toGMTString();
 }
 
-function readCookie() /**/
+function readCookie() 
 {
 	userId = -1;
 	let data = document.cookie;
@@ -233,7 +233,7 @@ function readCookie() /**/
 		}
 	}
 	
-	if( userId < 0 ) /**/
+	if( userId < 0 ) 
 	{
 		if (window.location.href == "http://managemymiami4331.xyz/Miami_AboutPage.html")
 		{
@@ -280,7 +280,7 @@ function addContact()
 	// let addPhoneNumber="";
 	// let addEmailAddress="";
 
-	//userId = "";
+	userId = readCookie();
 
 	let addFirstName = document.getElementById("addFirstName").value;
 	let addLastName = document.getElementById("addLastName").value;
