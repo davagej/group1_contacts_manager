@@ -791,6 +791,12 @@ select{
     cursor: pointer;
 }
 
+#myBtn:hover
+{
+    background-color: #30C0B7;
+    color: #FFFFFF;
+}
+
 #myModal
 {
 	display: center; /* Hidden by default */
