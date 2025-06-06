@@ -252,7 +252,7 @@ function doLogout()
 	window.location.href = "Miami_HomePage.html";
 }
 
-function addContact() /**/
+function addContact() 
 {
 	addFirstName="";
 	addLastName="";
