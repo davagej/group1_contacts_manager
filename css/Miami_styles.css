@@ -419,23 +419,27 @@ button.navBorder:hover
 
 #addFirstName
 {
+	position: relative; /**/
     font-size: 30px;
-    margin-bottom: 10%;
+    margin-bottom: 2.5%;
 }
 #addLastName
 {
+	position: relative; /**/
     font-size: 30px;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
 }
 #addEmailAddress
 {
+	position: relative; /**/
     font-size: 30px;
-    margin-top: 5%;
+    margin-top: 2.5%;
 }
 #addPhoneNumber
 {
+	position: relative; /**/
     font-size: 30px;
-    margin-top: 10%;
+    margin-top: 2.5%;
 }
 
 #searchText
