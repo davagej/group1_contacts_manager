@@ -310,7 +310,16 @@ function addContact()
 		{
 			if (this.readyState == 4 && this.status == 200) 
 			{
-				document.getElementById("contactAddResult").innerHTML = "Contact has been added!";
+				let jsonObject = JSON.parse( xhr.responseText );
+				
+				if (jsonObject.error != "")
+				{
+					document.getElementById("contactAddResult").innerHTML = jsonObject.error;
+					return;
+				}
+
+				document.getElementById("contactAddResult").innerHTML = "Contact has been added!";				
+				
 			}
 		};
 		xhr.send(jsonPayload);
@@ -322,8 +331,7 @@ function addContact()
 	catch(err)
 	{
 		document.getElementById("contactAddResult").innerHTML = err.message;
-	}
-	
+	}	
 }
 
 function searchColor()
