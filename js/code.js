@@ -272,10 +272,13 @@ function doLogout()
 
 function addContact() 
 {
+
 	// let addFirstName="";
 	// let addLastName="";
 	// let addPhoneNumber="";
 	// let addEmailAddress="";
+
+	userId = "";
 
 	let addFirstName = document.getElementById("addFirstName").value;
 	let addLastName = document.getElementById("addLastName").value;
