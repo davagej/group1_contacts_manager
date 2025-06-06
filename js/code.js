@@ -156,7 +156,7 @@ function register()
 
 function doLogin()
 {
-	let ID = 0;
+	userId = 0;
 	FirstName = "";
 	LastName = "";
 	
@@ -182,9 +182,9 @@ function doLogin()
 			if (this.readyState == 4 && this.status == 200) 
 			{
 				let jsonObject = JSON.parse( xhr.responseText );
-				ID = jsonObject.ID;
+				userId = jsonObject.ID;
 		
-				if( ID < 1 )
+				if( userId < 1 )
 				{		
 					document.getElementById("loginResult").innerHTML = "User/Password combination incorrect";
 					return;
@@ -259,16 +259,12 @@ function readCookie()
 		}
 		else
 		{
-			document.getElementById("userName").innerHTML = "Hello " + FirstName + " " + LastName + "," + "<br>Welcome to your contacts!";
-			// document.getElementById("userName").innerHTML = userId;
+			//document.getElementById("userName").innerHTML = "Hello " + FirstName + " " + LastName + "," + "<br>Welcome to your contacts!";
+			document.getElementById("userName").innerHTML = userId;
 		}	
 
 		document.getElementById("logo").onclick = function() {doLogout()};
 	}
-
-	
-
-	return userId;
 }
 
 function doLogout()
@@ -288,7 +284,7 @@ function addContact()
 	// let addPhoneNumber="";
 	// let addEmailAddress="";
 
-	userId = readCookie();
+	//userId = readCookie();
 
 	document.getElementById("contactAddResult").innerHTML = userId;
 	return;
