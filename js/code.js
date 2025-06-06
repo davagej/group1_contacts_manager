@@ -259,7 +259,7 @@ function readCookie()
 		}
 		else
 		{
-			document.getElementById("userName").innerHTML = "Hello" + FirstName + " " + LastName;
+			document.getElementById("userName").innerHTML = "Hello" + FirstName + " " + LastName + "," + <br /> + "Welcome to your contacts!"
 			// document.getElementById("userName").innerHTML = userId;
 		}	
 
