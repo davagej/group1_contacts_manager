@@ -65,6 +65,11 @@ function checkField(UserName, Password)
 	return flag;
 }
 
+function checkEmail()
+{
+	let email = document.getElementById("addEmailAddress");
+}
+
 
 function register()
 {
@@ -254,8 +259,8 @@ function readCookie()
 		}
 		else
 		{
-			// document.getElementById("userName").innerHTML = "Hello" + FirstName + " " + LastName;
-			document.getElementById("userName").innerHTML = userId;
+			document.getElementById("userName").innerHTML = "Hello" + FirstName + " " + LastName;
+			// document.getElementById("userName").innerHTML = userId;
 		}	
 
 		document.getElementById("logo").onclick = function() {doLogout()};
