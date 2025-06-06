@@ -282,6 +282,9 @@ function addContact()
 
 	userId = readCookie();
 
+	document.getElementById("contactAddResult").innerHTML = userId;
+	return;
+
 	let addFirstName = document.getElementById("addFirstName").value;
 	let addLastName = document.getElementById("addLastName").value;
 	let addPhoneNumber = document.getElementById("addPhoneNumber").value;
