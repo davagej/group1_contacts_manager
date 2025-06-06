@@ -210,7 +210,7 @@ function saveCookie()
 	document.cookie = "FirstName=" + FirstName + ",LastName=" + LastName + ",userId=" + userId + ";expires=" + date.toGMTString();
 }
 
-function readCookie()
+function readCookie() /**/
 {
 	userId = -1;
 	let data = document.cookie;
@@ -233,13 +233,31 @@ function readCookie()
 		}
 	}
 	
-	if( userId < 0 )
+	if( userId < 0 ) /**/
 	{
-		window.location.href = "Miami_HomePage.html";
+		if (window.location.href == "http://managemymiami4331.xyz/Miami_AboutPage.html")
+		{
+			document.getElementById("aboutBut").innerHTML = "Home";
+			document.getElementById("aboutBut").onclick = function() {goToHomePage()};
+		}
+		else
+		{
+			window.location.href = "Miami_HomePage.html";
+		}
 	}
-	else
+	else /**/
 	{
-		document.getElementById("userName").innerHTML = "Hello" + FirstName + " " + LastName", <br /> Welcome to your contacts!"
+		if (window.location.href == "http://managemymiami4331.xyz/Miami_AboutPage.html")
+		{
+			document.getElementById("aboutBut").innerHTML = "Contacts";
+			document.getElementById("aboutBut").onclick = function() {goToContactsPage()};
+		}
+		else
+		{
+			document.getElementById("userName").innerHTML = "Hello" + FirstName + " " + LastName;
+		}	
+
+		document.getElementById("logo").onclick = function() {doLogout()};
 	}
 }
 
