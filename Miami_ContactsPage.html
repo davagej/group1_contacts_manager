@@ -52,10 +52,8 @@
 				title="Please Fill out Field" /><br />
 
 				<input type="text" id="addEmailAddress" class="centerInDiv" placeholder="Enter Email Address" 
-				
+				pattern="(?=.*[@.]).{8,32}"
 				title="Must be in the format of name@mail.something" /><br />
-
-				<!-- pattern="(?=.*[@.]).{8,32}" -->
 
 				<button class="navBorder" id="myBtn" type="button" onclick="addContact();"> Add </button>
 				<span id="contactAddResult"></span>
