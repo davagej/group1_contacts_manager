@@ -277,10 +277,10 @@ function addContact()
 	// let addPhoneNumber="";
 	// let addEmailAddress="";
 
-	let addFirstName = document.getElementByID("addFirstName").value;
-	let addLastName = document.getElementByID("addLastName").value;
-	let addPhoneNumber = document.getElementByID("addPhoneNumber").value;
-	let addEmailAddress = document.getElementByID("addEmailAddress").value;
+	let addFirstName = document.getElementById("addFirstName").value;
+	let addLastName = document.getElementById("addLastName").value;
+	let addPhoneNumber = document.getElementById("addPhoneNumber").value;
+	let addEmailAddress = document.getElementById("addEmailAddress").value;
 	
 	// let newColor = document.getElementById("colorText").value;
 	document.getElementById("contactAddResult").innerHTML = "";
