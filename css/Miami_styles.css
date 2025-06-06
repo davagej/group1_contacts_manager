@@ -16,6 +16,7 @@ img.logo
     left: 2.5%;
     width: 4%;
     height: 7%;
+	cursor: pointer;
 }
 
 button.navText
