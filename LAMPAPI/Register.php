@@ -32,8 +32,15 @@ else
 		$stmt->bind_param("ssss", $firstName, $lastName, $login, $password);
 		$stmt->execute();
 		$stmt->close();
+		$stmt = $conn->prepare("SELECT ID FROM Users WHERE Login=?");
+		$stmt->bind_param("s", $login);
+		$stmt->execute();
+		$result = $stmt->get_result();
+		$row = $result->fetch_assoc();
+		$newID = $row['ID'];
+		$stmt->close();
 		$conn->close();
-		returnWithError("");
+		returnWithInfo($newID);
 	}
 }
 
@@ -51,6 +58,11 @@ function sendResultInfoAsJson($obj)
 function returnWithError($err)
 {
 	$retValue = '{"error":"' . $err . '"}';
+	sendResultInfoAsJson($retValue);
+}
+
+function returnWithInfo($ID) {
+	$retValue = '{"ID":"' . $ID . '"}';
 	sendResultInfoAsJson($retValue);
 }
 ?>
