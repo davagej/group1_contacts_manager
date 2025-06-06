@@ -318,15 +318,15 @@ function addContact()
 					return;
 				}
 
-				document.getElementById("contactAddResult").innerHTML = "Contact has been added!";				
-				
+				document.getElementById("contactAddResult").innerHTML = "Contact has been added!";		
+
+				document.getElementById("addFirstName").value = "";
+				document.getElementById("addLastName").value = "";
+				document.getElementById("addPhoneNumber").value = "";
+				document.getElementById("addEmailAddress").value = "";					
 			}
 		};
 		xhr.send(jsonPayload);
-		document.getElementById("addFirstName").value = "";
-		document.getElementById("addLastName").value = "";
-		document.getElementById("addPhoneNumber").value = "";
-		document.getElementById("addEmailAddress").value = "";
 	}
 	catch(err)
 	{
