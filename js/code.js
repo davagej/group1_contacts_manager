@@ -260,6 +260,8 @@ function readCookie()
 		document.getElementById("logo").onclick = function() {doLogout()};
 	}
 
+	document.getElementById("contactAddResult").innerHTML = userId;
+
 	return userId;
 }
 
