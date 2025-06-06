@@ -259,6 +259,8 @@ function readCookie() /**/
 
 		document.getElementById("logo").onclick = function() {doLogout()};
 	}
+
+	return userId;
 }
 
 function doLogout()
@@ -278,7 +280,7 @@ function addContact()
 	// let addPhoneNumber="";
 	// let addEmailAddress="";
 
-	userId = "";
+	//userId = "";
 
 	let addFirstName = document.getElementById("addFirstName").value;
 	let addLastName = document.getElementById("addLastName").value;
