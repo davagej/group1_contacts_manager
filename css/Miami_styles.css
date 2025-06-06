@@ -260,7 +260,7 @@ button.navBorder:hover
     margin: auto;
     word-wrap: break-word;
     width: 30vw; /**/
-    height: 60vh;
+    height: 30vw; /**/
 }
 
 #circleDivReg /**/
@@ -272,7 +272,7 @@ button.navBorder:hover
     margin: auto;
     word-wrap: break-word;
     width: 30vw;/**/
-    height: 60vh;
+    height: 30vw; /**/
     padding: 2%;
 }
 
