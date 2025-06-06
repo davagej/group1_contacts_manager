@@ -795,6 +795,8 @@ select{
 {
     background-color: #30C0B7;
     color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #myModal
