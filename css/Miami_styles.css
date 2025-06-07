@@ -271,8 +271,8 @@ button.navBorder:hover
     border-radius: 25px;
     font-size: 30px;
     width: 88%;
-    height: 2vh;
-    margin-bottom: 30%;
+    height: 1.75vh;
+    margin-bottom: 35%;
     padding: 25px;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
@@ -280,7 +280,6 @@ button.navBorder:hover
     align-items: center;
 }
 
-/* RENAME ME FOR CONTACT LIST NAME */
 #contactList
 {
 	position: fixed;
@@ -289,7 +288,7 @@ button.navBorder:hover
     border-radius: 25px;
     font-size: 20px;
     width: 88%;
-    height: 48vh;
+    height: 49vh;
     margin-top: 4.25%;
     padding: 25px;
     background-color: rgba(255, 255, 255, 0);
