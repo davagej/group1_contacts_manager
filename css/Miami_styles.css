@@ -270,8 +270,8 @@ button.navBorder:hover
     border-radius: 25px;
     font-size: 30px;
     width: 88%;
-    height: 2.5vh;
-    margin-bottom: 26.3%;
+    height: 2vh;
+    margin-bottom: 30%;
     padding: 25px;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
@@ -289,7 +289,7 @@ button.navBorder:hover
     font-size: 20px;
     width: 88%;
     height: 48vh;
-    margin-top: 4%;
+    margin-top: 4.25%;
     padding: 25px;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
@@ -565,6 +565,7 @@ img.aboutImage
 
 #searchText
 {
+    display: inline-block;
 	font-size: 30px;
 }
 
@@ -806,14 +807,7 @@ select{
 
 #myBtn
 {
-/* 	border: none;
-    background-color: inherit;
-    color: white;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif; 
-    margin-top: 2%;
-    cursor: pointer; */
-
+    display: inline-block;
 	border: none;
     background-color: white;
     color: black;
