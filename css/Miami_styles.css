@@ -271,8 +271,8 @@ button.navBorder:hover
     border-radius: 25px;
     font-size: 30px;
     width: 88%;
-    height: 2.5vh;
-    margin-bottom: 26.3%;
+    height: 5vh;
+    margin-top: 26.3%;
     padding: 25px;
     background-color: pink;
     display: flex;
