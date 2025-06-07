@@ -272,7 +272,7 @@ button.navBorder:hover
     font-size: 30px;
     width: 88%;
     height: 1.75vh;
-    margin-bottom: 35%;
+    /* margin-bottom: 35%; */
     padding: 25px;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
@@ -288,7 +288,7 @@ button.navBorder:hover
     border-radius: 25px;
     font-size: 20px;
     width: 88%;
-    height: 49vh;
+    height: 48.5vh;
     margin-top: 4.25%;
     padding: 25px;
     background-color: rgba(255, 255, 255, 0);
