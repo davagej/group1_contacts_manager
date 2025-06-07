@@ -376,34 +376,40 @@ function searchContact()
 					ContactList += current.Email + " ";
 					ContactList += current.ID + " ";
 					//This is the objects you can manipulate to make pretty (:
+					let divID = "Div" + current.ID;
+					let paraDiv = document.createElement("div");
+					paraDiv.className = "contactDiv";
+					paraDiv.id = divID;
+					document.getElementById("contactList").appendChild(paraDiv);
 					let paraF = document.createElement("p");
 					paraF.innerHTML = current.FirstName;
 					paraF.id = "FirstName"+current.ID;
-					document.getElementById("contactList").appendChild(paraF);
+					document.getElementById(divID).appendChild(paraF);
 					let paraL = document.createElement("p");
 					paraL.innerHTML = current.LastName;
 					paraL.id = "LastName"+current.ID;
-					document.getElementById("contactList").appendChild(paraL);
+					document.getElementById(divID).appendChild(paraL);
 					let paraP = document.createElement("p");
 					paraP.innerHTML = current.Phone;
 					paraP.id = "PhoneNumber"+current.ID;
-					document.getElementById("contactList").appendChild(paraP);
+					document.getElementById(divID).appendChild(paraP);
 					let paraE = document.createElement("p");
 					paraE.innerHTML = current.Email;
 					paraE.id = "EmailAddress" + current.ID;
-					document.getElementById("contactList").appendChild(paraE);
+					document.getElementById(divID).appendChild(paraE);
+					//Buttons
 					let EditButton = document.createElement("button");
 					EditButton.className = "editButton";
 					EditButton.innerHTML = "Edit";
 					EditButton.id = "e" + current.ID;
 					EditButton.setAttribute("onclick","editContactStartUp("+current.ID+")");
-					document.getElementById("contactList").appendChild(EditButton);
+					document.getElementById(divID).appendChild(EditButton);
 					let deleteButton = document.createElement("button");
 					deleteButton.className = "deleteButton";
 					deleteButton.innerHTML = "Delete";
 					deleteButton.id = "d" + current.ID;
 					deleteButton.setAttribute("onclick", "deleteContact("+current.ID+")");
-					document.getElementById("contactList").appendChild(deleteButton);
+					document.getElementById(divID).appendChild(deleteButton);
 					//For the debugger
 					if( i < jsonObject.results.length - 1 )
 					{
