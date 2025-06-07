@@ -138,7 +138,9 @@ function register()
 
 				saveCookie();
 	
-				window.location.href = "Miami_SignIn.html";
+				//window.location.href = "Miami_SignIn.html";
+
+				doLogout();
 			}
 			else
 			{
@@ -196,6 +198,7 @@ function doLogin()
 				saveCookie();
 	
 				window.location.href = "Miami_ContactsPage.html";
+
 			}
 		};
 		xhr.send(jsonPayload);
