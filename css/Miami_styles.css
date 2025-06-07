@@ -566,7 +566,7 @@ img.aboutImage
 
 #searchText
 {
-    display: block;
+    display: inline-block;
 	font-size: 20px;
 }
 
@@ -633,12 +633,12 @@ input[type="text"],input[type="password"]{
 
 #searchContactButton
 {
-    display: block;
+    display: inline-block;
 }
 
 #contactSearchResult
 {
-    display: block;
+    display: inline-block;
 }
 
 #loginResult
@@ -668,7 +668,7 @@ input[type="text"],input[type="password"]{
 
 #userName
 {
-    display: block;
+    display: inline-block;
     width: 100%;
     /* margin-left: 10%; */
     text-align: left;
@@ -813,7 +813,7 @@ select{
 
 #myBtn
 {
-    display: block;
+    display: inline-block;
 	border: none;
     background-color: white;
     color: black;
