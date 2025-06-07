@@ -83,6 +83,9 @@
 </div>
 
 <script>
+	// Get email
+	let emailInput = document.getElementById("addEmailAddress");
+
 	// Get the modal
 	let modal = document.getElementById("myModal");
 	
@@ -91,6 +94,12 @@
 	
 	// Get the <span> element that closes the modal
 	let span = document.getElementsByClassName("close")[0];
+
+	//When the user clicks on the firstName field, clear contactAddResult
+	emailInput.onfocus = function (argument) 
+	{
+		document.getElementById("contactAddResult").innerHTML = "";
+	}
 	
 	// When the user clicks on the button, open the modal
 	btn.onclick = function() 
