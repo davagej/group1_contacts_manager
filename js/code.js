@@ -80,6 +80,15 @@ function checkEmail()
 	return emailFlag;
 }
 
+function clearResultModal() {
+  const element = document.activeElement.tagName;
+
+  if (element == "INPUT")
+	{
+		document.getElementById("contactAddResult").innerHTML = "";
+	}
+}
+
 
 function register()
 {

@@ -18,18 +18,17 @@
 </head>
 <body>
 
-<!--<h1 id="title">COP 4331 MIAMI LAMP STACK</h1>-->
 <h1 id="title">Manage My Miami</h1>
 
-<img id="logo" src="images/MiamiLogo.png" alt="logo" onclick="goToHomePage();"> <!---->
+<img id="logo" src="images/MiamiLogo.png" alt="logo" onclick="goToHomePage();"> 
 
 <button class="navText" id="aboutBut" type="button" onclick="goToAbout();"> About </button>
-<button class="navText" id="settingBut" onclick="document.location='https://github.com/davagej/group1_contacts_manager/tree/main'"> Settings </button> <!---->
+<button class="navText" id="settingBut" onclick="document.location='https://github.com/davagej/group1_contacts_manager/tree/main'"> Settings </button> 
 <button class="navBorder" id="signInBut" type="button" onclick="doLogout();"> Log Out </button>
 
 <div id="loginDiv">
 
-	<img id="palmtrees" src="images/palmtreesBlack.png" alt="palm trees"> <!---->
+	<img id="palmtrees" src="images/palmtreesBlack.png" alt="palm trees"> 
 
 	<!-- NEW DIV BELOW -->
 	<div id="bodyHeaderHiddenDiv">
@@ -43,7 +42,7 @@
 
 	<div id="bodyTransDiv">
 		<div id="myModal" class="modal">		
-			<div class="add-Contact-Modal">
+			<div class="add-Contact-Modal" onclick="clearResultModal()">
 				<span class="close">&times;</span>
 				
 				<input type="text" id="addFirstName" class="centerInDiv" placeholder="Enter First Name" 
@@ -61,7 +60,7 @@
 
 				<button class="navBorder" id="addButton" type="button" onclick="addContact();"> Add </button>
 				<span id="contactAddResult"></span>
-			</div>		
+			</div>	
 		</div>
 
 		<div id="headerTransDiv">
@@ -87,10 +86,6 @@
 </div>
 
 <script>
-	// Get email
-	let emailInput = document.getElementById("addEmailAddress");
-	let currentElement = document.activeElement.tagName;
-
 	// Get the modal
 	let modal = document.getElementById("myModal");
 	
@@ -99,17 +94,6 @@
 	
 	// Get the <span> element that closes the modal
 	let span = document.getElementsByClassName("close")[0];
-
-	//When the user clicks on the firstName field, clear contactAddResult
-	// emailInput.onfocus = function (argument) 
-	// {
-	// 	document.getElementById("contactAddResult").innerHTML = "";
-	// }
-	
-	if (currentElement == "Input")
-	{
-		document.getElementById("contactAddResult").innerHTML = "";
-	}
 
 	// When the user clicks on the button, open the modal
 	btn.onclick = function() 
