@@ -334,17 +334,17 @@ function addContact()
 	}	
 }
 
-function searchColor()
+function searchContact()
 {
 	let srch = document.getElementById("searchText").value;
-	document.getElementById("colorSearchResult").innerHTML = "";
+	document.getElementById("contactList").innerHTML = "";
 	
-	let colorList = "";
+	let ContactList = "";
 
-	let tmp = {search:srch,userId:userId};
+	let tmp = {UserID:userId,search:srch};
 	let jsonPayload = JSON.stringify( tmp );
 
-	let url = urlBase + '/SearchColors.' + extension;
+	let url = urlBase + '/Search.' + extension;
 	
 	let xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);
@@ -355,26 +355,51 @@ function searchColor()
 		{
 			if (this.readyState == 4 && this.status == 200) 
 			{
-				document.getElementById("colorSearchResult").innerHTML = "Color(s) has been retrieved";
+				document.getElementById("contactSearchResult").innerHTML = "Contacts(s) have been retrieved";
 				let jsonObject = JSON.parse( xhr.responseText );
 				
 				for( let i=0; i<jsonObject.results.length; i++ )
 				{
-					colorList += jsonObject.results[i];
+					//This Code is for debugging. Can be commented out.
+					let current = jsonObject.results[i];
+					ContactList += current.FirstName + " ";
+					ContactList += current.LastName + " ";
+					ContactList += current.Phone + " ";
+					ContactList += current.Email + " ";
+					ContactList += current.ID + " ";
+					//This is the objects you can manipulate to make pretty (:
+					let paraF = document.createElement("p");
+					paraF.innerHTML = current.FirstName;
+					paraF.id = "FirstName";
+					document.getElementById("contactList").appendChild(paraF);
+					let paraL = document.createElement("p");
+					paraL.innerHTML = current.FirstName;
+					paraL.id = "LastName";
+					document.getElementById("contactList").appendChild(paraL);
+					let paraP = document.createElement("p");
+					paraL.innerHTML = current.Phone;
+					paraL.id = "PhoneNumber";
+					document.getElementById("contactList").appendChild(paraP);
+					let paraE = document.createElement("p");
+					paraL.innerHTML = current.Email;
+					paraL.id = "EmailAddress";
+					document.getElementById("contactList").appendChild(paraE);
+
+					//For the debugger
 					if( i < jsonObject.results.length - 1 )
 					{
-						colorList += "<br />\r\n";
+						ContactList += "<br />\r\n";
 					}
 				}
 				
-				document.getElementsByTagName("p")[0].innerHTML = colorList;
+				document.getElementsByTagName("p")[0].innerHTML = ContactList;
 			}
 		};
 		xhr.send(jsonPayload);
 	}
 	catch(err)
 	{
-		document.getElementById("colorSearchResult").innerHTML = err.message;
+		document.getElementById("contactSearchResult").innerHTML = err.message;
 	}
 	
 }

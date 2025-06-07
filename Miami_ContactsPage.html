@@ -33,8 +33,15 @@
 	<p id="contact-welcome"><span id="userName"></span>
 
 	<div id="bodyTransDiv">
-	<button id="myBtn">Add</button>
+		<button id="addButton">Add</button>
 		<!-- ADD SEARCH FOR CONTACT HERE WITH BLANK SEARCH TO VIEW ALL USERS CONTACTS -->
+		<br />
+		<input type="text" id="searchText" placeholder="Search your Maimi"/>
+		<button type="button" id="searchContactButton" class="buttons" onclick="searchContact();"> Search Contact </button>
+		<br />
+		<span id="contactSearchResult"></span>
+		<div id="contactList">
+		</div><br /><br />
 
 		<div id="myModal" class="modal">
 		
