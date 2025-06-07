@@ -502,4 +502,32 @@ function editContactCancel(ID) {
 	searchContact();
 }
 
-function contactDelete(ID) {}
+function contactDelete(ID) {
+	let temp = {ContactID:ID, UserID:userId};
+	let jsonPayload = JSON.stringify(temp);
+	let url = urlBase +'/DeleteContact.'+extension;
+	document.getElementById("contactSearchResult").innerHTML = jsonPayload;
+
+	let xhr = new XMLHttpRequest();
+	xhr.open("POST", url, true);
+	xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+
+	try {
+		xhr.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("contactSearchResult").innerHTML = "Contact has been removed";
+				let jsonObject = JSON.parse( xhr.responseText );
+				if (jsonObject.error != "") {
+					document.getElementById("contactSearchResult").innerHTML = jsonObject.error;
+				} else {
+					searchContact();
+				}
+			} else {
+
+			}
+		};
+		xhr.send(jsonPayload);
+	} catch {
+		document.getElementById("contactSearchResult").innerHTML = "RIP";
+	}
+}
