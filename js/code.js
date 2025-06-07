@@ -377,12 +377,12 @@ function searchContact()
 					paraL.id = "LastName";
 					document.getElementById("contactList").appendChild(paraL);
 					let paraP = document.createElement("p");
-					paraL.innerHTML = current.Phone;
-					paraL.id = "PhoneNumber";
+					paraP.innerHTML = current.Phone;
+					paraP.id = "PhoneNumber";
 					document.getElementById("contactList").appendChild(paraP);
 					let paraE = document.createElement("p");
-					paraL.innerHTML = current.Email;
-					paraL.id = "EmailAddress";
+					paraE.innerHTML = current.Email;
+					paraE.id = "EmailAddress";
 					document.getElementById("contactList").appendChild(paraE);
 
 					//For the debugger
