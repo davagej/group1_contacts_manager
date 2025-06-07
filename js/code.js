@@ -464,7 +464,7 @@ function editContactSave(ID) {
 	let phoneNumber = document.getElementById("PhoneEdit").value;
 	let emailAddress = document.getElementById("EmailEdit").value;
 
-	let temp = {ContactID:ID, UserID:userId, FirstName:firstName, LastName:lastName, PhoneNumber:phoneNumber,Email:emailAddress};
+	let temp = {ContactID:ID, UserID:userId, FirstName:firstName, LastName:lastName, Phone:phoneNumber,Email:emailAddress};
 	let jsonPayload = JSON.stringify(temp);
 	let url = urlBase +'/UpdateContact.'+extension;
 	document.getElementById("contactSearchResult").innerHTML = jsonPayload;
