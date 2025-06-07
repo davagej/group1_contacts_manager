@@ -267,14 +267,14 @@ button.navBorder:hover
 {
 	position: fixed;
 	border-style: hidden;
-    border-color: pink;
+    border-color: black;
     border-radius: 25px;
     font-size: 30px;
     width: 88%;
-    height: 5vh;
-    margin-top: 26.3%;
+    height: 50vh;
+    margin-top: 10%;
     padding: 25px;
-    background-color: pink;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
