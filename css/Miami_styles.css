@@ -270,8 +270,8 @@ button.navBorder:hover
     border-radius: 25px;
     font-size: 30px;
     width: 88%;
-    height: 2vh;
-    margin-bottom: 30%;
+    height: 1.75vh;
+    /* margin-bottom: 35%; */
     padding: 25px;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
@@ -279,7 +279,6 @@ button.navBorder:hover
     align-items: center;
 }
 
-/* RENAME ME FOR CONTACT LIST NAME */
 #contactList
 {
 	position: absolute;
@@ -566,6 +565,12 @@ img.aboutImage
 {
     display: inline-block;
 	font-size: 20px;
+    max-width: 30%;
+
+    margin-left: 0%;
+	margin-right: 0%;
+    margin-top: 0%;
+	margin-bottom: 3%;
 }
 
 #colorText
@@ -623,8 +628,12 @@ input[type="text"],input[type="password"]{
     font-size: 20px;
     /* width: 100%; */
     text-align: left;
-	/* margin-right: 9.75%;
-	margin-bottom: 36.5%; */
+
+    margin-left: 0%;
+	margin-right: 68%;
+    margin-top: 2.5%;
+	margin-bottom: 0%;
+
     font-family: 'Poppins', sans-serif;
     color: white;	
 }
@@ -632,11 +641,23 @@ input[type="text"],input[type="password"]{
 #searchContactButton
 {
     display: inline-block;
+    width: auto;
+    font-size: 20px;
+
+    margin-left: 0%;
+	margin-right: 0%;
+    margin-top: 0%;
+	margin-bottom: 3%;
 }
 
 #contactSearchResult
 {
     display: inline-block;
+
+    margin-left: 0%;
+	margin-right: 0%;
+    margin-top: 0%;
+	margin-bottom: 3%;
 }
 
 #loginResult
@@ -667,7 +688,7 @@ input[type="text"],input[type="password"]{
 #userName
 {
     display: inline-block;
-    width: 100%;
+    /* width: 100%; */
     /* margin-left: 10%; */
     text-align: left;
 }
@@ -817,8 +838,12 @@ select{
     color: black;
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
-    padding: 0px;
-    /* width: 6%; */
+
+    margin-left: 10%;
+	margin-right: 0%;
+    margin-top: 0%;
+	margin-bottom: 0%;
+
     border-radius: 15px;
     cursor: pointer;
 }
@@ -827,8 +852,8 @@ select{
 {
     background-color: #30C0B7;
     color: #FFFFFF;
-    font-weight: bold;
-    text-decoration: underline;
+    /* font-weight: bold;
+    text-decoration: underline; */
 }
 
 #myModal
