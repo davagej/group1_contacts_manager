@@ -502,7 +502,7 @@ function editContactCancel(ID) {
 	searchContact();
 }
 
-function contactDelete(ID) {
+function deleteContact(ID) {
 	let temp = {ContactID:ID, UserID:userId};
 	let jsonPayload = JSON.stringify(temp);
 	let url = urlBase +'/DeleteContact.'+extension;
