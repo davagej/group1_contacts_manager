@@ -568,7 +568,7 @@ img.aboutImage
 {
     display: inline-block;
 	font-size: 20px;
-    max-width: fit-content;
+    max-width: 30%;
 }
 
 #colorText
