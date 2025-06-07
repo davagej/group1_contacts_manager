@@ -385,11 +385,11 @@ function searchContact()
 				{
 					//This Code is for debugging. Can be commented out.
 					let current = jsonObject.results[i];
-					ContactList += current.FirstName + " ";
-					ContactList += current.LastName + " ";
-					ContactList += current.Phone + " ";
-					ContactList += current.Email + " ";
-					ContactList += current.ID + " ";
+					//ContactList += current.FirstName + " ";
+					//ContactList += current.LastName + " ";
+					//ContactList += current.Phone + " ";
+					//ContactList += current.Email + " ";
+					//ContactList += current.ID + " ";
 					//This is the objects you can manipulate to make pretty (:
 					let divID = "Div" + current.ID;
 					let paraDiv = document.createElement("div");
@@ -432,7 +432,7 @@ function searchContact()
 					}
 				}
 				
-				document.getElementsByTagName("p")[0].innerHTML = ContactList;
+				//document.getElementsByTagName("p")[0].innerHTML = ContactList;
 			}
 		};
 		xhr.send(jsonPayload);
