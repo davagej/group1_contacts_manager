@@ -262,6 +262,23 @@ button.navBorder:hover
     align-items: center;
 }
 
+#bodyHeaderHiddenDiv
+{
+	position: fixed;
+	border-style: solid;
+    border-color: rgba(255,255,255,1);
+    border-radius: 25px;
+    font-size: 30px;
+    width: 88%;
+    height: 2.5vh;
+    margin-bottom: 26.3%;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* RENAME ME FOR CONTACT LIST NAME */
 #contactList
 {
@@ -272,7 +289,7 @@ button.navBorder:hover
     font-size: 20px;
     width: 88%;
     height: 48vh;
-    margin-top: 3.5%;
+    margin-top: 4%;
     padding: 25px;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
