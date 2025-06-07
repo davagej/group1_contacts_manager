@@ -635,6 +635,7 @@ input[type="text"],input[type="password"]{
 #searchContactButton
 {
     display: inline-block;
+    width: auto;
 }
 
 #contactSearchResult
