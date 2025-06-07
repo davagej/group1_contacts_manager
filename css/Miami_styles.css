@@ -622,7 +622,7 @@ input[type="text"],input[type="password"]{
 {
     display: inline-block;
     font-size: 20px;
-    width: 90%;
+    width: 30%;
     text-align: left;
 	margin-right: 9.75%;
 	margin-bottom: 36.5%;
@@ -668,9 +668,9 @@ input[type="text"],input[type="password"]{
 #userName
 {
     display: inline-block;
-    width: 80%;
+    width: 30%;
     margin-left: 10%;
-    text-align: center;
+    text-align: left;
 }
 
 select{
