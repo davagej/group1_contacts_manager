@@ -67,7 +67,17 @@ function checkField(UserName, Password)
 
 function checkEmail()
 {
+	let emailFlag = 1; // if 0 invalid email, if 1 valid email
 	let email = document.getElementById("addEmailAddress");
+	let emailRequirements = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+	if (!email.value.match(emailRequirements))
+	{
+		document.getElementById("contactAddResult").innerHTML = "Invalid email";
+		emailFlag = 0;
+	}
+
+	return emailFlag;
 }
 
 
@@ -298,6 +308,11 @@ function addContact()
 	
 	// let newColor = document.getElementById("colorText").value;
 	document.getElementById("contactAddResult").innerHTML = "";
+
+	if (checkEmail() == 0)
+	{
+		return;
+	}
 
 	let tmp = {FirstName:addFirstName, LastName:addLastName, Phone:addPhoneNumber, Email:addEmailAddress, UserID:userId};
 	let jsonPayload = JSON.stringify( tmp );

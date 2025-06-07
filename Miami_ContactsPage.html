@@ -60,7 +60,7 @@
 				title="Please Fill out Field" /><br />
 
 				<input type="text" id="addEmailAddress" class="centerInDiv" placeholder="Enter Email Address" 
-				pattern="(?=.*[@.]).{8,32}"
+				pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
 				title="Must be in the format of name@mail.something" /><br />
 
 				<button class="navBorder" id="addButton" type="button" onclick="addContact();"> Add </button>
