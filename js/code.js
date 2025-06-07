@@ -373,7 +373,7 @@ function searchContact()
 					paraF.id = "FirstName";
 					document.getElementById("contactList").appendChild(paraF);
 					let paraL = document.createElement("p");
-					paraL.innerHTML = current.FirstName;
+					paraL.innerHTML = current.LastName;
 					paraL.id = "LastName";
 					document.getElementById("contactList").appendChild(paraL);
 					let paraP = document.createElement("p");
