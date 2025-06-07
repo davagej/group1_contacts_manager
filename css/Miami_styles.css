@@ -701,7 +701,6 @@ select{
 #headerFirst
 {
 	display: inline-block;
-    /*font-size: 20px;*/
     font-weight: bold;
     width: 90%;
     text-align: center;
@@ -716,7 +715,6 @@ select{
 #headerLast
 {
 	display: inline-block;
-    /*font-size: 20px;*/
     font-weight: bold;
     width: 90%;
     text-align: center;
@@ -731,7 +729,6 @@ select{
 #headerEmail
 {
 	display: inline-block;
-    /*font-size: 20px;*/
     font-weight: bold;
     width: 90%;
     text-align: center;
@@ -746,7 +743,6 @@ select{
 #headerPhone
 {
 	display: inline-block;
-    /*font-size: 20px;*/
     font-weight: bold;
     width: 90%;
     text-align: center;
@@ -761,7 +757,6 @@ select{
 #headerOptions
 {
 	display: inline-block;
-    /*font-size: 20px;*/
     font-weight: bold;
     width: 90%;
     text-align: center;
