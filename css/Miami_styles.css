@@ -266,15 +266,15 @@ button.navBorder:hover
 #contactList
 {
 	position: fixed;
-	border-style: hidden;
+	border-style: solid;
     border-color: black;
     border-radius: 25px;
     font-size: 30px;
     width: 88%;
-    height: 50vh;
-    margin-top: 10%;
+    height: 40vh;
+    margin-top: 7.5%;
     padding: 25px;
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0);
     display: flex;
     justify-content: center;
     align-items: center;
