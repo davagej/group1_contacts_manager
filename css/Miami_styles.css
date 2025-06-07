@@ -632,7 +632,7 @@ input[type="text"],input[type="password"]{
     text-align: left;
 
     margin-left: 0%;
-	margin-right: 65%;
+	margin-right: 68%;
     margin-top: 2.5%;
 	margin-bottom: 0%;
 
@@ -644,6 +644,7 @@ input[type="text"],input[type="password"]{
 {
     display: inline-block;
     width: auto;
+    font-size: 20px;
 
     margin-left: 0%;
 	margin-right: 0%;
