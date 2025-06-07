@@ -326,7 +326,8 @@ function addContact()
 				document.getElementById("addFirstName").value = "";
 				document.getElementById("addLastName").value = "";
 				document.getElementById("addPhoneNumber").value = "";
-				document.getElementById("addEmailAddress").value = "";					
+				document.getElementById("addEmailAddress").value = "";
+				searchContact()
 			}
 		};
 		xhr.send(jsonPayload);
