@@ -572,7 +572,7 @@ img.aboutImage
     margin-left: 0%;
 	margin-right: 0%;
     margin-top: 0%;
-	margin-bottom: 0%;
+	margin-bottom: 3%;
 }
 
 #colorText
@@ -632,8 +632,8 @@ input[type="text"],input[type="password"]{
     text-align: left;
 
     margin-left: 0%;
-	margin-right: 0%;
-    margin-top: 0%;
+	margin-right: 50%;
+    margin-top: 1%;
 	margin-bottom: 0%;
 
     font-family: 'Poppins', sans-serif;
@@ -648,7 +648,7 @@ input[type="text"],input[type="password"]{
     margin-left: 0%;
 	margin-right: 0%;
     margin-top: 0%;
-	margin-bottom: 0%;
+	margin-bottom: 3%;
 }
 
 #contactSearchResult
@@ -658,7 +658,7 @@ input[type="text"],input[type="password"]{
     margin-left: 0%;
 	margin-right: 0%;
     margin-top: 0%;
-	margin-bottom: 0%;
+	margin-bottom: 3%;
 }
 
 #loginResult
@@ -843,7 +843,7 @@ select{
     margin-left: 0%;
 	margin-right: 0%;
     margin-top: 0%;
-	margin-bottom: 0%;
+	margin-bottom: 3%;
 
     border-radius: 15px;
     cursor: pointer;
