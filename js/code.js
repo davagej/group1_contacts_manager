@@ -495,7 +495,8 @@ function editContactSave(ID) {
 }
 
 function editContactCancel(ID) {
-
+	document.getElementById("FirstNameEdit").id = "NULL";
+	searchContact();
 }
 
 function contactDelete(ID) {}
