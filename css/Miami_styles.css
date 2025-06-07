@@ -276,8 +276,8 @@ button.navBorder:hover
     padding: 25px;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
-    justify-content: space-around;
-    align-items: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 #contactList
@@ -568,6 +568,11 @@ img.aboutImage
     display: inline-block;
 	font-size: 20px;
     max-width: 30%;
+
+    margin-left: 0%;
+	margin-right: 0%;
+    margin-top: 0%;
+	margin-bottom: 0%;
 }
 
 #colorText
@@ -625,8 +630,12 @@ input[type="text"],input[type="password"]{
     font-size: 20px;
     /* width: 100%; */
     text-align: left;
-	/* margin-right: 9.75%;
-	margin-bottom: 36.5%; */
+
+    margin-left: 0%;
+	margin-right: 0%;
+    margin-top: 0%;
+	margin-bottom: 0%;
+
     font-family: 'Poppins', sans-serif;
     color: white;	
 }
@@ -635,11 +644,21 @@ input[type="text"],input[type="password"]{
 {
     display: inline-block;
     width: auto;
+
+    margin-left: 0%;
+	margin-right: 0%;
+    margin-top: 0%;
+	margin-bottom: 0%;
 }
 
 #contactSearchResult
 {
     display: inline-block;
+
+    margin-left: 0%;
+	margin-right: 0%;
+    margin-top: 0%;
+	margin-bottom: 0%;
 }
 
 #loginResult
@@ -820,8 +839,12 @@ select{
     color: black;
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
-    padding: 0px;
-    /* width: 6%; */
+
+    margin-left: 0%;
+	margin-right: 0%;
+    margin-top: 0%;
+	margin-bottom: 0%;
+
     border-radius: 15px;
     cursor: pointer;
 }
