@@ -144,7 +144,7 @@ function register()
 			}
 			else
 			{
-				document.getElementById("loginResult").innerHTML = "womp womp";
+				document.getElementById("loginResult").innerHTML = "womp";
 			}
 		};
 		xhr.send(jsonPayload);
