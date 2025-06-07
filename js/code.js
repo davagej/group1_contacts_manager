@@ -339,6 +339,10 @@ function addContact()
 
 function searchContact()
 {
+	if (document.getElementById("FirstNameEdit")) {
+		//Should probably put a wraning somewhere?
+		return;
+	}
 	let srch = document.getElementById("searchText").value;
 	document.getElementById("contactList").innerHTML = "";
 	
@@ -387,7 +391,18 @@ function searchContact()
 					paraE.innerHTML = current.Email;
 					paraE.id = "EmailAddress" + current.ID;
 					document.getElementById("contactList").appendChild(paraE);
-
+					let EditButton = document.createElement("button");
+					EditButton.className = "editButton";
+					EditButton.innerHTML = "Edit";
+					EditButton.id = "e" + current.ID;
+					EditButton.setAttribute("onclick","editContactStartUp("+current.ID+")");
+					document.getElementById("contactList").appendChild(EditButton);
+					let deleteButton = document.createElement("button");
+					deleteButton.className = "deleteButton";
+					deleteButton.innerHTML = "Delete";
+					deleteButton.id = "d" + current.ID;
+					deleteButton.setAttribute("onclick", "deleteContact("+current.ID+")");
+					document.getElementById("contactList").appendChild(deleteButton);
 					//For the debugger
 					if( i < jsonObject.results.length - 1 )
 					{
@@ -406,3 +421,85 @@ function searchContact()
 	}
 	
 }
+
+function editContactStartUp(ID) {
+	if (document.getElementById("FirstNameEdit")) {
+		//probably should post and error or something
+		return;
+	}
+	let firstName = document.getElementById("FirstName"+ID);
+	let lastName = document.getElementById("LastName"+ID);
+	let phoneNumber = document.getElementById("PhoneNumber"+ID);
+	let emailAddress = document.getElementById("EmailAddress"+ID);
+	let editButton = document.getElementById("e"+ID);
+	let deleteButton = document.getElementById("d"+ID);
+	editButton.setAttribute("onclick","editContactSave("+ID+")");
+	deleteButton.setAttribute("onclick","editContactCancel("+ID+")");
+
+	let editFN = document.createElement("input");
+	editFN.type = "text";
+	editFN.value = firstName.innerHTML;
+	editFN.id = "FirstNameEdit";
+	firstName.replaceWith(editFN);
+	let editLN = document.createElement("input");
+	editLN.type = "text";
+	editLN.value = lastName.innerHTML;
+	editLN.id = "LastNameEdit";
+	lastName.replaceWith(editLN);
+	let editP = document.createElement("input");
+	editP.type = "text";
+	editP.value = phoneNumber.innerHTML;
+	editP.id = "PhoneEdit";
+	phoneNumber.replaceWith(editP);
+	let editE= document.createElement("input");
+	editE.type = "text";
+	editE.value = emailAddress.innerHTML;
+	editE.id = "EmailEdit";
+	emailAddress.replaceWith(editE);
+
+	editButton.innerHTML = "Save"
+	deleteButton.innerHTML = "Cancel";
+}
+
+function editContactSave(ID) {
+	let firstName = document.getElementById("FirstNameEdit").value;
+	let lastName = document.getElementById("LastNameEdit").value;
+	let phoneNumber = document.getElementById("PhoneEdit").value;
+	let emailAddress = document.getElementById("EmailEdit").value;
+
+	let temp = {ContactID:ID, UserID:userId, FirstName:firstName, LastName:lastName, Phone:phoneNumber,Email:emailAddress};
+	let jsonPayload = JSON.stringify(temp);
+	let url = urlBase +'/UpdateContact.'+extension;
+	document.getElementById("contactSearchResult").innerHTML = jsonPayload;
+
+	let xhr = new XMLHttpRequest();
+	xhr.open("POST", url, true);
+	xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+
+	try {
+		xhr.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("contactSearchResult").innerHTML = "Contact has been edited successfully";
+				let jsonObject = JSON.parse( xhr.responseText );
+				if (jsonObject.error != "") {
+					document.getElementById("contactSearchResult").innerHTML = jsonObject.error;
+				} else {
+					document.getElementById("FirstNameEdit").id = "NULL";
+					searchContact();
+				}
+			} else {
+
+			}
+		};
+		xhr.send(jsonPayload);
+	} catch {
+		document.getElementById("contactSearchResult").innerHTML = "RIP";
+	}
+}
+
+function editContactCancel(ID) {
+	document.getElementById("FirstNameEdit").id = "NULL";
+	searchContact();
+}
+
+function contactDelete(ID) {}
