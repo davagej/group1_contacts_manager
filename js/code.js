@@ -481,10 +481,7 @@ function editContactSave(ID) {
 				if (jsonObject.error != "") {
 					document.getElementById("contactSearchResult").innerHTML = jsonObject.error;
 				} else {
-					firstName.remove();
-					lastName.remove();
-					phoneNumber.remove();
-					emailAddress.remove();
+					document.getElementById("FirstNameEdit").id = "NULL";
 					searchContact();
 				}
 			} else {
