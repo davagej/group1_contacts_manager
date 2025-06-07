@@ -630,6 +630,16 @@ input[type="text"],input[type="password"]{
     color: white;	
 }
 
+#searchContactButton
+{
+    display: inline-block;
+}
+
+#contactSearchResult
+{
+    display: inline-block;
+}
+
 #loginResult
 {
     position: relative;
