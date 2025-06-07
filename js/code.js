@@ -370,19 +370,19 @@ function searchContact()
 					//This is the objects you can manipulate to make pretty (:
 					let paraF = document.createElement("p");
 					paraF.innerHTML = current.FirstName;
-					paraF.id = "FirstName";
+					paraF.id = "FirstName"+current.ID;
 					document.getElementById("contactList").appendChild(paraF);
 					let paraL = document.createElement("p");
 					paraL.innerHTML = current.LastName;
-					paraL.id = "LastName";
+					paraL.id = "LastName"+current.ID;
 					document.getElementById("contactList").appendChild(paraL);
 					let paraP = document.createElement("p");
 					paraP.innerHTML = current.Phone;
-					paraP.id = "PhoneNumber";
+					paraP.id = "PhoneNumber"+current.ID;
 					document.getElementById("contactList").appendChild(paraP);
 					let paraE = document.createElement("p");
 					paraE.innerHTML = current.Email;
-					paraE.id = "EmailAddress";
+					paraE.id = "EmailAddress" + current.ID;
 					document.getElementById("contactList").appendChild(paraE);
 
 					//For the debugger
