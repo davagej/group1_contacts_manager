@@ -568,6 +568,7 @@ img.aboutImage
 {
     display: inline-block;
 	font-size: 20px;
+    max-width: fit-content;
 }
 
 #colorText
@@ -669,7 +670,7 @@ input[type="text"],input[type="password"]{
 #userName
 {
     display: inline-block;
-    width: 100%;
+    /* width: 100%; */
     /* margin-left: 10%; */
     text-align: left;
 }
