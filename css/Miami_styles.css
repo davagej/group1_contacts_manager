@@ -566,7 +566,7 @@ img.aboutImage
 #searchText
 {
     display: block;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 #colorText
@@ -622,10 +622,10 @@ input[type="text"],input[type="password"]{
 {
     display: inline-block;
     font-size: 20px;
-    width: 100%;
+    /* width: 100%; */
     text-align: left;
-	margin-right: 9.75%;
-	margin-bottom: 36.5%;
+	/* margin-right: 9.75%;
+	margin-bottom: 36.5%; */
     font-family: 'Poppins', sans-serif;
     color: white;	
 }
@@ -824,7 +824,7 @@ select{
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
     padding: 0px;
-    width: 6%;
+    /* width: 6%; */
     border-radius: 15px;
     cursor: pointer;
 }
