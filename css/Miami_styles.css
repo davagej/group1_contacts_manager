@@ -559,6 +559,7 @@ img.aboutImage
 
 #searchText
 {
+    position: relative;
     display: inline-block;
 	font-size: 20px;
     max-width: fit-content;
@@ -646,7 +647,7 @@ input[type="text"],input[type="password"]{
 
 #searchContactButton
 {
-    position: static;
+    position: relative;
     display: inline-block;
 	border: none;
     background-color: white;
