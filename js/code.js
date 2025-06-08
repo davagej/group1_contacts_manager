@@ -448,7 +448,10 @@ function searchContact()
 			{
 				document.getElementById("contactSearchResult").innerHTML = "Contacts(s) have been retrieved";
 				let jsonObject = JSON.parse( xhr.responseText );
-				
+				if (jsonObject.error != "") {
+					document.getElementById("contactSearchResult").innerHTML = jsonObject.error;
+					return;
+				}
 				for( let i=0; i<jsonObject.results.length; i++ )
 				{
 					//This Code is for debugging. Can be commented out.
