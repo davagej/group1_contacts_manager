@@ -378,8 +378,8 @@ button.navBorder:hover
 #aboutRole-descript 
 {
     text-align: center;
-    font-size: 1.6vw;
-    margin-top: 60%;
+    font-size: 1.4vw;
+    margin-top: 55%;
     text-decoration: none;
 }
 
@@ -391,7 +391,7 @@ img.aboutImage
     left: 22%;
     top: 22.5%;
     width: 10vw;
-    height: 20vh;
+    height: 18vh;
     border-radius: 10%;
 }
 
