@@ -561,7 +561,7 @@ img.aboutImage
     max-width: fit-content;
     align-content: center;
     
-    left: 0%;
+    left: 0;
     margin-left: 80%;
     vertical-align: middle;
 }
@@ -646,7 +646,7 @@ input[type="text"],input[type="password"]{
     align-content: center;
     vertical-align: middle;
 
-    left: 0%;
+    left: 0;
     margin-left: 77%;
 
     border-radius: 15px;
@@ -844,7 +844,7 @@ select{
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
 
-    left: 0%;
+    left: 0;
     margin-left: 68%;
     position: absolute;
     align-content: center;
