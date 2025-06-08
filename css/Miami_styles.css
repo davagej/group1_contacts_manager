@@ -561,8 +561,8 @@ img.aboutImage
 {
     display: inline-block;
 	font-size: 20px;
-    text-align: right;
     max-width: fit-content;
+    max-block-size: 30%;
 
     margin-left: 0%;
 	margin-right: 0%;
@@ -635,6 +635,8 @@ input[type="text"],input[type="password"]{
 
     max-height: fit-content;
     max-width: fit-content;
+    max-block-size: 35%;
+    max-inline-size: 35%;
 
     vertical-align: 50%;
 
@@ -651,10 +653,12 @@ input[type="text"],input[type="password"]{
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
     max-width: fit-content;
+    /* max-block-size: 20%; */
+    max-inline-size: 20%;
 
-    margin-left: 10%;
+    margin-left: 0%;
 	margin-right: 0%;
-    margin-top: 1%;
+    margin-top: 0%;
 	margin-bottom: 0%;
 
     vertical-align: 50%;
@@ -854,12 +858,13 @@ select{
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
 
-    margin-left: 10%;
+    margin-left: 0%;
 	margin-right: 0%;
     margin-top: 0%;
 	margin-bottom: 0%;
 
     vertical-align: 50%;
+    max-block-size: 10%;
 
     border-radius: 15px;
     cursor: pointer;
