@@ -992,6 +992,7 @@ select{
 .viewContent
 {
     font-size: 1.6vw;
+    text-align: center;
 }
 
 #firstNameView {
