@@ -658,6 +658,7 @@ input[type="text"],input[type="password"]{
     /* max-block-size: 20%; */
     /* max-inline-size: 20%; */
 
+    left: 0%;
     margin-left: 10%;
 	margin-right: 0%;
     margin-top: 0%;
