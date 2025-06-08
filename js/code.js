@@ -515,7 +515,12 @@ function searchContact()
 					paraE.style.textOverflow = "ellipsis";
 					document.getElementById(divID).appendChild(paraE);
 
-					// let buttonContainer = document.createElement("div");
+					let buttonContainer = document.createElement("div");
+					buttonContainer.id = "buttonContainer" + current.ID;
+					buttonContainer.style.display = "inline-block";
+					buttonContainer.style.borderStyle = "solid";
+					buttonContainer.style.borderColor = "#30C0B7"
+					document.getElementById(divID).appendChild(buttonContainer);
 
 					//Buttons
 					let editButton = document.createElement("button");
@@ -526,7 +531,7 @@ function searchContact()
 					// editButton.style.position = "absolute";
 					//editButton.style.left = "86%";
 					editButton.setAttribute("onclick","editContactStartUp("+current.ID+")");
-					document.getElementById(divID).appendChild(editButton);
+					document.getElementById(buttonContainer.id).appendChild(editButton);
 					
 					let deleteButton = document.createElement("button");
 					deleteButton.className = "innerButtons";
@@ -536,14 +541,14 @@ function searchContact()
 					// deleteButton.style.position = "absolute";
 					//deleteButton.style.left = "95%";
 					deleteButton.setAttribute("onclick", "confirmDelete("+current.ID+")");
-					document.getElementById(divID).appendChild(deleteButton);
+					document.getElementById(buttonContainer.id).appendChild(deleteButton);
 
 					let viewButtton = document.createElement("button");
 					viewButtton.className = "innerButtons";
 					viewButtton.innerHTML = "View";
 					viewButtton.id = "v"+current.ID;
 					viewButtton.setAttribute("onclick", "viewContact(" + current.ID +")");
-					document.getElementById(divID).appendChild(viewButtton);
+					document.getElementById(buttonContainer.id).appendChild(viewButtton);
 
 
 					//For the debugger
