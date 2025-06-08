@@ -262,8 +262,8 @@ button.navBorder:hover
 {
 	position: absolute;
     top: 0;
-	border-style: solid;
-    border-color: rgba(255,255,255,1);
+	border-style: none;
+    border-color: white;
     border-radius: 25px;
     font-size: 30px;
     width: 96%;
@@ -279,7 +279,7 @@ button.navBorder:hover
 {
 	position: absolute;
     bottom: 0;
-	border-style: solid;
+	border-style: none;
     border-color: black;
     border-radius: 25px;
     font-size: 20px;
@@ -318,12 +318,12 @@ button.navBorder:hover
 
 .circleAbout 
 {
-    position: relative;
+    /*position: relative;*/
     border-radius: 50%;
 /*     background-color: #EE227D; */
 	background-image: linear-gradient(#FD8083, #EE227D);
     word-wrap: break-word;
-    width: 38vh;
+    width: 32vh;
     height: 38vh;
 }
 
@@ -367,7 +367,7 @@ button.navBorder:hover
     font-family: 'Poppins', sans-serif; 
     font-weight: 900;
     text-align: center;
-    font-size: 1.0em;
+    font-size: 1.6vw;
     margin-top: 9%;
     text-decoration: none;
 }
@@ -375,7 +375,7 @@ button.navBorder:hover
 #aboutRole-descript 
 {
     text-align: center;
-    font-size: 1.0em;
+    font-size: 1.6vw;
     margin-top: 62%;
     text-decoration: none;
 }
@@ -559,7 +559,6 @@ img.aboutImage
     display: inline-block;
 	font-size: 20px;
     max-width: fit-content;
-    align-content: center;
     
     left: 0;
     margin-left: 80%;
@@ -646,7 +645,7 @@ input[type="text"],input[type="password"]{
 
     left: 0;
     margin-left: 77%;
-    margin-top: 1%;
+    margin-top: 1.1%;
 
     border-radius: 15px;
     cursor: pointer;
@@ -846,7 +845,7 @@ select{
     left: 0;
     margin-left: 68%;
     position: absolute;
-    margin-top: 1%;
+    margin-top: 1.1%;
 
     border-radius: 15px;
     cursor: pointer;
