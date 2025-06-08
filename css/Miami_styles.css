@@ -867,6 +867,7 @@ select{
 
     vertical-align: 50%;
     max-block-size: 10%;
+    position: relative;
 
     border-radius: 15px;
     cursor: pointer;
