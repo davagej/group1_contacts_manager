@@ -620,6 +620,7 @@ input[type="text"],input[type="password"]{
     display: inline-block;
     font-size: 20px;
     text-align: left;
+    position: absolute;
 
     max-height: min-content;
     max-width: fit-content;
