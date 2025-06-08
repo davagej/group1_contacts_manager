@@ -534,27 +534,23 @@ img.aboutImage
 
 #addFirstName
 {
-	position: relative; 
-    font-size: 30px;
-    margin-bottom: 2.5%;
+	position: absolute; 
+    top: 20%;
 }
 #addLastName
 {
-	position: relative; 
-    font-size: 30px;
-    margin-bottom: 2.5%;
+	position: absolute; 
+    top: 40%;
 }
 #addEmailAddress
 {
-	position: relative; 
-    font-size: 30px;
-    margin-top: 2.5%;
+	position: absolute; 
+    top: 60%;
 }
 #addPhoneNumber
 {
-	position: relative;
-    font-size: 30px;
-    margin-top: 2.5%;
+	position: absolute;
+    top: 80%;
 }
 
 #searchText
@@ -578,6 +574,7 @@ input[type="text"],input[type="password"]{
     border-radius: 25px;
     text-align: center;
     width: 90%;
+    font-size: 2vw;
     /*margin-left: 10%;*/
     /*margin-bottom: 2%;*/
     font-family: 'Ubuntu', sans-serif;
@@ -825,7 +822,7 @@ select{
 {
   color: white;
   float: right;
-  font-size: 28px;
+  font-size: 1.6vw;
   font-weight: bold;
 }
 
@@ -859,6 +856,18 @@ select{
     color: #FFFFFF;
     /* font-weight: bold;
     text-decoration: underline; */
+}
+
+#addButton
+{
+    position: absolute;
+    bottom: 5%;
+}
+
+#addButton:hover 
+{
+  background-color: #498099;
+  color: #FFFFFF;  
 }
 
 #myModal
