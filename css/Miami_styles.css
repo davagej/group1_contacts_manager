@@ -333,34 +333,34 @@ button.navBorder:hover
 #circleAboutPosition1 
 {
     position: absolute;
-    top: 9%;
+    top: 6%;
     right: 72%;
 }
 
 #circleAboutPosition2 
 {
     position: absolute;
-    bottom: 50%;
+    bottom: 48%;
 }
 
 #circleAboutPosition3 
 {
     position: absolute;
-    bottom: 50%;
+    bottom: 48%;
     left: 72%;
 }
 
 #circleAboutPosition4 
 {
     position: absolute;
-    top: 50%;
+    top: 48%;
     right: 56%;
 }
 
 #circleAboutPosition5 
 {
     position: absolute;
-    top: 50%;
+    top: 48%;
     right: 25%;
 }
 
