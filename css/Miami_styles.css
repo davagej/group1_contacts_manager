@@ -272,7 +272,7 @@ button.navBorder:hover
     display: inline-block;
     vertical-align: middle;
     /* justify-content: space-evenly; */
-    /* align-items: center; */
+    align-items: center;
 }
 
 #contactList
@@ -626,8 +626,6 @@ input[type="text"],input[type="password"]{
     max-width: fit-content;
     max-block-size: 35%;
     max-inline-size: 35%;
-
-    /* vertical-align: super; */
 
     font-family: 'Poppins', sans-serif;
     color: white;	
