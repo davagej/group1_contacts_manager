@@ -130,7 +130,8 @@ function checkPhone()
 	return phoneFlag;
 }
 
-function clearResultModal() {
+function clearResultModal()
+{
   const element = document.activeElement.tagName;
 
   if (element == "INPUT")
@@ -206,8 +207,6 @@ function register()
 				LastName = jsonObject.LastName;
 
 				saveCookie();
-	
-				//window.location.href = "Miami_SignIn.html";
 
 				doLogout();
 			}
@@ -318,10 +317,10 @@ function readCookie()
 		}
 		else
 		{
-			window.location.href = "Miami_HomePage.html";
+			//window.location.href = "Miami_HomePage.html";
 		}
 	}
-	else /**/
+	else 
 	{
 		if (window.location.href == "http://managemymiami4331.xyz/Miami_AboutPage.html")
 		{
