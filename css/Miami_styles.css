@@ -991,23 +991,36 @@ select{
 
 .viewContent
 {
+    /*position: absolute;*/
     font-size: 1.6vw;
 }
 
-#firstNameView {
-
+#firstNameView 
+{
+    top: 5%;
+}
+#firstNameView:before
+{
+    content: "First Name: ";
 }
 
-#lastNameView {
-
+#lastNameView 
+{
+    top: 15%;
+}
+#lastNameView:before
+{
+    content: "Last Name: ";
 }
 
-#emailView {
-
+#emailView 
+{
+    top:  25%;
 }
 
-#phoneView {
-
+#phoneView 
+{
+    top: 35%;
 }
 
 #FirstNameEdit {
@@ -1051,6 +1064,7 @@ select{
 }
 
 
+
 .Entry {
     display: inline-flex;
     align-items: center;
@@ -1058,3 +1072,4 @@ select{
     width: 19.625%;
     height: 100%;
 }
+
