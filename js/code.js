@@ -684,5 +684,11 @@ function deleteContact(ID) {
 }
 
 function viewContact(ID) {
+let modal = document.getElementById("myModalView");
+let firstNameData = document.getElementById("FirstName"+ID);
+let lastNameData = document.getElementById("LastName"+ID);
+let phoneNumberData = document.getElementById("PhoneNumber"+ID);
+let emailAddressData = document.getElementById("EmailAddress"+ID);
+modal.style.display = "block";
 
 }
