@@ -303,6 +303,14 @@ button.navBorder:hover
     top: 2%;*/
     height: 15%;
     font-size: 2vw;
+    border-bottom: 2px solid;
+    border-bottom-color: black;
+}
+
+
+.colDiv
+{
+    text-align: center;
 }
 
 /*.editButton

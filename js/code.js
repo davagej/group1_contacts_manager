@@ -466,57 +466,69 @@ function searchContact()
 					let paraF = document.createElement("div");
 					paraF.innerHTML = current.FirstName;
 					paraF.id = "FirstName"+current.ID;
+					paraF.className = "colDiv";
 					//paraF.style.float = 'left';
 					paraF.style.display = "inline-block";
-					paraF.style.borderStyle = "solid";
-					paraF.style.borderColor = "#30C0B7";
-					pareF.style.width = "20%";
+					// paraF.style.borderStyle = "solid";
+					// paraF.style.borderColor = "#30C0B7";
+					paraF.style.width = "20%";
 					document.getElementById(divID).appendChild(paraF);
 
 					let paraL = document.createElement("div");
 					paraL.innerHTML = current.LastName;
 					paraL.id = "LastName"+current.ID;
+					paraL.className = "colDiv";
 					//paraL.style.float = 'left';
 					paraL.style.display = "inline-block";
 					// paraL.style.position = "relative";
 					// paraL.style.left = "60%";
-					paraL.style.borderStyle = "solid";
-					paraL.style.borderColor = "#30C0B7"
+					// paraL.style.borderStyle = "solid";
+					// paraL.style.borderColor = "#30C0B7"
+					paraL.style.width = "20%";
 					document.getElementById(divID).appendChild(paraL);
 
 					let paraP = document.createElement("div");
 					paraP.innerHTML = current.Phone;
 					paraP.id = "PhoneNumber"+current.ID;
+					paraP.className = "colDiv";
 					paraP.style.display = "inline-block";
 					// paraP.style.position = "relative";
 					// paraP.style.left = "100%";
-					paraP.style.borderStyle = "solid";
-					paraP.style.borderColor = "#30C0B7"
+					// paraP.style.borderStyle = "solid";
+					// paraP.style.borderColor = "#30C0B7"
+					paraP.style.width = "20%";
 					document.getElementById(divID).appendChild(paraP);
 
 					let paraE = document.createElement("div");
 					paraE.innerHTML = current.Email;
 					paraE.id = "EmailAddress" + current.ID;
+					paraE.className = "colDiv";
 					paraE.style.display = "inline-block";
 					// paraE.style.position = "relative";
 					// paraE.style.left = "150%";
-					paraE.style.borderStyle = "solid";
-					paraE.style.borderColor = "#30C0B7"
+					// paraE.style.borderStyle = "solid";
+					// paraE.style.borderColor = "#30C0B7"
+					paraE.style.width = "20%";
 					document.getElementById(divID).appendChild(paraE);
 
 					//Buttons
-					let EditButton = document.createElement("button");
-					EditButton.className = "editButton";
-					EditButton.innerHTML = "Edit";
-					EditButton.id = "e" + current.ID;
-					// EditButton.id = "test";
-					EditButton.setAttribute("onclick","editContactStartUp("+current.ID+")");
-					document.getElementById(divID).appendChild(EditButton);
+					let editButton = document.createElement("button");
+					editButton.className = "editButton buttons";
+					editButton.innerHTML = "Edit";
+					editButton.id = "e" + current.ID;
+					editButton.style.width = "8%";
+					// editButton.style.position = "absolute";
+					editButton.style.left = "86%";
+					editButton.setAttribute("onclick","editContactStartUp("+current.ID+")");
+					document.getElementById(divID).appendChild(editButton);
 					
 					let deleteButton = document.createElement("button");
-					deleteButton.className = "deleteButton";
+					deleteButton.className = "deleteButton buttons";
 					deleteButton.innerHTML = "Delete";
 					deleteButton.id = "d" + current.ID;
+					deleteButton.style.width = "8%";
+					// deleteButton.style.position = "absolute";
+					deleteButton.style.left = "95%";
 					deleteButton.setAttribute("onclick", "confirmDelete("+current.ID+")");
 					// deleteButton.setAttribute("onclick", "deleteContact("+current.ID+")");
 					document.getElementById(divID).appendChild(deleteButton);
