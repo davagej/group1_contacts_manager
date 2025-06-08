@@ -475,24 +475,24 @@ function searchContact()
 					paraL.id = "LastName"+current.ID;
 					//paraL.style.float = 'left';
 					paraL.style.display = "inline-block";
-					paraL.style.position = "relative";
-					paraL.style.left = "60%";
+					// paraL.style.position = "relative";
+					// paraL.style.left = "60%";
 					document.getElementById(divID).appendChild(paraL);
 
 					let paraP = document.createElement("div");
 					paraP.innerHTML = current.Phone;
 					paraP.id = "PhoneNumber"+current.ID;
 					paraP.style.display = "inline-block";
-					paraP.style.position = "relative";
-					paraP.style.left = "100%";
+					// paraP.style.position = "relative";
+					// paraP.style.left = "100%";
 					document.getElementById(divID).appendChild(paraP);
 
 					let paraE = document.createElement("div");
 					paraE.innerHTML = current.Email;
 					paraE.id = "EmailAddress" + current.ID;
 					paraE.style.display = "inline-block";
-					paraE.style.position = "relative";
-					paraE.style.left = "150%";
+					// paraE.style.position = "relative";
+					// paraE.style.left = "150%";
 					document.getElementById(divID).appendChild(paraE);
 
 					//Buttons
