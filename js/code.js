@@ -683,5 +683,5 @@ function deleteContact(ID) {
 }
 
 function viewContact(ID) {
-
+	
 }
