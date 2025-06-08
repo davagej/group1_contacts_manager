@@ -446,7 +446,7 @@ function searchContact()
 		{
 			if (this.readyState == 4 && this.status == 200) 
 			{
-				document.getElementById("contactSearchResult").innerHTML = "Contacts(s) have been retrieved";
+				document.getElementById("contactSearchResult").innerHTML = "Contact(s) have been retrieved";
 				let jsonObject = JSON.parse( xhr.responseText );
 				if (jsonObject.error != "") {
 					document.getElementById("contactSearchResult").innerHTML = jsonObject.error;
