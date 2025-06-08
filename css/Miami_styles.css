@@ -291,6 +291,11 @@ button.navBorder:hover
     align-items: center;
 }
 
+.contactDiv
+{
+    font-size: 2vw;
+}
+
 #circleDiv 
 {
     position: absolute;
@@ -543,14 +548,14 @@ img.aboutImage
 	position: absolute; 
     top: 40%;
 }
-#addEmailAddress
-{
-	position: absolute; 
-    top: 60%;
-}
 #addPhoneNumber
 {
 	position: absolute;
+    top: 60%;
+}
+#addEmailAddress
+{
+	position: absolute; 
     top: 80%;
 }
 
