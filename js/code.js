@@ -453,22 +453,27 @@ function searchContact()
 					paraDiv.className = "contactDiv";
 					paraDiv.id = divID;
 					document.getElementById("contactList").appendChild(paraDiv);
+
 					let paraF = document.createElement("p");
 					paraF.innerHTML = current.FirstName;
 					paraF.id = "FirstName"+current.ID;
 					document.getElementById(divID).appendChild(paraF);
+
 					let paraL = document.createElement("p");
 					paraL.innerHTML = current.LastName;
 					paraL.id = "LastName"+current.ID;
 					document.getElementById(divID).appendChild(paraL);
+
 					let paraP = document.createElement("p");
 					paraP.innerHTML = current.Phone;
 					paraP.id = "PhoneNumber"+current.ID;
 					document.getElementById(divID).appendChild(paraP);
+
 					let paraE = document.createElement("p");
 					paraE.innerHTML = current.Email;
 					paraE.id = "EmailAddress" + current.ID;
 					document.getElementById(divID).appendChild(paraE);
+
 					//Buttons
 					let EditButton = document.createElement("button");
 					EditButton.className = "editButton";
