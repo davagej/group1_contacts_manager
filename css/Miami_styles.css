@@ -844,7 +844,7 @@ select{
   cursor: pointer;
 }
 
-#myBtn
+#addButtonHeader /*change mybtn to new name*/
 {
     display: inline-block;
 	border: none;
@@ -862,7 +862,7 @@ select{
     cursor: pointer;
 }
 
-#myBtn:hover
+#addButtonHeader:hover
 {
     background-color: #30C0B7;
     color: #FFFFFF;
