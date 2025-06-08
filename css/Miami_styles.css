@@ -299,6 +299,18 @@ button.navBorder:hover
     font-size: 2vw;
 }
 
+#editButton
+{
+
+}
+
+#e
+{
+    color: black;
+    position: relative;
+    left: 180%;
+}
+
 #circleDiv 
 {
     position: absolute;

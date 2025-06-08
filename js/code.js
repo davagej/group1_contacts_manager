@@ -496,6 +496,7 @@ function searchContact()
 					EditButton.className = "editButton";
 					EditButton.innerHTML = "Edit";
 					EditButton.id = "e" + current.ID;
+					// EditButton.id = "test";
 					EditButton.setAttribute("onclick","editContactStartUp("+current.ID+")");
 					document.getElementById(divID).appendChild(EditButton);
 					let deleteButton = document.createElement("button");
