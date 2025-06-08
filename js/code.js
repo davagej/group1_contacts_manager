@@ -515,6 +515,8 @@ function searchContact()
 					paraE.style.textOverflow = "ellipsis";
 					document.getElementById(divID).appendChild(paraE);
 
+					// let buttonContainer = document.createElement("div");
+
 					//Buttons
 					let editButton = document.createElement("button");
 					editButton.className = "innerButtons";
