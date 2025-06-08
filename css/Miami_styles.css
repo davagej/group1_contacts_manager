@@ -542,14 +542,14 @@ img.aboutImage
 	position: absolute; 
     top: 40%;
 }
-#addEmailAddress
-{
-	position: absolute; 
-    top: 60%;
-}
 #addPhoneNumber
 {
 	position: absolute;
+    top: 60%;
+}
+#addEmailAddress
+{
+	position: absolute; 
     top: 80%;
 }
 
@@ -560,8 +560,8 @@ img.aboutImage
 	font-size: 20px;
     max-width: fit-content;
     
-    left: 0%;
-    margin-left: 80%;
+    right: 0%;
+    /*margin-left: 80%;*/
     /*vertical-align: 50%;*/
 }
 
