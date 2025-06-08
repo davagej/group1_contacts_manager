@@ -318,13 +318,16 @@ button.navBorder:hover
 
 .circleAbout 
 {
-    /*position: relative;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-/*     background-color: #EE227D; */
 	background-image: linear-gradient(#FD8083, #EE227D);
     word-wrap: break-word;
-    width: 23vw;
-    height: 38vh;
+    width: 18vw;
+    height: 18vw;
 }
 
 #circleAboutPosition1 
@@ -384,8 +387,8 @@ img.aboutImage
 {
     position: absolute;
     margin-bottom: auto;
-    /*top: 2.5%;*/
-    left: 27%;
+    top: 50%;
+    left: 22%;
     top: 22.5%;
     width: 10vw;
     height: 20vh;
