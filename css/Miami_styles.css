@@ -318,7 +318,7 @@ button.navBorder:hover
 
 .circleAbout 
 {
-    position: relative;
+    /*position: relative;*/
     border-radius: 50%;
 /*     background-color: #EE227D; */
 	background-image: linear-gradient(#FD8083, #EE227D);
