@@ -542,14 +542,14 @@ img.aboutImage
 	position: absolute; 
     top: 40%;
 }
-#addPhoneNumber
-{
-	position: absolute;
-    top: 60%;
-}
 #addEmailAddress
 {
 	position: absolute; 
+    top: 60%;
+}
+#addPhoneNumber
+{
+	position: absolute;
     top: 80%;
 }
 
@@ -620,7 +620,7 @@ input[type="text"],input[type="password"]{
     display: inline-block;
     font-size: 20px;
     text-align: left;
-    position: absolute;
+    position: relative;
 
     max-height: min-content;
     max-width: fit-content;
