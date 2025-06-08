@@ -517,7 +517,7 @@ function searchContact()
 
 					//Buttons
 					let editButton = document.createElement("button");
-					editButton.className = " innerButtons";
+					editButton.className = "innerButtons";
 					editButton.innerHTML = "Edit";
 					editButton.id = "e" + current.ID;
 					//editButton.style.width = "8%";
