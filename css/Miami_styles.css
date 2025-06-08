@@ -603,6 +603,12 @@ img.aboutImage
 /*     font-size: 1.6vw; */
 }
 
+#searchText:hover
+{
+    background-color: #30C0B7;
+    color: #FFFFFF;
+}
+
 #colorText
 {
 	font-size: 30px;
@@ -690,6 +696,12 @@ input[type="text"],input[type="password"]{
 
     border-radius: 15px;
     cursor: pointer;
+}
+
+#searchContactButton:hover
+{
+    background-color: #30C0B7;
+    color: #FFFFFF;
 }
 
 #contactSearchResult
