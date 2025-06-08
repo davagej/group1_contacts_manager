@@ -593,8 +593,6 @@ function editContactStartUp(ID) {
 	editFN.value = firstName.innerHTML;
 	editFN.id = "FirstNameEdit";
 	editFN.style.display = "inline-block";
-	editFN.style.width = "20%";
-	firstName.replaceWith(editFN);
 	let editLN = document.createElement("input");
 	editLN.className = "textEntries";
 	editLN.type = "text";
