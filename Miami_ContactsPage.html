@@ -101,6 +101,11 @@
 </div>
 
 <script>
+	addEventListener("input", function(event) {
+		if (event.target.id == "searchText") {
+			searchContact();
+		}
+	});
 	// Get the modal
 	let modal = document.getElementById("myModal");
 	let viewModal = document.getElementById("myModalView");
