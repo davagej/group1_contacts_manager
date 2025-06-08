@@ -289,7 +289,7 @@ button.navBorder:hover
     /*display: flex;*/
    /* display: grid;
     grid-template-rows: max-content;*/
-    display: table;
+    /*display: table;*/
     justify-content: center;
     align-items: center;
     overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -301,7 +301,7 @@ button.navBorder:hover
   /*  position: absolute;
     left: 5%;
     top: 2%;*/
-    height: 20%;
+    height: 15%;
     font-size: 2vw;
 }
 
