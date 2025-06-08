@@ -470,6 +470,7 @@ function searchContact()
 					paraF.style.display = "inline-block";
 					paraF.style.borderStyle = "solid";
 					paraF.style.borderColor = "#30C0B7";
+					pareF.style.width = "20%";
 					document.getElementById(divID).appendChild(paraF);
 
 					let paraL = document.createElement("div");
