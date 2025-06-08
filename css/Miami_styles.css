@@ -991,7 +991,7 @@ select{
 
 .viewContent
 {
-    /*position: absolute;*/
+    position: absolute;
     font-size: 1.6vw;
 }
 
