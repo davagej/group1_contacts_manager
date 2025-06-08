@@ -646,7 +646,7 @@ input[type="text"],input[type="password"]{
 
 #searchContactButton
 {
-    position: relative;
+    position: static;
     display: inline-block;
 	border: none;
     background-color: white;
