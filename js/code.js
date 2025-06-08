@@ -256,7 +256,7 @@ function doLogin()
 				saveCookie();
 	
 				window.location.href = "Miami_ContactsPage.html";
-
+				searchContact();
 			}
 		};
 		xhr.send(jsonPayload);
