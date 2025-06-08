@@ -990,21 +990,12 @@ select{
     font-size: 1.6vw;
 }
 
-#firstNameView
+.textEntries
 {
-
-}
-#lastNameView
-{
-
-}
-#phoneNumView
-{
-
-}
-#emailView
-{
-
+    font-size: 1vw;
+    text-align: center;
+    display: inline-block;
+    
 }
 
 

@@ -588,32 +588,33 @@ function editContactStartUp(ID) {
 	deleteButton.setAttribute("onclick","editContactCancel("+ID+")");
 
 	let editFN = document.createElement("input");
+	editFN.className = "textEntries";
 	editFN.type = "text";
 	editFN.value = firstName.innerHTML;
 	editFN.id = "FirstNameEdit";
 	editFN.style.display = "inline-block";
-	editFN.style.width = "15%";
+	editFN.style.width = "20%";
 	firstName.replaceWith(editFN);
 	let editLN = document.createElement("input");
+	editLN.className = "textEntries";
 	editLN.type = "text";
 	editLN.value = lastName.innerHTML;
 	editLN.id = "LastNameEdit";
-	editLN.style.display = "inline-block";
-	editLN.style.width = "15%";
+
 	lastName.replaceWith(editLN);
 	let editP = document.createElement("input");
+	editP.className = "textEntries";
 	editP.type = "text";
 	editP.value = phoneNumber.innerHTML;
 	editP.id = "PhoneEdit";
-	editP.style.display = "inline-block";
-	editP.style.width = "15%";
+
 	phoneNumber.replaceWith(editP);
 	let editE= document.createElement("input");
+	editE.className = "textEntries";
 	editE.type = "text";
 	editE.value = emailAddress.innerHTML;
 	editE.id = "EmailEdit";
-	editE.style.display = "inline-block";
-	editE.style.width = "15%";
+
 	emailAddress.replaceWith(editE);
 
 	editButton.innerHTML = "Save"
