@@ -348,7 +348,7 @@ function addContact()
 	{
 		return;
 	}
-	if else (checkPhone() == 0)
+	else if (checkPhone() == 0)
 	{
 		return;
 	}
