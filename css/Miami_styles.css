@@ -563,7 +563,7 @@ img.aboutImage
     
     left: 0;
     margin-left: 80%;
-    margin-top: 0%;
+    margin-top: 1%;
 }
 
 #colorText
@@ -622,7 +622,7 @@ input[type="text"],input[type="password"]{
     font-size: 20px;
     text-align: left;
     position: relative;
-    margin-top: 0%;
+    margin-top: 0.5%;
 
     max-height: fit-content;
     max-width: fit-content;
@@ -646,7 +646,7 @@ input[type="text"],input[type="password"]{
 
     left: 0;
     margin-left: 77%;
-    margin-top: 0%;
+    margin-top: 1%;
 
     border-radius: 15px;
     cursor: pointer;
@@ -846,7 +846,7 @@ select{
     left: 0;
     margin-left: 68%;
     position: absolute;
-    margin-top: 0%;
+    margin-top: 1%;
 
     border-radius: 15px;
     cursor: pointer;
