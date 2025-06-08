@@ -581,6 +581,7 @@ function editContactStartUp(ID) {
 		return;
 	}
 	document.getElementById("v"+ID).style.display = "none";
+	document.getElementById("v"+ID).style.width = "0";
 	let firstName = document.getElementById("FirstName"+ID);
 	let lastName = document.getElementById("LastName"+ID);
 	let phoneNumber = document.getElementById("PhoneNumber"+ID);
@@ -606,15 +607,15 @@ function editContactStartUp(ID) {
 	editFN.type = "text";
 	editFN.value = firstName.innerHTML;
 	editFN.id = "FirstNameEdit";
+	firstName.replaceWith(holderdivFN);
 	holderdivFN.appendChild(editFN);
-	firstName.replaceWith(holderdivFN)
 
 	let editLN = document.createElement("input");
 	editLN.type = "text";
 	editLN.value = lastName.innerHTML;
 	editLN.id = "LastNameEdit";
-	holderdivLN.appendChild(editLN);
 	lastName.replaceWith(holderdivLN);
+	holderdivLN.appendChild(editLN);
 
 	let editP = document.createElement("input");
 	editP.type = "text";
@@ -626,8 +627,8 @@ function editContactStartUp(ID) {
 	editE.type = "text";
 	editE.value = emailAddress.innerHTML;
 	editE.id = "EmailEdit";
-	holderdivE.appendChild(editE);
 	emailAddress.replaceWith(holderdivE);
+	holderdivE.appendChild(editE);
 
 
 	editButton.innerHTML = "Save"
