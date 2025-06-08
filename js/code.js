@@ -317,8 +317,7 @@ function readCookie()
 		}
 		else
 		{
-			doLogout();
-			//window.location.href = "Miami_HomePage.html";
+			window.location.href = "Miami_HomePage.html";
 		}
 	}
 	else 
