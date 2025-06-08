@@ -683,9 +683,9 @@ input[type="text"],input[type="password"]{
 /*     font-size: 1.6vw; */
     font-family: 'Poppins', sans-serif; 
 /*     max-width: fit-content; */
-	width: 15%
+	width: 8%;
 
-    left: 75%;
+    left: 75.3%;
     height: 70%;
     /*margin-left: 77%;*/
     margin-top: 1.1%;
@@ -900,7 +900,7 @@ select{
     /*margin-left: 68%;*/
     position: absolute;
     margin-top: 1.1%;
-	width: 15%
+	width: 5%;
 
     border-radius: 15px;
     cursor: pointer;
