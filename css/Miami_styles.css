@@ -313,6 +313,8 @@ button.navBorder:hover
 .colDiv
 {
     text-align: center;
+    font-size: 2vh;
+    font-family: 'Poppins', sans-serif;
 }
 
 .innerButtons
