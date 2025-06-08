@@ -637,7 +637,7 @@ img.aboutImage
 }
 
 input[type="text"],input[type="password"]{
-    border-radius: 25px;
+    border-radius: 25px; 
     text-align: center;
     width: 90%;
     font-size: 2vw;
@@ -922,12 +922,13 @@ select{
 /*     font-size: 1.6vw; */
     font-family: 'Poppins', sans-serif; 
 
-    left: 70%;
+    left: 73%;
     height: 70%;
+    text-align: center;
     /*margin-left: 68%;*/
     position: absolute;
     margin-top: 1.18%;
-	width: 5%;
+	width: 6%;
 
     border-radius: 15px;
     cursor: pointer;
