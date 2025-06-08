@@ -313,11 +313,13 @@ button.navBorder:hover
 .colDiv
 {
     text-align: center;
+    font-size: 2vh;
+    font-family: 'Poppins', sans-serif;
 }
 
 .innerButtons
 {
-    font-size: 1.6vw;
+    font-size: 2vh;
     border-radius: 25px;
     width: 25%; /**/
     font-family: 'Poppins', sans-serif;
@@ -920,11 +922,11 @@ select{
 /*     font-size: 1.6vw; */
     font-family: 'Poppins', sans-serif; 
 
-    left: 75%;
+    left: 70%;
     height: 70%;
     /*margin-left: 68%;*/
     position: absolute;
-    margin-top: 1.15%;
+    margin-top: 1.18%;
 	width: 5%;
 
     border-radius: 15px;
