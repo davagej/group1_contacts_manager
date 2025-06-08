@@ -379,11 +379,11 @@ button.navBorder:hover
 {
     text-align: center;
     font-size: 1.4vw;
-    margin-top: 55%;
+    margin-top: 53%;
     text-decoration: none;
 }
 
-img.aboutImage 
+img.aboutImage
 {
     position: absolute;
     margin-bottom: auto;
