@@ -33,6 +33,11 @@ function goToContactsPage()
 	window.location.href = "Miami_ContactsPage.html"
 }
 
+function confirmDelete()
+{
+	return confirm ("<b>WARNING<b>\nYou are about to delete a contact, which is a permanent action that cannot be undone.\n<b>Do you want to delete this contact?<b>");
+}
+
 function checkFieldReg(firstName, lastName, userName, password)
 {
 	let flag = 1; // if 0 fields are empty, if 1 they are not empty 
