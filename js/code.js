@@ -590,42 +590,51 @@ function editContactStartUp(ID) {
 	editButton.setAttribute("onclick","editContactSave("+ID+")");
 	deleteButton.setAttribute("onclick","editContactCancel("+ID+")");
 
+	let holderdivFN = document.createElement("div");
+	let holderdivLN = document.createElement("div");
+	let holderdivP = document.createElement("div");
+	let holderdivE = document.createElement("div");
+	holderdivFN.className = "colDiv";
+	holderdivLN.className = "colDiv";
+	holderdivP.className = "colDiv";
+	holderdivE.className = "colDiv";
+	holderdivFN.id = "firstNameH";
+	holderdivLN.id = "lastNameH";
+	holderdivE.id = "emailH";
+	holderdivP.id = "phoneH";
 	let editFN = document.createElement("input");
-	editFN.className = "textEntries";
 	editFN.type = "text";
 	editFN.value = firstName.innerHTML;
 	editFN.id = "FirstNameEdit";
-	editFN.style.display = "inline-block";
-	firstName.replaceWith(editFN);
+	holderdivFN.appendChild(editFN);
+	firstName.replaceWith(holderdivFN)
 
 	let editLN = document.createElement("input");
-	editLN.className = "textEntries";
 	editLN.type = "text";
 	editLN.value = lastName.innerHTML;
 	editLN.id = "LastNameEdit";
+	holderdivLN.appendChild(editLN);
+	lastName.replaceWith(holderdivLN);
 
-	lastName.replaceWith(editLN);
 	let editP = document.createElement("input");
-	editP.className = "textEntries";
 	editP.type = "text";
 	editP.value = phoneNumber.innerHTML;
 	editP.id = "PhoneEdit";
-
-	phoneNumber.replaceWith(editP);
+	holderdivP.appendChild(editP);
+	phoneNumber.replaceWith(holderdivP);
 	let editE= document.createElement("input");
-	editE.className = "textEntries";
 	editE.type = "text";
 	editE.value = emailAddress.innerHTML;
 	editE.id = "EmailEdit";
+	holderdivE.appendChild(editE);
+	emailAddress.replaceWith(holderdivE);
 
-	emailAddress.replaceWith(editE);
 
 	editButton.innerHTML = "Save"
 	deleteButton.innerHTML = "Cancel";
 }
 
 function editContactSave(ID) {
-	document.getElementById("v"+ID).style.display = "block";
 	let firstName = document.getElementById("FirstNameEdit").value;
 	let lastName = document.getElementById("LastNameEdit").value;
 	let phoneNumber = document.getElementById("PhoneEdit").value;
