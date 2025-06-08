@@ -295,7 +295,7 @@ button.navBorder:hover
 {
     position: absolute;
     left: 5%;
-    margin-bottom: 25%;
+    top: 2%;
     font-size: 2vw;
 }
 re
