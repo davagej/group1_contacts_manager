@@ -36,7 +36,7 @@ function goToContactsPage()
 function confirmDelete("+current.ID+")
 {
 	let result = confirm ("<b>WARNING<b>\nYou are about to delete a contact, which is a permanent action that cannot be undone.\n<b>Do you want to delete this contact?<b>");
-	if (confirm == TRUE)
+	if (result == TRUE)
 	{
 		deleteContact("+current.ID+");
 	}
