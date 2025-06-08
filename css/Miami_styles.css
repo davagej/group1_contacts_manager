@@ -647,7 +647,7 @@ input[type="text"],input[type="password"]{
     margin-top: 0%;
 	margin-bottom: 0%;
 
-    /* vertical-align: middle; */
+    vertical-align: 50%;
 }
 
 #contactSearchResult
@@ -659,7 +659,7 @@ input[type="text"],input[type="password"]{
     margin-top: 0%;
 	margin-bottom: 0%;
 
-    /* vertical-align: middle; */
+    vertical-align: 50%;
 }
 
 #loginResult
