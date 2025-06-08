@@ -565,7 +565,7 @@ img.aboutImage
     max-width: fit-content;
     
     left: 0%;
-    margin-left: 70%;
+    margin-left: 80%;
     /* vertical-align: 50%; */
 }
 
@@ -647,7 +647,7 @@ input[type="text"],input[type="password"]{
     max-width: fit-content;
 
     left: 0%;
-    margin-left: 75%;
+    margin-left: 65%;
     /* vertical-align: middle; */
 
     border-radius: 15px;
