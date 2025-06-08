@@ -80,6 +80,32 @@ function checkEmail()
 	return emailFlag;
 }
 
+function checkPhone()
+{
+	let phoneFlag = 1; // if 0 invalid email, if 1 valid email
+	let phoneNumber = document.getElementById("addPhoneNumber");
+	let phoneNumRequirements = /[0-9]/g;
+
+	if (!phoneNumber.value.match(phoneNumRequirements))
+	{
+		document.getElementById("contactAddResult").innerHTML = "Invalid Phone Number";
+		phoneFlag = 0;
+	}
+
+	if(phoneNumber.value.length > 10) 
+  {
+    document.getElementById("contactAddResult").innerHTML = "Phone Number Has too Many Digits";
+		phoneFlag = 0;
+  }
+  else if (phoneNumber.value.length < 10)
+  {
+  	document.getElementById("contactAddResult").innerHTML = "Phone Number Has Not Enough Digits";
+		phoneFlag = 0;
+  }
+
+	return phoneFlag;
+}
+
 function clearResultModal() {
   const element = document.activeElement.tagName;
 
@@ -319,6 +345,10 @@ function addContact()
 	document.getElementById("contactAddResult").innerHTML = "";
 
 	if (checkEmail() == 0)
+	{
+		return;
+	}
+	if else (checkPhone() == 0)
 	{
 		return;
 	}
