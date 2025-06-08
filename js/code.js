@@ -691,10 +691,14 @@ function deleteContact(ID) {
 
 function viewContact(ID) {
 let modal = document.getElementById("myModalView");
-let firstNameData = document.getElementById("FirstName"+ID);
-let lastNameData = document.getElementById("LastName"+ID);
-let phoneNumberData = document.getElementById("PhoneNumber"+ID);
-let emailAddressData = document.getElementById("EmailAddress"+ID);
-modal.style.display = "block";
+let firstNameData = document.getElementById("FirstName"+ID).innerHTML;
+let lastNameData = document.getElementById("LastName"+ID).innerHTML;
+let phoneNumberData = document.getElementById("PhoneNumber"+ID).innerHTML;
+let emailAddressData = document.getElementById("EmailAddress"+ID).innerHTML;
 
+document.getElementById("firstNameView").innerHTML = firstNameData;
+document.getElementById("lastNameView").innerHTML = lastNameData;
+document.getElementById("phoneView").innerHTML = phoneNumberData;
+document.getElementById("emailView").innerHTML = emailAddressData;
+modal.style.display = "block";
 }
