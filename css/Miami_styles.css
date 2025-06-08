@@ -598,7 +598,7 @@ img.aboutImage
 {
    /* position: absolute;
     top:50%;*/
-	font-size: 1vh;
+	font-size: 2vh;
 /*     font-size: 1.6vw; */
 }
 
@@ -677,7 +677,7 @@ input[type="text"],input[type="password"]{
 	border: none;
     background-color: white;
     color: black;
-	font-size: 1vh;
+	font-size: 2vh;
 /*     font-size: 1.6vw; */
     font-family: 'Poppins', sans-serif; 
     max-width: fit-content;
@@ -882,7 +882,7 @@ select{
 	border: none;
     background-color: white;
     color: black;
-	font-size: 1vh;
+	font-size: 2vh;
 /*     font-size: 1.6vw; */
     font-family: 'Poppins', sans-serif; 
 
