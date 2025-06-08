@@ -897,6 +897,9 @@ select{
   	border: 4px solid #FFFFFF;
   	width: 60%;
   	height: 58.2%;
+/*    display: flex;
+    justify-content: center;
+    align-items: center;*/
 }
 
 /* The Close Button */
@@ -991,24 +994,37 @@ select{
 
 .viewContent
 {
+    position: absolute;
     font-size: 1.6vw;
-    text-align: center;
+    align-content: center;
 }
 
-#firstNameView {
-
+#firstNameView 
+{
+    top: 5%;
+}
+#firstNameView:before
+{
+    content: "First Name: ";
 }
 
-#lastNameView {
-
+#lastNameView 
+{
+    top: 15%;
+}
+#lastNameView:before
+{
+    content: "Last Name: ";
 }
 
-#emailView {
-
+#emailView 
+{
+    top:  25%;
 }
 
-#phoneView {
-
+#phoneView 
+{
+    top: 35%;
 }
 
 #FirstNameEdit {
