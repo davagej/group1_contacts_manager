@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<!-- 6/08/25, Time: 1:51pm, Pre-classes -->
+<html lang="en">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
@@ -7,7 +8,7 @@
 	<script type="text/javascript" src="js/md5.js"></script>
 	<script type="text/javascript" src="js/code.js"></script>
     <link href="css/Miami_styles.css" rel="stylesheet">	
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 <!-- 	UNCOMMENT LATER -->
 	<script type="text/javascript">
 	document.addEventListener('DOMContentLoaded', function() 
@@ -34,9 +35,8 @@
 	<!-- NEW DIV BELOW -->
 	<div id="bodyHeaderHiddenDiv">
 		<p id="contact-welcome"><span id="userName"></span> </p>
-		<button type="button" id="myBtn">Add</button>
+		<button type="button" id="addButtonHeader">Add</button>
 
-		<button type="button" id="searchContactButton" class="buttons" onclick="searchContact();"> Search </button>
 		<input type="text" id="searchText" placeholder="Search your Miami"/>
 		<!-- <button type="button" id="searchContactButton" class="buttons" onclick="searchContact();"> Search </button> -->
 		<!-- <span id="contactSearchResult"></span> -->
@@ -66,15 +66,26 @@
 			</div>	
 		</div>
 
-		<div id="headerTransDiv">
-			<p id="headerFirst"> First Name
-			<p id="headerLast"> Last Name
-			<p id="headerPhone"> Phone Number
-			<p id="headerEmail"> Email Address
-			<p id="headerOptions"> Options
+		<div id="myModalView" class="modal">
+			<div class="add-Contact-Modal">
+				<span class="close">&times;</span>
+				<p class="viewContent" id="firstNameView"></p>
+				<p class="viewContent" id="lastNameView"></p>
+				<p class="viewContent" id="phoneView"></p>
+				<p class="viewContent" id="emailView"></p>
+			</div>	
+		</div>
+
+
+		<div id="headerTransDiv"> 
+			<p id="headerFirst"> First Name </p>
+			<p id="headerLast"> Last Name </p>
+			<p id="headerPhone"> Phone Number </p>
+			<p id="headerEmail"> Email Address </p>
+			<p id="headerOptions"> Options </p>
 		</div>
 		
-		<div id="contactList" style="overflow: auto">
+		<div id="contactList">
 <!--		All Contacts are falling here		-->
 		</div>
 
@@ -89,21 +100,30 @@
 </div>
 
 <script>
+	addEventListener("input", function(event) {
+		if (event.target.id == "searchText") {
+			searchContact();
+		}
+	});
 	// Get the modal
 	let modal = document.getElementById("myModal");
-	
+	let viewModal = document.getElementById("myModalView");
 	// Get the button that opens the modal
-	let btn = document.getElementById("myBtn");
+	let btn = document.getElementById("addButtonHeader");
 	
 	// Get the <span> element that closes the modal
 	let span = document.getElementsByClassName("close")[0];
+	let viewSpan = document.getElementsByClassName("close")[1];
 
 	// When the user clicks on the button, open the modal
 	btn.onclick = function() 
 	{
 	  modal.style.display = "block";
 	}
-	
+
+	viewSpan.onclick = function() {
+		viewModal.style.display = "none";
+	}
 	// When the user clicks on <span> (x), close the modal
 	span.onclick = function() 
 	{
@@ -114,10 +134,43 @@
 	window.onclick = function(event) 
 	{
 	  if (event.target == modal) {
-	    modal.style.display = "none";
+		  modal.style.display = "none";
+	  }
+	  if (event.target == viewModal) {
+		  viewModal.style.display = "none";
 	  }
 	}
 </script>
+<!-- <script>
+	// Get the modal
+	let modal = document.getElementById("myModalView");
+
+	// Get the button that opens the modal
+	let btn = document.getElementById("viewButton");
+
+	// Get the <span> element that closes the modal
+	let span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on the button, open the modal
+	btn.onclick = function()
+	{
+		modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function()
+	{
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event)
+	{
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+</script> -->
 
 </body>
 </html>

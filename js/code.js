@@ -2,6 +2,8 @@
 const urlBase = 'http://managemymiami4331.xyz/LAMPAPI'
 const extension = 'php';
 
+// 6/08/25, Time: 1:51pm, Pre-classes
+
 // Miami code
 
 let userId = 0;
@@ -31,6 +33,15 @@ function goToHomePage()
 function goToContactsPage()
 {
 	window.location.href = "Miami_ContactsPage.html"
+}
+
+function confirmDelete(ID)
+{
+	let result = confirm ("WARNING\nYou are about to delete a contact, which is a permanent action that cannot be undone.\nDo you want to delete this contact?");
+	if (result == true)
+	{
+		deleteContact(ID);
+	}
 }
 
 function checkFieldReg(firstName, lastName, userName, password)
@@ -119,7 +130,8 @@ function checkPhone()
 	return phoneFlag;
 }
 
-function clearResultModal() {
+function clearResultModal()
+{
   const element = document.activeElement.tagName;
 
   if (element == "INPUT")
@@ -195,8 +207,6 @@ function register()
 				LastName = jsonObject.LastName;
 
 				saveCookie();
-	
-				//window.location.href = "Miami_SignIn.html";
 
 				doLogout();
 			}
@@ -307,10 +317,10 @@ function readCookie()
 		}
 		else
 		{
-			window.location.href = "Miami_HomePage.html";
+			//window.location.href = "Miami_HomePage.html";
 		}
 	}
-	else /**/
+	else 
 	{
 		if (window.location.href == "http://managemymiami4331.xyz/Miami_AboutPage.html")
 		{
@@ -437,7 +447,10 @@ function searchContact()
 			{
 				document.getElementById("contactSearchResult").innerHTML = "Contacts(s) have been retrieved";
 				let jsonObject = JSON.parse( xhr.responseText );
-				
+				if (jsonObject.error != "") {
+					document.getElementById("contactSearchResult").innerHTML = jsonObject.error;
+					return;
+				}
 				for( let i=0; i<jsonObject.results.length; i++ )
 				{
 					//This Code is for debugging. Can be commented out.
@@ -453,35 +466,96 @@ function searchContact()
 					paraDiv.className = "contactDiv";
 					paraDiv.id = divID;
 					document.getElementById("contactList").appendChild(paraDiv);
-					let paraF = document.createElement("p");
+
+					let paraF = document.createElement("div");
 					paraF.innerHTML = current.FirstName;
 					paraF.id = "FirstName"+current.ID;
+					paraF.className = "colDiv";
+					//paraF.style.float = 'left';
+					paraF.style.display = "inline-block";
+					// paraF.style.borderStyle = "solid";
+					// paraF.style.borderColor = "#30C0B7";
+					paraF.style.width = "20%";
 					document.getElementById(divID).appendChild(paraF);
-					let paraL = document.createElement("p");
+
+					let paraL = document.createElement("div");
 					paraL.innerHTML = current.LastName;
 					paraL.id = "LastName"+current.ID;
+					paraL.className = "colDiv";
+					//paraL.style.float = 'left';
+					paraL.style.display = "inline-block";
+					// paraL.style.position = "relative";
+					// paraL.style.left = "60%";
+					// paraL.style.borderStyle = "solid";
+					// paraL.style.borderColor = "#30C0B7"
+					paraL.style.width = "20%";
 					document.getElementById(divID).appendChild(paraL);
-					let paraP = document.createElement("p");
+
+					let paraP = document.createElement("div");
 					paraP.innerHTML = current.Phone;
 					paraP.id = "PhoneNumber"+current.ID;
+					paraP.className = "colDiv";
+					paraP.style.display = "inline-block";
+					// paraP.style.position = "relative";
+					// paraP.style.left = "100%";
+					// paraP.style.borderStyle = "solid";
+					// paraP.style.borderColor = "#30C0B7"
+					paraP.style.width = "20%";
 					document.getElementById(divID).appendChild(paraP);
-					let paraE = document.createElement("p");
+
+					let paraE = document.createElement("div");
 					paraE.innerHTML = current.Email;
 					paraE.id = "EmailAddress" + current.ID;
+					paraE.className = "colDiv";
+					paraE.style.display = "inline-block";
+					// paraE.style.position = "relative";
+					// paraE.style.left = "150%";
+					// paraE.style.borderStyle = "solid";
+					// paraE.style.borderColor = "#30C0B7"
+					paraE.style.width = "20%";
+					paraE.style.overflow = "hidden";
+					paraE.style.textOverflow = "ellipsis";
 					document.getElementById(divID).appendChild(paraE);
+
+					let buttonContainer = document.createElement("div");
+					buttonContainer.className = "colDiv";
+					buttonContainer.id = "buttonContainer" + current.ID;
+					buttonContainer.style.display = "inline-block";
+					// buttonContainer.style.borderStyle = "solid";
+					// buttonContainer.style.borderColor = "#30C0B7"
+					buttonContainer.style.width = "19%";
+					document.getElementById(divID).appendChild(buttonContainer);
+
 					//Buttons
-					let EditButton = document.createElement("button");
-					EditButton.className = "editButton";
-					EditButton.innerHTML = "Edit";
-					EditButton.id = "e" + current.ID;
-					EditButton.setAttribute("onclick","editContactStartUp("+current.ID+")");
-					document.getElementById(divID).appendChild(EditButton);
+					let editButton = document.createElement("button");
+					editButton.className = "innerButtons";
+					editButton.innerHTML = "Edit";
+					editButton.id = "e" + current.ID;
+					//editButton.style.width = "8%";
+					// editButton.style.position = "absolute";
+					//editButton.style.left = "86%";
+					editButton.setAttribute("onclick","editContactStartUp("+current.ID+")");
+					document.getElementById(buttonContainer.id).appendChild(editButton);
+					
 					let deleteButton = document.createElement("button");
-					deleteButton.className = "deleteButton";
+					deleteButton.className = "innerButtons";
 					deleteButton.innerHTML = "Delete";
 					deleteButton.id = "d" + current.ID;
-					deleteButton.setAttribute("onclick", "deleteContact("+current.ID+")");
-					document.getElementById(divID).appendChild(deleteButton);
+					deleteButton.style.width = "fit-content"
+					///deleteButton.style.width = "8%";
+					// deleteButton.style.position = "absolute";
+					//deleteButton.style.left = "95%";
+					deleteButton.setAttribute("onclick", "confirmDelete("+current.ID+")");
+					document.getElementById(buttonContainer.id).appendChild(deleteButton);
+
+					let viewButtton = document.createElement("button");
+					viewButtton.className = "innerButtons";
+					viewButtton.innerHTML = "View";
+					viewButtton.id = "v"+current.ID;
+					viewButtton.setAttribute("onclick", "viewContact(" + current.ID +")");
+					document.getElementById(buttonContainer.id).appendChild(viewButtton);
+
+
 					//For the debugger
 					if( i < jsonObject.results.length - 1 )
 					{
@@ -506,6 +580,7 @@ function editContactStartUp(ID) {
 		//probably should post and error or something
 		return;
 	}
+	document.getElementById("v"+ID).style.display = "none";
 	let firstName = document.getElementById("FirstName"+ID);
 	let lastName = document.getElementById("LastName"+ID);
 	let phoneNumber = document.getElementById("PhoneNumber"+ID);
@@ -515,26 +590,45 @@ function editContactStartUp(ID) {
 	editButton.setAttribute("onclick","editContactSave("+ID+")");
 	deleteButton.setAttribute("onclick","editContactCancel("+ID+")");
 
+	let holderdivFN = document.createElement("div");
+	let holderdivLN = document.createElement("div");
+	let holderdivP = document.createElement("div");
+	let holderdivE = document.createElement("div");
+	holderdivFN.className = "Entry"
+	holderdivLN.className = "Entry"
+	holderdivE.className = "Entry"
+	holderdivP.className = "Entry"
+	holderdivFN.id = "firstNameH";
+	holderdivLN.id = "lastNameH";
+	holderdivE.id = "emailH";
+	holderdivP.id = "phoneH";
 	let editFN = document.createElement("input");
 	editFN.type = "text";
 	editFN.value = firstName.innerHTML;
 	editFN.id = "FirstNameEdit";
-	firstName.replaceWith(editFN);
+	holderdivFN.appendChild(editFN);
+	firstName.replaceWith(holderdivFN)
+
 	let editLN = document.createElement("input");
 	editLN.type = "text";
 	editLN.value = lastName.innerHTML;
 	editLN.id = "LastNameEdit";
-	lastName.replaceWith(editLN);
+	holderdivLN.appendChild(editLN);
+	lastName.replaceWith(holderdivLN);
+
 	let editP = document.createElement("input");
 	editP.type = "text";
 	editP.value = phoneNumber.innerHTML;
 	editP.id = "PhoneEdit";
-	phoneNumber.replaceWith(editP);
+	holderdivP.appendChild(editP);
+	phoneNumber.replaceWith(holderdivP);
 	let editE= document.createElement("input");
 	editE.type = "text";
 	editE.value = emailAddress.innerHTML;
 	editE.id = "EmailEdit";
-	emailAddress.replaceWith(editE);
+	holderdivE.appendChild(editE);
+	emailAddress.replaceWith(holderdivE);
+
 
 	editButton.innerHTML = "Save"
 	deleteButton.innerHTML = "Cancel";
@@ -609,4 +703,21 @@ function deleteContact(ID) {
 	} catch {
 		document.getElementById("contactSearchResult").innerHTML = "RIP";
 	}
+}
+
+function viewContact(ID) {
+	if (document.getElementById("FirstNameEdit")) {
+		return;
+	}
+	let modal = document.getElementById("myModalView");
+	let firstNameData = document.getElementById("FirstName"+ID).innerHTML;
+	let lastNameData = document.getElementById("LastName"+ID).innerHTML;
+	let phoneNumberData = document.getElementById("PhoneNumber"+ID).innerHTML;
+	let emailAddressData = document.getElementById("EmailAddress"+ID).innerHTML;
+
+	document.getElementById("firstNameView").innerHTML = firstNameData;
+	document.getElementById("lastNameView").innerHTML = lastNameData;
+	document.getElementById("phoneView").innerHTML = phoneNumberData;
+	document.getElementById("emailView").innerHTML = emailAddressData;
+	modal.style.display = "block";
 }
