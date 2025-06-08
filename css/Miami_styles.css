@@ -645,7 +645,7 @@ input[type="text"],input[type="password"]{
 
     left: 0;
     margin-left: 77%;
-    margin-top: 1.1%;
+    margin-top: 1.15%;
 
     border-radius: 15px;
     cursor: pointer;
@@ -845,7 +845,7 @@ select{
     left: 0;
     margin-left: 68%;
     position: absolute;
-    margin-top: 1.1%;
+    margin-top: 1.15%;
 
     border-radius: 15px;
     cursor: pointer;
