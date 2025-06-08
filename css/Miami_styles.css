@@ -990,12 +990,50 @@ select{
     font-size: 1.6vw;
 }
 
-.textEntries
-{
-    font-size: 1vw;
-    text-align: center;
-    display: inline-block;
-    width: 15%;
+#firstNameView {
+
 }
 
+#lastNameView {
 
+}
+
+#emailView {
+
+}
+
+#phoneView {
+
+}
+
+#FirstNameEdit {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    width: 15%;
+    height: 50%;
+}
+
+#LastNameEdit {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    width: 15%;
+    height: 50%;
+}
+
+#PhoneEdit {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    width: 15%;
+    height: 50%;
+}
+
+#EmailEdit {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    width: 15%;
+    height: 50%;
+}
