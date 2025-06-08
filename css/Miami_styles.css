@@ -561,7 +561,7 @@ img.aboutImage
 {
     display: inline-block;
 	font-size: 20px;
-    max-width: auto;
+    width: 30%;
 
     margin-left: 10%;
 	margin-right: 0%;
