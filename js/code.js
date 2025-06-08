@@ -671,3 +671,7 @@ function deleteContact(ID) {
 		document.getElementById("contactSearchResult").innerHTML = "RIP";
 	}
 }
+
+function viewContact() {
+	
+}
