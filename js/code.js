@@ -93,9 +93,9 @@ function checkPhone()
 {
 	let phoneFlag = 1; // if 0 invalid email, if 1 valid email
 	let phoneNumber = document.getElementById("addPhoneNumber");
-	let phoneNumRequirements = /[0-9]/g;
+	let phoneNumRequirements = /^\d+$/;
 
-	if (!phoneNumber.value.test(phoneNumRequirements))
+	if (!phoneNumRequirements.test(phoneNumber.value))
 	{
 		document.getElementById("contactAddResult").innerHTML = "Invalid Phone Number";
 		phoneFlag = 0;
