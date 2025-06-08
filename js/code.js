@@ -33,7 +33,7 @@ function goToContactsPage()
 	window.location.href = "Miami_ContactsPage.html"
 }
 
-function confirmDelete()
+function confirmDelete("+current.ID+")
 {
 	let result = confirm ("<b>WARNING<b>\nYou are about to delete a contact, which is a permanent action that cannot be undone.\n<b>Do you want to delete this contact?<b>");
 	if (confirm == TRUE)
@@ -508,7 +508,7 @@ function searchContact()
 					deleteButton.className = "deleteButton";
 					deleteButton.innerHTML = "Delete";
 					deleteButton.id = "d" + current.ID;
-					deleteButton.setAttribute("onclick", confirmDelete());
+					deleteButton.setAttribute("onclick", confirmDelete("+current.ID+"));
 					// deleteButton.setAttribute("onclick", "deleteContact("+current.ID+")");
 					document.getElementById(divID).appendChild(deleteButton);
 					
