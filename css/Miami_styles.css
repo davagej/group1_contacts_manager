@@ -558,12 +558,20 @@ img.aboutImage
 {
     position: absolute;
     display: inline-block;
-	font-size: 20px;
-    max-width: fit-content;
+	/*font-size: 3vh;*/
+    /*max-width: fit-content;*/
+    width: 20%;
+    height: 70%;
     
-    left: 0;
-    margin-left: 80%;
+    right: 0%;
+    /*margin-left: 80%;*/
     margin-top: 1%;
+}
+#searchText::placeholder
+{
+   /* position: absolute;
+    top:50%;*/
+    font-size: 1.6vw;
 }
 
 #colorText
