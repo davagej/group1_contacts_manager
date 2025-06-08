@@ -33,41 +33,45 @@ function goToContactsPage()
 	window.location.href = "Miami_ContactsPage.html"
 }
 
-function checkField(UserName, Password, PhoneNum, Email)
+function checkFieldReg(firstName, lastName, userName, password)
 {
-	//FirstName = document.getElementById("enterFirstName").value;
 	let flag = 1; // if 0 fields are empty, if 1 they are not empty 
 
-	if (FirstName == "")
+	if (firstName == "")
 	{
     document.getElementById("firstNamePosition").classList.add("invalid");
     flag = 0;
 	}
 
-	if (LastName == "")
+	if (lastName == "")
 	{
     document.getElementById("lastNamePosition").classList.add("invalid");
     flag = 0;
 	}
 
-	if (UserName == "")
+	if (userName == "")
 	{
     document.getElementById("usernamePosition").classList.add("invalid");
     flag = 0;
 	}
 
-	if (Password == "")
+	if (password == "")
 	{
     document.getElementById("passwordPosition").classList.add("invalid");
     flag = 0;
 	}
 
-	if (PhoneNum == "" || Email == "")
+	return flag;
+}
+
+function checkFieldAddContact(firstName, lastName, phoneNum, email)
+{
+	if (firstName == "" || lastName == "" || phoneNum == "" || email == "")
 	{
-		flag = 0;
+		return 0;
 	}
 
-	return flag;
+	return 1;
 }
 
 function checkEmail()
@@ -96,17 +100,19 @@ function checkPhone()
 		document.getElementById("contactAddResult").innerHTML = "Invalid Phone Number";
 		phoneFlag = 0;
 	}
-
-	if(phoneNumber.value.length > 10) 
-  {
-    document.getElementById("contactAddResult").innerHTML = "Phone Number Has too Many Digits";
-		phoneFlag = 0;
-  }
-  else if (phoneNumber.value.length < 10)
-  {
-  	document.getElementById("contactAddResult").innerHTML = "Phone Number Has Not Enough Digits";
-		phoneFlag = 0;
-  }
+	else
+	{
+		if(phoneNumber.value.length > 10) 
+	  {
+	    document.getElementById("contactAddResult").innerHTML = "Phone Number Has too Many Digits";
+			phoneFlag = 0;
+	  }
+	  else if (phoneNumber.value.length < 10)
+	  {
+	  	document.getElementById("contactAddResult").innerHTML = "Phone Number Has Not Enough Digits";
+			phoneFlag = 0;
+	  }
+	}
 
 	return phoneFlag;
 }
@@ -143,7 +149,7 @@ function register()
 	let numberInvalid = number.classList.contains("invalid");
 	let lengthInvalid = length.classList.contains("invalid");
 
-	if (checkField(UserName, Password, -1, -1) == 0)
+	if (checkFieldReg(FirstName, LastName, UserName, Password) == 0)
 	{
 		document.getElementById("loginResult").innerHTML = "Please Fill in Empty Fields";
 		return;
@@ -348,7 +354,7 @@ function addContact()
 	
 	document.getElementById("contactAddResult").innerHTML = "";
 
-	if (checkField(-1, -1, addPhoneNumber, addEmailAddress) == 0)
+	if (checkFieldAddContact(addFirstName, addLastName, addPhoneNumber, addEmailAddress) == 0)
 	{
 		document.getElementById("contactAddResult").innerHTML = "Please Fill in Empty Fields";
 		return;
