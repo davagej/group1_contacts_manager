@@ -541,6 +541,7 @@ function searchContact()
 					viewButtton.innerHTML = "View";
 					viewButtton.id = "v"+current.ID;
 					viewButtton.setAttribute("onclick", "viewContact(" + current.ID +")");
+					document.getElementById(divID).appendChild(viewButtton);
 
 
 					//For the debugger
@@ -681,5 +682,5 @@ function deleteContact(ID) {
 }
 
 function viewContact(ID) {
-	
+
 }
