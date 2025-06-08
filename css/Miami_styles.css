@@ -626,8 +626,10 @@ input[type="text"],input[type="password"]{
 
     margin-left: 0%;
 	margin-right: 0%;
-    margin-top: 1%;
+    margin-top: 0%;
 	margin-bottom: 0%;
+
+    vertical-align: middle;
 
     font-family: 'Poppins', sans-serif;
     color: white;	
@@ -642,7 +644,9 @@ input[type="text"],input[type="password"]{
     margin-left: 0%;
 	margin-right: 0%;
     margin-top: 0%;
-	margin-bottom: 3%;
+	margin-bottom: 0%;
+
+    vertical-align: middle;
 }
 
 #contactSearchResult
@@ -652,7 +656,9 @@ input[type="text"],input[type="password"]{
     margin-left: 0%;
 	margin-right: 0%;
     margin-top: 0%;
-	margin-bottom: 3%;
+	margin-bottom: 0%;
+
+    vertical-align: middle;
 }
 
 #loginResult
@@ -838,6 +844,8 @@ select{
 	margin-right: 0%;
     margin-top: 0%;
 	margin-bottom: 0%;
+
+    vertical-align: middle;
 
     border-radius: 15px;
     cursor: pointer;
