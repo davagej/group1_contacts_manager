@@ -563,7 +563,7 @@ img.aboutImage
     
     left: 0%;
     margin-left: 80%;
-    /* vertical-align: 50%; */
+    vertical-align: middle;
 }
 
 #colorText
@@ -644,10 +644,10 @@ input[type="text"],input[type="password"]{
     font-family: 'Poppins', sans-serif; 
     max-width: fit-content;
     align-content: center;
+    vertical-align: middle;
 
     left: 0%;
     margin-left: 77%;
-    /* vertical-align: middle; */
 
     border-radius: 15px;
     cursor: pointer;
@@ -848,6 +848,7 @@ select{
     margin-left: 68%;
     position: absolute;
     align-content: center;
+    vertical-align: middle;
 
     border-radius: 15px;
     cursor: pointer;
