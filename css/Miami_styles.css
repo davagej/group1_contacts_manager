@@ -270,8 +270,8 @@ button.navBorder:hover
     height: 10%;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    /* align-items: center; */
 }
 
 #contactList
