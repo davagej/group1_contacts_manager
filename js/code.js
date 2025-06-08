@@ -515,26 +515,32 @@ function searchContact()
 
 					//Buttons
 					let editButton = document.createElement("button");
-					editButton.className = "editButton buttons";
+					editButton.className = " innerButtons";
 					editButton.innerHTML = "Edit";
 					editButton.id = "e" + current.ID;
-					editButton.style.width = "8%";
+					//editButton.style.width = "8%";
 					// editButton.style.position = "absolute";
-					editButton.style.left = "86%";
+					//editButton.style.left = "86%";
 					editButton.setAttribute("onclick","editContactStartUp("+current.ID+")");
 					document.getElementById(divID).appendChild(editButton);
 					
 					let deleteButton = document.createElement("button");
-					deleteButton.className = "deleteButton buttons";
+					deleteButton.className = "innerButtons";
 					deleteButton.innerHTML = "Delete";
 					deleteButton.id = "d" + current.ID;
-					deleteButton.style.width = "8%";
+					///deleteButton.style.width = "8%";
 					// deleteButton.style.position = "absolute";
-					deleteButton.style.left = "95%";
+					//deleteButton.style.left = "95%";
 					deleteButton.setAttribute("onclick", "confirmDelete("+current.ID+")");
-					// deleteButton.setAttribute("onclick", "deleteContact("+current.ID+")");
 					document.getElementById(divID).appendChild(deleteButton);
-					
+
+					let viewButtton = document.createElement("button");
+					viewButtton.className = "innerButtons";
+					viewButtton.innerHTML = "View";
+					viewButtton.id = "v"+current.ID;
+					viewButtton.setAttribute("onclick", "viewContact(" + current.ID +")");
+
+
 					//For the debugger
 					if( i < jsonObject.results.length - 1 )
 					{
@@ -672,6 +678,6 @@ function deleteContact(ID) {
 	}
 }
 
-function viewContact() {
-	
+function viewContact(ID) {
+
 }
