@@ -311,8 +311,8 @@ button.navBorder:hover
 	background-image: linear-gradient(#FD8083, #EE227D);
     margin: auto;
     word-wrap: break-word;
-    width: 30vw;
-    height: 30vw; 
+    width: 15vw;
+    /*height: 30vw; */
     padding: 2%;
 }
 
