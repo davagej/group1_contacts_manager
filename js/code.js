@@ -594,10 +594,10 @@ function editContactStartUp(ID) {
 	let holderdivLN = document.createElement("div");
 	let holderdivP = document.createElement("div");
 	let holderdivE = document.createElement("div");
-	holderdivFN.className = "colDiv";
-	holderdivLN.className = "colDiv";
-	holderdivP.className = "colDiv";
-	holderdivE.className = "colDiv";
+	holderdivFN.className = "Entry"
+	holderdivLN.className = "Entry"
+	holderdivE.className = "Entry"
+	holderdivP.className = "Entry"
 	holderdivFN.id = "firstNameH";
 	holderdivLN.id = "lastNameH";
 	holderdivE.id = "emailH";

@@ -1011,7 +1011,7 @@ select{
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     font-size: 2vh;
-    width: 15%;
+    width: 40%;
     height: 50%;
 }
 
@@ -1019,7 +1019,7 @@ select{
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     font-size: 2vh;
-    width: 15%;
+    width: 40%;
     height: 50%;
 }
 
@@ -1027,14 +1027,23 @@ select{
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     font-size: 2vh;
-    width: 15%;
+    width: 40%;
     height: 50%;
 }
 
 #EmailEdit {
     display: inline-block;
+    position: relative;
+    right: 50%;
     font-family: 'Poppins', sans-serif;
     font-size: 2vh;
-    width: 15%;
+    width: 40%;
     height: 50%;
+}
+
+.Entry {
+    display: inline-block;
+    align-content: center;
+    outline: #3B0855 solid 3px;
+
 }
