@@ -590,22 +590,22 @@ img.aboutImage
 #addFirstName
 {
 	position: absolute; 
-    top: 20%;
+    top: 15%;
 }
 #addLastName
 {
 	position: absolute; 
-    top: 40%;
+    top: 35%;
 }
 #addPhoneNumber
 {
 	position: absolute;
-    top: 60%;
+    top: 55%;
 }
 #addEmailAddress
 {
 	position: absolute; 
-    top: 80%;
+    top: 75%;
 }
 
 #searchText
@@ -637,7 +637,7 @@ img.aboutImage
 }
 
 input[type="text"],input[type="password"]{
-    border-radius: 25px;
+    border-radius: 25px; 
     text-align: center;
     width: 90%;
     font-size: 2vw;
@@ -919,15 +919,16 @@ select{
     background-color: white;
     color: black;
 	font-size: 2vh;
-/*     font-size: 1.6vw; */
+    /*font-size: 1.6vw; */
     font-family: 'Poppins', sans-serif; 
 
-    left: 70%;
+    left: 73%;
     height: 70%;
+    text-align: center;
     /*margin-left: 68%;*/
     position: absolute;
     margin-top: 1.18%;
-	width: 5%;
+	width: 6%;
 
     border-radius: 15px;
     cursor: pointer;
