@@ -577,6 +577,7 @@ function editContactStartUp(ID) {
 		//probably should post and error or something
 		return;
 	}
+	document.getElementById("v"+ID).style.display = "none";
 	let firstName = document.getElementById("FirstName"+ID);
 	let lastName = document.getElementById("LastName"+ID);
 	let phoneNumber = document.getElementById("PhoneNumber"+ID);
@@ -620,6 +621,7 @@ function editContactStartUp(ID) {
 }
 
 function editContactSave(ID) {
+	document.getElementById("v"+ID).style.display = "block";
 	let firstName = document.getElementById("FirstNameEdit").value;
 	let lastName = document.getElementById("LastNameEdit").value;
 	let phoneNumber = document.getElementById("PhoneEdit").value;
@@ -691,15 +693,18 @@ function deleteContact(ID) {
 }
 
 function viewContact(ID) {
-let modal = document.getElementById("myModalView");
-let firstNameData = document.getElementById("FirstName"+ID).innerHTML;
-let lastNameData = document.getElementById("LastName"+ID).innerHTML;
-let phoneNumberData = document.getElementById("PhoneNumber"+ID).innerHTML;
-let emailAddressData = document.getElementById("EmailAddress"+ID).innerHTML;
+	if (document.getElementById("FirstNameEdit")) {
+		return;
+	}
+	let modal = document.getElementById("myModalView");
+	let firstNameData = document.getElementById("FirstName"+ID).innerHTML;
+	let lastNameData = document.getElementById("LastName"+ID).innerHTML;
+	let phoneNumberData = document.getElementById("PhoneNumber"+ID).innerHTML;
+	let emailAddressData = document.getElementById("EmailAddress"+ID).innerHTML;
 
-document.getElementById("firstNameView").innerHTML = firstNameData;
-document.getElementById("lastNameView").innerHTML = lastNameData;
-document.getElementById("phoneView").innerHTML = phoneNumberData;
-document.getElementById("emailView").innerHTML = emailAddressData;
-modal.style.display = "block";
+	document.getElementById("firstNameView").innerHTML = firstNameData;
+	document.getElementById("lastNameView").innerHTML = lastNameData;
+	document.getElementById("phoneView").innerHTML = phoneNumberData;
+	document.getElementById("emailView").innerHTML = emailAddressData;
+	modal.style.display = "block";
 }
