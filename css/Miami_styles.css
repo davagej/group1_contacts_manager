@@ -323,8 +323,8 @@ button.navBorder:hover
 /*     background-color: #EE227D; */
 	background-image: linear-gradient(#FD8083, #EE227D);
     word-wrap: break-word;
-    width: 15vw;
-    /*height: 38vh;*/
+    width: 38vh;
+    height: 38vh;
 }
 
 #circleAboutPosition1 
