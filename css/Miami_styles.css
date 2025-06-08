@@ -311,8 +311,8 @@ button.navBorder:hover
 	background-image: linear-gradient(#FD8083, #EE227D);
     margin: auto;
     word-wrap: break-word;
-    width: 6vw;
-    /*height: 30vw; */
+    width: 30vw;
+    height: 30vw; 
     padding: 2%;
 }
 
@@ -645,7 +645,7 @@ input[type="text"],input[type="password"]{
 
     left: 0;
     margin-left: 77%;
-    margin-top: 1.1%;
+    margin-top: 1.2%;
 
     border-radius: 15px;
     cursor: pointer;
@@ -845,7 +845,7 @@ select{
     left: 0;
     margin-left: 68%;
     position: absolute;
-    margin-top: 1.1%;
+    margin-top: 1.2%;
 
     border-radius: 15px;
     cursor: pointer;
