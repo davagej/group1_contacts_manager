@@ -846,7 +846,7 @@ select{
     margin-top: 0%;
 	margin-bottom: 0%;
 
-    /* vertical-align: middle; */
+    vertical-align: 50%;
 
     border-radius: 15px;
     cursor: pointer;
