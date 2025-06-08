@@ -559,6 +559,7 @@ img.aboutImage
 
 #searchText
 {
+    position: absolute;
     display: inline-block;
 	font-size: 20px;
     max-width: fit-content;
@@ -646,6 +647,7 @@ input[type="text"],input[type="password"]{
 
 #searchContactButton
 {
+    position: absolute;
     display: inline-block;
 	border: none;
     background-color: white;
@@ -653,8 +655,8 @@ input[type="text"],input[type="password"]{
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
     max-width: fit-content;
-    /* max-block-size: 20%; */
-    max-inline-size: 20%;
+    max-block-size: 20%;
+    /* max-inline-size: 20%; */
 
     margin-left: 0%;
 	margin-right: 0%;
@@ -865,6 +867,7 @@ select{
 
     vertical-align: 50%;
     max-block-size: 10%;
+    position: absolute;
 
     border-radius: 15px;
     cursor: pointer;
