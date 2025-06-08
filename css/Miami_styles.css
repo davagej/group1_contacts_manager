@@ -850,11 +850,12 @@ select{
 	border: none;
     background-color: white;
     color: black;
-    font-size: 20px;
+    font-size: 1.6vw;
     font-family: 'Poppins', sans-serif; 
 
-    left: 0;
-    margin-left: 68%;
+    left: 66%;
+    height: 70%;
+    /*margin-left: 68%;*/
     position: absolute;
     margin-top: 1.1%;
 
