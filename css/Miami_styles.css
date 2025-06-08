@@ -622,12 +622,12 @@ input[type="text"],input[type="password"]{
     text-align: left;
     position: relative;
 
-    max-height: min-content;
+    max-height: fit-content;
     max-width: fit-content;
     max-block-size: 35%;
     max-inline-size: 35%;
 
-    vertical-align: super;
+    /* vertical-align: super; */
 
     font-family: 'Poppins', sans-serif;
     color: white;	
