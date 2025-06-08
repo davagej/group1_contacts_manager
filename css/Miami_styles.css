@@ -642,15 +642,22 @@ input[type="text"],input[type="password"]{
 #searchContactButton
 {
     display: inline-block;
-    width: auto;
+	border: none;
+    background-color: white;
+    color: black;
     font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+    width: auto;
 
-    margin-left: 0%;
+    margin-left: 10%;
 	margin-right: 0%;
     margin-top: 0%;
 	margin-bottom: 0%;
 
     vertical-align: 50%;
+
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 #contactSearchResult
