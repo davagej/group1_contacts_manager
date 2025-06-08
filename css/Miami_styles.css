@@ -315,6 +315,20 @@ button.navBorder:hover
     text-align: center;
 }
 
+.innerButtons
+{
+    font-size: 1.6vw;
+    border-radius: 25px;
+    width: 25%; /**/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.innerButtons:hover{
+    background-color: #30C0B7;
+    color: #FFFFFF;
+    /*opacity: 50%;*/
+}
+
 /*.editButton
 {
     position: relative;
@@ -987,7 +1001,7 @@ select{
 }
 #emailView
 {
-    
+
 }
 
 
