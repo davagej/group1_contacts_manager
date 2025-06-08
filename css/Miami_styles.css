@@ -621,7 +621,7 @@ input[type="text"],input[type="password"]{
     font-size: 20px;
     text-align: left;
 
-    max-height: fit-content;
+    max-height: min-content;
     max-width: fit-content;
     max-block-size: 35%;
     max-inline-size: 35%;
@@ -843,7 +843,7 @@ select{
     font-family: 'Poppins', sans-serif; 
 
     left: 0%;
-    margin-left: 70%;
+    margin-left: 68%;
     position: absolute;
 
     border-radius: 15px;
