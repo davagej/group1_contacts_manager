@@ -788,13 +788,16 @@ select{
 }
 
 #contactAddResult{
+    position: absolute;
     display: block;
-    font-size: 0.8em;
+    font-size: 1.1vw;
     width: 90%;
     text-align: center;
-    margin-left: 5%;
-    margin-top: 2%;
-    margin-bottom: 1%;
+    /*margin-left: 5%;*/
+    /*margin-top: 2%;
+    margin-bottom: 1%;*/
+    right: 4.7%;
+    bottom: 0%;
     font-family: 'Poppins', sans-serif;
     color: #95060a;
 }
@@ -945,7 +948,7 @@ select{
 #addButton
 {
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
 }
 
 #addButton:hover 
@@ -1033,8 +1036,6 @@ select{
 
 #EmailEdit {
     display: inline-block;
-    position: relative;
-    right: 50%;
     font-family: 'Poppins', sans-serif;
     font-size: 2vh;
     width: 40%;
