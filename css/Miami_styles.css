@@ -562,7 +562,7 @@ img.aboutImage
     
     left: 0%;
     margin-left: 80%;
-    vertical-align: 50%;
+    /*vertical-align: 50%;*/
 }
 
 #colorText
