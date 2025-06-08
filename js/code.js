@@ -35,7 +35,11 @@ function goToContactsPage()
 
 function confirmDelete()
 {
-	return confirm ("<b>WARNING<b>\nYou are about to delete a contact, which is a permanent action that cannot be undone.\n<b>Do you want to delete this contact?<b>");
+	let result = confirm ("<b>WARNING<b>\nYou are about to delete a contact, which is a permanent action that cannot be undone.\n<b>Do you want to delete this contact?<b>");
+	if (confirm == TRUE)
+	{
+		deleteContact("+current.ID+");
+	}
 }
 
 function checkFieldReg(firstName, lastName, userName, password)
@@ -498,12 +502,15 @@ function searchContact()
 					EditButton.id = "e" + current.ID;
 					EditButton.setAttribute("onclick","editContactStartUp("+current.ID+")");
 					document.getElementById(divID).appendChild(EditButton);
+					
 					let deleteButton = document.createElement("button");
 					deleteButton.className = "deleteButton";
 					deleteButton.innerHTML = "Delete";
 					deleteButton.id = "d" + current.ID;
-					deleteButton.setAttribute("onclick", "deleteContact("+current.ID+")");
+					deleteButton.setAttribute("onclick", confirmDelete());
+					// deleteButton.setAttribute("onclick", "deleteContact("+current.ID+")");
 					document.getElementById(divID).appendChild(deleteButton);
+					
 					//For the debugger
 					if( i < jsonObject.results.length - 1 )
 					{
