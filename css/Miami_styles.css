@@ -311,8 +311,8 @@ button.navBorder:hover
 	background-image: linear-gradient(#FD8083, #EE227D);
     margin: auto;
     word-wrap: break-word;
-    width: 30vw;
-    height: 30vw; 
+    width: 6vw;
+    /*height: 30vw; */
     padding: 2%;
 }
 
@@ -324,7 +324,7 @@ button.navBorder:hover
 	background-image: linear-gradient(#FD8083, #EE227D);
     word-wrap: break-word;
     width: 38vw;
-    /*height: 38vh;*/
+    height: 38vh;
 }
 
 #circleAboutPosition1 
