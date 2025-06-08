@@ -596,8 +596,8 @@ function editContactStartUp(ID) {
 	editFN.value = firstName.innerHTML;
 	editFN.id = "FirstNameEdit";
 	editFN.style.display = "inline-block";
-	firstName.appendChild(editFN);
-	
+	firstName.replaceWith(editFN);
+
 	let editLN = document.createElement("input");
 	editLN.className = "textEntries";
 	editLN.type = "text";
