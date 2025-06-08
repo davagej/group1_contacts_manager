@@ -585,6 +585,7 @@ img.aboutImage
 {
     position: absolute;
     display: inline-block;
+	text-align: center;
 	/*font-size: 3vh;*/
     /*max-width: fit-content;*/
     width: 20%;
@@ -599,7 +600,7 @@ img.aboutImage
    /* position: absolute;
     top:50%;*/
 	font-size: 2vh;
-	vertical-align: baseline;
+/* 	vertical-align: baseline; */
 /*     font-size: 1.6vw; */
 }
 
