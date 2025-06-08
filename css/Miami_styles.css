@@ -561,9 +561,10 @@ img.aboutImage
 {
     display: inline-block;
 	font-size: 20px;
+    text-align: right;
     width: 30%;
 
-    margin-left: 10%;
+    margin-left: 0%;
 	margin-right: 0%;
     margin-top: 0%;
 	margin-bottom: 0%;
