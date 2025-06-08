@@ -511,6 +511,8 @@ function searchContact()
 					// paraE.style.borderStyle = "solid";
 					// paraE.style.borderColor = "#30C0B7"
 					paraE.style.width = "20%";
+					paraE.style.overflow = "hidden";
+					paraE.style.textOverflow = "ellipsis";
 					document.getElementById(divID).appendChild(paraE);
 
 					//Buttons
