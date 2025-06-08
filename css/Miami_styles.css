@@ -626,7 +626,7 @@ input[type="text"],input[type="password"]{
     max-block-size: 35%;
     max-inline-size: 35%;
 
-    vertical-align: auto;
+    vertical-align: 0%;
 
     font-family: 'Poppins', sans-serif;
     color: white;	
@@ -644,7 +644,7 @@ input[type="text"],input[type="password"]{
     max-width: fit-content;
 
     left: 0%;
-    margin-left: 75%;
+    margin-left: 80%;
     /* vertical-align: middle; */
 
     border-radius: 15px;
@@ -843,7 +843,7 @@ select{
     font-family: 'Poppins', sans-serif; 
 
     left: 0%;
-    margin-left: 65%;
+    margin-left: 75%;
     position: absolute;
 
     border-radius: 15px;
