@@ -95,7 +95,7 @@ function checkPhone()
 	let phoneNumber = document.getElementById("addPhoneNumber");
 	let phoneNumRequirements = /[0-9]/g;
 
-	if (!phoneNumber.value.match(phoneNumRequirements))
+	if (!phoneNumber.value.test(phoneNumRequirements))
 	{
 		document.getElementById("contactAddResult").innerHTML = "Invalid Phone Number";
 		phoneFlag = 0;
