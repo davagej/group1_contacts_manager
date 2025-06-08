@@ -80,6 +80,7 @@ function checkEmail()
 	let email = document.getElementById("addEmailAddress");
 	let emailRequirements = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+	// if email doesnt follow in something@something.something format
 	if (!email.value.match(emailRequirements))
 	{
 		document.getElementById("contactAddResult").innerHTML = "Invalid email";
@@ -95,6 +96,7 @@ function checkPhone()
 	let phoneNumber = document.getElementById("addPhoneNumber");
 	let phoneNumRequirements = /^\d+$/;
 
+	// if phone contains non-digits
 	if (!phoneNumRequirements.test(phoneNumber.value))
 	{
 		document.getElementById("contactAddResult").innerHTML = "Invalid Phone Number";
