@@ -320,7 +320,7 @@ button.navBorder:hover
     font-size: 1.6vw;
     border-radius: 25px;
     width: 25%; /**/
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
@@ -479,7 +479,7 @@ img.aboutImage
     /*margin-left: 35%;*/
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .buttons:hover{
@@ -641,7 +641,7 @@ input[type="text"],input[type="password"]{
     font-size: 2vw;
     /*margin-left: 10%;*/
     /*margin-bottom: 2%;*/
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #inner-title{
@@ -749,7 +749,7 @@ input[type="text"],input[type="password"]{
     text-align: center;
     margin-left: 5%;
     margin-top: 15%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: black;
 }
 
@@ -761,7 +761,7 @@ input[type="text"],input[type="password"]{
     text-align: center;
     margin-left: 5%;
     margin-bottom: 2%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #95060a;
 }
 
@@ -778,7 +778,7 @@ select{
     margin-left: 35%;
     margin-top: 2%;
     font-size: 0.75em;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #colorSearchResult{
@@ -793,7 +793,7 @@ select{
     margin-left: 5%;
     margin-top: 2%;
     margin-bottom: 1%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #95060a;
 }
 
