@@ -564,9 +564,9 @@ img.aboutImage
 	font-size: 20px;
     max-width: fit-content;
     
-    left: auto;
+    left: 0%;
     margin-left: 70%;
-    vertical-align: 50%;
+    /* vertical-align: 50%; */
 }
 
 #colorText
@@ -646,9 +646,9 @@ input[type="text"],input[type="password"]{
     font-family: 'Poppins', sans-serif; 
     max-width: fit-content;
 
-    left: auto;
+    left: 0%;
     margin-left: 75%;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 
     border-radius: 15px;
     cursor: pointer;
@@ -845,7 +845,7 @@ select{
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
 
-    left: auto;
+    left: 0%;
     margin-left: 50%;
     position: absolute;
 
