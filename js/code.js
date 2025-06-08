@@ -479,6 +479,8 @@ function searchContact()
 					paraL.style.display = "inline-block";
 					// paraL.style.position = "relative";
 					// paraL.style.left = "60%";
+					paraL.style.borderStyle = "solid";
+					paraL.style.borderColor = "#30C0B7"
 					document.getElementById(divID).appendChild(paraL);
 
 					let paraP = document.createElement("div");
@@ -487,6 +489,8 @@ function searchContact()
 					paraP.style.display = "inline-block";
 					// paraP.style.position = "relative";
 					// paraP.style.left = "100%";
+					paraP.style.borderStyle = "solid";
+					paraP.style.borderColor = "#30C0B7"
 					document.getElementById(divID).appendChild(paraP);
 
 					let paraE = document.createElement("div");
@@ -495,6 +499,8 @@ function searchContact()
 					paraE.style.display = "inline-block";
 					// paraE.style.position = "relative";
 					// paraE.style.left = "150%";
+					paraE.style.borderStyle = "solid";
+					paraE.style.borderColor = "#30C0B7"
 					document.getElementById(divID).appendChild(paraE);
 
 					//Buttons
