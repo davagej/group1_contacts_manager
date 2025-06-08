@@ -33,33 +33,38 @@ function goToContactsPage()
 	window.location.href = "Miami_ContactsPage.html"
 }
 
-function checkField(UserName, Password)
+function checkField(UserName, Password, PhoneNum, Email)
 {
 	//FirstName = document.getElementById("enterFirstName").value;
-	let flag = 0;
+	let flag = 1; // if 0 fields are empty, if 1 they are not empty 
 
 	if (FirstName == "")
 	{
     document.getElementById("firstNamePosition").classList.add("invalid");
-    flag = 1;
+    flag = 0;
 	}
 
 	if (LastName == "")
 	{
     document.getElementById("lastNamePosition").classList.add("invalid");
-    flag = 1;
+    flag = 0;
 	}
 
 	if (UserName == "")
 	{
     document.getElementById("usernamePosition").classList.add("invalid");
-    flag = 1;
+    flag = 0;
 	}
 
 	if (Password == "")
 	{
     document.getElementById("passwordPosition").classList.add("invalid");
-    flag = 1;
+    flag = 0;
+	}
+
+	if (PhoneNum == "" || Email == "")
+	{
+		flag = 0;
 	}
 
 	return flag;
@@ -138,7 +143,7 @@ function register()
 	let numberInvalid = number.classList.contains("invalid");
 	let lengthInvalid = length.classList.contains("invalid");
 
-	if (checkField(UserName, Password) == 1)
+	if (checkField(UserName, Password, -1, -1) == 0)
 	{
 		document.getElementById("loginResult").innerHTML = "Please Fill in Empty Fields";
 		return;
@@ -341,8 +346,13 @@ function addContact()
 	let addPhoneNumber = document.getElementById("addPhoneNumber").value;
 	let addEmailAddress = document.getElementById("addEmailAddress").value;
 	
-	// let newColor = document.getElementById("colorText").value;
 	document.getElementById("contactAddResult").innerHTML = "";
+
+	if (checkField(-1, -1, addPhoneNumber, addEmailAddress) == 0)
+	{
+		document.getElementById("contactAddResult").innerHTML = "Please Fill in Empty Fields";
+		return;
+	}
 
 	if (checkEmail() == 0)
 	{
