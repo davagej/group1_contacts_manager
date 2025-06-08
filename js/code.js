@@ -468,6 +468,7 @@ function searchContact()
 					paraF.id = "FirstName"+current.ID;
 					//paraF.style.float = 'left';
 					paraF.style.display = "inline-block";
+					pareF.style.borderColor = "black";
 					document.getElementById(divID).appendChild(paraF);
 
 					let paraL = document.createElement("div");
