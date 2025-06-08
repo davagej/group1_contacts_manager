@@ -562,7 +562,7 @@ img.aboutImage
     display: inline-block;
 	font-size: 20px;
     text-align: right;
-    width: min-content;
+    max-width: fit-content;
 
     margin-left: 0%;
 	margin-right: 0%;
@@ -633,6 +633,9 @@ input[type="text"],input[type="password"]{
     margin-top: 0%;
 	margin-bottom: 0%;
 
+    max-height: fit-content;
+    max-width: fit-content;
+
     vertical-align: 50%;
 
     font-family: 'Poppins', sans-serif;
@@ -647,7 +650,7 @@ input[type="text"],input[type="password"]{
     color: black;
     font-size: 20px;
     font-family: 'Poppins', sans-serif; 
-    width: min-content;
+    max-width: fit-content;
 
     margin-left: 10%;
 	margin-right: 0%;
