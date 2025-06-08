@@ -539,6 +539,7 @@ function searchContact()
 					deleteButton.className = "innerButtons";
 					deleteButton.innerHTML = "Delete";
 					deleteButton.id = "d" + current.ID;
+					deleteButton.style.width = "fit-content"
 					///deleteButton.style.width = "8%";
 					// deleteButton.style.position = "absolute";
 					//deleteButton.style.left = "95%";
