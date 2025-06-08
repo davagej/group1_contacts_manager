@@ -256,9 +256,6 @@ function doLogin()
 				saveCookie();
 	
 				window.location.href = "Miami_ContactsPage.html";
-
-				document.getElementById("contactSearchResult").innerHTML = "Yurrr";
-				searchContact();
 			}
 		};
 		xhr.send(jsonPayload);
@@ -401,7 +398,7 @@ function addContact()
 				document.getElementById("addLastName").value = "";
 				document.getElementById("addPhoneNumber").value = "";
 				document.getElementById("addEmailAddress").value = "";
-				searchContact()
+				searchContact();
 			}
 		};
 		xhr.send(jsonPayload);
