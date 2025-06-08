@@ -621,7 +621,7 @@ input[type="text"],input[type="password"]{
 #contact-welcome
 {
     display: inline-block;
-    font-size: 20px;
+    font-size: 1.1vw;
     text-align: left;
     position: relative;
     margin-top: 0.5%;
