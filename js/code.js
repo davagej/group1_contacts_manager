@@ -416,6 +416,7 @@ function searchContact()
 {
 	if (document.getElementById("FirstNameEdit")) {
 		//Should probably put a wraning somewhere?
+		document.getElementById("contactList").innerHTML = "yuhh";
 		return;
 	}
 	let srch = document.getElementById("searchText").value;
