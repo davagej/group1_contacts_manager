@@ -319,7 +319,7 @@ button.navBorder:hover
 
 .innerButtons
 {
-    font-size: 1.6vw;
+    font-size: 2vh;
     border-radius: 25px;
     width: 25%; /**/
     font-family: 'Poppins', sans-serif;
