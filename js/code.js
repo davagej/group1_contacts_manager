@@ -508,7 +508,7 @@ function searchContact()
 					deleteButton.className = "deleteButton";
 					deleteButton.innerHTML = "Delete";
 					deleteButton.id = "d" + current.ID;
-					deleteButton.setAttribute("onclick", confirmDelete("+current.ID+"));
+					deleteButton.setAttribute("onclick", "confirmDelete("+current.ID+")");
 					// deleteButton.setAttribute("onclick", "deleteContact("+current.ID+")");
 					document.getElementById(divID).appendChild(deleteButton);
 					
