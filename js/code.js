@@ -3,7 +3,7 @@ const urlBase = 'http://managemymiami4331.xyz/LAMPAPI'
 const extension = 'php';
 
 // 6/08/25, Time: 1:51pm, Pre-classes
- 
+
 // Miami code
 
 let userId = 0;
@@ -573,8 +573,6 @@ function editContactStartUp(ID) {
 	editFN.value = firstName.innerHTML;
 	editFN.id = "FirstNameEdit";
 	editFN.style.display = "inline-block";
-			// paraF.style.borderStyle = "solid";
-			// paraF.style.borderColor = "#30C0B7";
 	editFN.style.width = "20%";
 	firstName.replaceWith(editFN);
 	let editLN = document.createElement("input");
@@ -582,19 +580,21 @@ function editContactStartUp(ID) {
 	editLN.value = lastName.innerHTML;
 	editLN.id = "LastNameEdit";
 	editLN.style.display = "inline-block";
-			// paraF.style.borderStyle = "solid";
-			// paraF.style.borderColor = "#30C0B7";
 	editLN.style.width = "20%";
 	lastName.replaceWith(editLN);
 	let editP = document.createElement("input");
 	editP.type = "text";
 	editP.value = phoneNumber.innerHTML;
 	editP.id = "PhoneEdit";
+	editP.style.display = "inline-block";
+	editP.style.width = "20%";
 	phoneNumber.replaceWith(editP);
 	let editE= document.createElement("input");
 	editE.type = "text";
 	editE.value = emailAddress.innerHTML;
 	editE.id = "EmailEdit";
+	editE.style.display = "inline-block";
+	editE.style.width = "20%";
 	emailAddress.replaceWith(editE);
 
 	editButton.innerHTML = "Save"
