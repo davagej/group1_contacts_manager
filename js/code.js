@@ -508,8 +508,8 @@ function searchContact()
 					paraE.style.display = "inline-block";
 					// paraE.style.position = "relative";
 					// paraE.style.left = "150%";
-					paraE.style.borderStyle = "solid";
-					paraE.style.borderColor = "#30C0B7"
+					// paraE.style.borderStyle = "solid";
+					// paraE.style.borderColor = "#30C0B7"
 					paraE.style.width = "20%";
 					paraE.style.overflow = "hidden";
 					paraE.style.textOverflow = "ellipsis";
@@ -518,9 +518,9 @@ function searchContact()
 					let buttonContainer = document.createElement("div");
 					buttonContainer.id = "buttonContainer" + current.ID;
 					buttonContainer.style.display = "inline-block";
-					buttonContainer.style.borderStyle = "solid";
-					buttonContainer.style.borderColor = "#30C0B7"
-					buttonContainer.style.width = "15%";
+					// buttonContainer.style.borderStyle = "solid";
+					// buttonContainer.style.borderColor = "#30C0B7"
+					buttonContainer.style.width = "19%";
 					document.getElementById(divID).appendChild(buttonContainer);
 
 					//Buttons
