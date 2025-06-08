@@ -599,7 +599,7 @@ img.aboutImage
    /* position: absolute;
     top:50%;*/
 	font-size: 2vh;
-	vertical-align: middle;
+	vertical-align: baseline;
 /*     font-size: 1.6vw; */
 }
 
