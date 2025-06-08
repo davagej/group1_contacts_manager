@@ -520,6 +520,7 @@ function searchContact()
 					buttonContainer.style.display = "inline-block";
 					buttonContainer.style.borderStyle = "solid";
 					buttonContainer.style.borderColor = "#30C0B7"
+					buttonContainer.style.width = "20%";
 					document.getElementById(divID).appendChild(buttonContainer);
 
 					//Buttons
