@@ -731,8 +731,10 @@ input[type="text"],input[type="password"]{
 {
     position: absolute;
     display: inline-block;
-
-    bottom: 0%;
+    font-size: 2vw;
+    bottom: 0;
+    color: White;
+    font-family: 'Poppins', sans-serif;
 
   /*  margin-left: 0%;
 	margin-right: 0%;
