@@ -621,16 +621,18 @@ input[type="text"],input[type="password"]{
 #contact-welcome
 {
     display: inline-block;
-    font-size: 1.1vw;
+    font-size: 1vw;
     text-align: left;
-    position: relative;
-    margin-top: 0.5%;
+/*    position: relative;
+    margin-top: 0.5%;*/
+    position: absolute;
+    top: 0%;
 
-    max-height: fit-content;
+    /*max-height: fit-content;*/
     max-width: fit-content;
-    max-block-size: 35%;
+  /*  max-block-size: 35%;
     max-inline-size: 35%;
-
+*/
     font-family: 'Poppins', sans-serif;
     color: white;	
 }
