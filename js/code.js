@@ -454,14 +454,18 @@ function searchContact()
 					paraDiv.id = divID;
 					document.getElementById("contactList").appendChild(paraDiv);
 
-					let paraF = document.createElement("p");
+					let paraF = document.createElement("div");
 					paraF.innerHTML = current.FirstName;
 					paraF.id = "FirstName"+current.ID;
+					//paraF.style.float = 'left';
+					paraF.style.display = "inline-block";
 					document.getElementById(divID).appendChild(paraF);
 
-					let paraL = document.createElement("p");
+					let paraL = document.createElement("div");
 					paraL.innerHTML = current.LastName;
 					paraL.id = "LastName"+current.ID;
+					//paraL.style.float = 'left';
+					paraL.style.display = "inline-block";
 					document.getElementById(divID).appendChild(paraL);
 
 					let paraP = document.createElement("p");
