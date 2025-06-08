@@ -625,6 +625,7 @@ input[type="text"],input[type="password"]{
     margin-top: 0.5%;*/
     position: absolute;
     top: 0%;
+    height: 10%;
 
     /*max-height: fit-content;*/
     max-width: fit-content;
