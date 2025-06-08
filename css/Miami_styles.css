@@ -321,7 +321,7 @@ button.navBorder:hover
     border-radius: 25px;
     width: 25%; /**/
     font-family: 'Ubuntu', sans-serif;
-    align-items: center;
+    text-align: center;
 }
 
 .innerButtons:hover{

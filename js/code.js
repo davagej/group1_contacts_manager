@@ -516,6 +516,7 @@ function searchContact()
 					document.getElementById(divID).appendChild(paraE);
 
 					let buttonContainer = document.createElement("div");
+					buttonContainer.className = "colDiv";
 					buttonContainer.id = "buttonContainer" + current.ID;
 					buttonContainer.style.display = "inline-block";
 					// buttonContainer.style.borderStyle = "solid";
