@@ -323,7 +323,7 @@ button.navBorder:hover
 /*     background-color: #EE227D; */
 	background-image: linear-gradient(#FD8083, #EE227D);
     word-wrap: break-word;
-    width: 32vh;
+    width: 38vh;
     height: 38vh;
 }
 
@@ -368,7 +368,7 @@ button.navBorder:hover
     font-weight: 900;
     text-align: center;
     font-size: 1.6vw;
-    margin-top: 9%;
+    margin-top: 14%;
     text-decoration: none;
 }
 
@@ -376,7 +376,7 @@ button.navBorder:hover
 {
     text-align: center;
     font-size: 1.6vw;
-    margin-top: 62%;
+    margin-top: 60%;
     text-decoration: none;
 }
 
