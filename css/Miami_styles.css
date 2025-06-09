@@ -540,23 +540,6 @@ img.aboutImage
     height: 7.2vh;
 }
 
-#firstNamePosition
-{
-    margin-top: 3%; 
-}
-#lastNamePosition
-{
-    margin-top: 3%;
-}
-#usernamePosition
-{
-    margin-top: 3%;
-}
-#passwordPosition
-{
-    margin-top: 3%;
-}
-
 .centerInDiv 
 {
     /*width: 70%;*/
@@ -572,19 +555,19 @@ img.aboutImage
 
 #enterFirstName
 {
-    font-size: 2vw;
+    margin-top: 5%;
 }
 #enterLastName
 {
-    font-size: 2vw;
+   margin-top: 5%;
 }
 #createUsername
 {
-    font-size: 2vw;
+    margin-top: 5%;
 }
 #createPassword
 {
-    font-size: 2vw;
+    margin-top: 5%;
 }
 
 #addFirstName
@@ -639,7 +622,7 @@ img.aboutImage
 input[type="text"],input[type="password"]{
     border-radius: 25px; 
     text-align: center;
-    width: 90%;
+    width: 70%;
     font-size: 2vw;
     /*margin-left: 10%;*/
     /*margin-bottom: 2%;*/
@@ -731,7 +714,7 @@ input[type="text"],input[type="password"]{
 {
     position: absolute;
     display: inline-block;
-    font-size: 2vw;
+    font-size: 1.6vw;
     bottom: 0;
     color: White;
     font-family: 'Poppins', sans-serif;
@@ -746,13 +729,15 @@ input[type="text"],input[type="password"]{
 
 #loginResult
 {
-    position: relative;
+    position: absolute;
+    bottom: 0%;
     display: inline-block;
     font-size: 1.5vw;
     width: 90%;
+    left: 5%;
     text-align: center;
-    margin-left: 5%;
-    margin-top: 15%;
+/*    margin-left: 5%;
+    margin-top: 15%;*/
     font-family: 'Poppins', sans-serif;
     color: black;
 }

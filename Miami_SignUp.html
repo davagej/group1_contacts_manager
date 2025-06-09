@@ -23,33 +23,20 @@
 <div id="loginDiv">
   <img id="palmtrees" src="images/palmtreesBlack.png" alt="palm trees"> <!---->
   <div id="circleDivReg">
-  <span id="inner-title-reg">Register</span>
-
-    <div id="firstNamePosition" class="inputDiv center">
-      <input type="text" id="enterFirstName" class="centerInDiv" placeholder="Enter First Name " 
+    <span id="inner-title-reg">Register</span>
+    <input type="text" id="enterFirstName" class="center" placeholder="Enter First Name " 
         title="Please Fill out Field" /><br />
-    </div>
+    <input type="text" id="enterLastName" class="center" placeholder="Enter Last Name"
+      title="Please Fill out Field"/><br />
+    <input type="text" id="createUsername" class="center" placeholder="Create Username"
+      title="Please Fill out Field" /><br /> 
+    <input type="password" id="createPassword" class="center" placeholder="Create Password"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,32}" title="Must be 8-32 
+      Characters Long,Have One Uppercase & Lowercase Letter, 
+      and Have One Number & Special Character"/><br />
+    <button type="button" id="signUpButton" class="buttons" onclick="register();"> Sign Up </button>
+    <span id="loginResult"></span>
 
-    <div id="lastNamePosition" class="inputDiv center">
-      <input type="text" id="enterLastName" class="centerInDiv" placeholder="Enter Last Name"
-        title="Please Fill out Field"/><br />
-    </div>
-
-    <div id="usernamePosition" class="inputDiv center">
-      <input type="text" id="createUsername" class="centerInDiv" placeholder="Create Username"
-        title="Must Be 3-13 Characters Long and Have Least One Uppercase Letter" /><br /> <!-- put restrictions! -->
-    </div>
-
-    <div id="passwordPosition" class="inputDiv center">
-      <input type="password" id="createPassword" class="centerInDiv" placeholder="Create Password"
-        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,32}" title="Must be 8-32 
-        Characters Long,Have One Uppercase & Lowercase Letter, 
-        and Have One Number & Special Character"/><br />
-    </div>
-
-  <button type="button" id="signUpButton" class="buttons" onclick="register();"> Sign Up </button>
-
-  <span id="loginResult"></span>
     <div id="textBox">
       <h3 id="headerReq">Password must contain the following:</h3>
       <p id="upperCaseReq" class="invalid"> Least One Uppercase Letter </p>
@@ -61,46 +48,18 @@
 </div>
 
 <script>
-let firstNameInput = document.getElementById("enterFirstName");
-let lastNameInput = document.getElementById("enterLastName");
-let usernameInput = document.getElementById("createUsername");
 let passwordInput = document.getElementById("createPassword");
 let letter = document.getElementById("lowerCaseReq");
 let capital = document.getElementById("upperCaseReq");
 let number = document.getElementById("numberSpecialCharReq");
 let length = document.getElementById("charRangeReq");
 
-//When the user clicks on the firstName field, remove invalid field
-firstNameInput.onfocus = function() 
-{
-  if (document.getElementById("firstNamePosition").classList.contains("invalid"))
-  {
-    document.getElementById("firstNamePosition").classList.remove("invalid");
-  }
-}
-
-lastNameInput.onfocus = function() 
-{
-  if (document.getElementById("lastNamePosition").classList.contains("invalid"))
-  {
-    document.getElementById("lastNamePosition").classList.remove("invalid");
-  }
-}
-
-usernameInput.onfocus = function() 
-{
-  if (document.getElementById("usernamePosition").classList.contains("invalid"))
-  {
-    document.getElementById("usernamePosition").classList.remove("invalid");
-  }
-}
-
 //When the user clicks on the password field, show the message box
 passwordInput.onfocus = function() 
 {
-  if (document.getElementById("passwordPosition").classList.contains("invalid"))
+  if (document.getElementById("createPassword").classList.contains("invalid"))
   {
-    document.getElementById("passwordPosition").classList.remove("invalid");
+    document.getElementById("createPassword").classList.remove("invalid");
   }
 
   document.getElementById("textBox").style.display = "block";

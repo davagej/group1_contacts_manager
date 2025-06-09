@@ -46,33 +46,12 @@ function confirmDelete(ID)
 
 function checkFieldReg(firstName, lastName, userName, password)
 {
-	let flag = 1; // if 0 fields are empty, if 1 they are not empty 
-
-	if (firstName == "")
+	if (firstName == "" || lastName == "" || userName == "" || password == "")
 	{
-    document.getElementById("firstNamePosition").classList.add("invalid");
-    flag = 0;
+		return 0;
 	}
 
-	if (lastName == "")
-	{
-    document.getElementById("lastNamePosition").classList.add("invalid");
-    flag = 0;
-	}
-
-	if (userName == "")
-	{
-    document.getElementById("usernamePosition").classList.add("invalid");
-    flag = 0;
-	}
-
-	if (password == "")
-	{
-    document.getElementById("passwordPosition").classList.add("invalid");
-    flag = 0;
-	}
-
-	return flag;
+	return 1;
 }
 
 function checkFieldAddContact(firstName, lastName, phoneNum, email)
