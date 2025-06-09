@@ -11,18 +11,17 @@
 </head>
 <body>
 
-<!--<h1 id="title">COP 4331 MIAMI LAMP STACK</h1>-->
-<h1 id="title">Manage My Miami</h1> <!-- Make a button to link to home page or github?-->
+<h1 id="title">Manage My Miami</h1> 
 
-<img id="logo" src="images/MiamiLogo.png" alt="logo" onclick="goToHomePage();"> <!---->
+<img id="logo" src="images/MiamiLogo.png" alt="logo" onclick="goToHomePage();"> 
 
 <button class="navText" id="aboutBut" type="button" onclick="goToAbout();"> About </button>
-<button class="navText" id="settingBut" onclick="document.location='https://github.com/davagej/group1_contacts_manager/tree/main'"> Settings </button> <!---->
+<button class="navText" id="settingBut" onclick="document.location='https://github.com/davagej/group1_contacts_manager/tree/main'"> Settings </button> 
 <button class="navBorder" id="signInBut" type="button" onclick="goToSignIn();"> Sign In </button>
 
 <div id="loginDiv">
-  <img id="palmtrees" src="images/palmtreesBlack.png" alt="palm trees"> <!---->
-  <div id="circleDivReg">
+  <img id="palmtrees" src="images/palmtreesBlack.png" alt="palm trees"> 
+  <div id="circleDivReg" onclick="clearLoginResult();">
     <span id="inner-title-reg">Register</span>
     <input type="text" id="enterFirstName" class="center" placeholder="Enter First Name " 
         title="Please Fill out Field" /><br />

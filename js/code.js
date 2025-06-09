@@ -1,8 +1,5 @@
-//const urlBase = 'http://142.93.51.19/LAMPAPI'; // Change to domain name
 const urlBase = 'http://managemymiami4331.xyz/LAMPAPI'
 const extension = 'php';
-
-// 6/08/25, Time: 1:51pm, Pre-classes
 
 // Miami code
 
@@ -129,10 +126,8 @@ function clearLoginResult()
 	}
 }
 
-
 function register()
 {
-	//document.getElementById("loginResult").innerHTML = "Test";
 	userId = 0;
 	FirstName = "";
 	LastName = "";
@@ -337,16 +332,6 @@ function doLogout()
 
 function addContact() 
 {
-
-	// let addFirstName="";
-	// let addLastName="";
-	// let addPhoneNumber="";
-	// let addEmailAddress="";
-
-	//userId = readCookie();
-
-	//document.getElementById("contactAddResult").innerHTML = userId;
-
 	let addFirstName = document.getElementById("addFirstName").value;
 	let addLastName = document.getElementById("addLastName").value;
 	let addPhoneNumber = document.getElementById("addPhoneNumber").value;
@@ -460,7 +445,6 @@ function searchContact()
 					paraF.innerHTML = current.FirstName;
 					paraF.id = "FirstName"+current.ID;
 					paraF.className = "colDiv";
-					//paraF.style.float = 'left';
 					paraF.style.display = "inline-block";
 					// paraF.style.borderStyle = "solid";
 					// paraF.style.borderColor = "#30C0B7";
@@ -471,10 +455,7 @@ function searchContact()
 					paraL.innerHTML = current.LastName;
 					paraL.id = "LastName"+current.ID;
 					paraL.className = "colDiv";
-					//paraL.style.float = 'left';
 					paraL.style.display = "inline-block";
-					// paraL.style.position = "relative";
-					// paraL.style.left = "60%";
 					// paraL.style.borderStyle = "solid";
 					// paraL.style.borderColor = "#30C0B7"
 					paraL.style.width = "20%";
@@ -485,8 +466,6 @@ function searchContact()
 					paraP.id = "PhoneNumber"+current.ID;
 					paraP.className = "colDiv";
 					paraP.style.display = "inline-block";
-					// paraP.style.position = "relative";
-					// paraP.style.left = "100%";
 					// paraP.style.borderStyle = "solid";
 					// paraP.style.borderColor = "#30C0B7"
 					paraP.style.width = "20%";
@@ -497,8 +476,6 @@ function searchContact()
 					paraE.id = "EmailAddress" + current.ID;
 					paraE.className = "colDiv";
 					paraE.style.display = "inline-block";
-					// paraE.style.position = "relative";
-					// paraE.style.left = "150%";
 					// paraE.style.borderStyle = "solid";
 					// paraE.style.borderColor = "#30C0B7"
 					paraE.style.width = "20%";
@@ -520,9 +497,6 @@ function searchContact()
 					editButton.className = "innerButtons";
 					editButton.innerHTML = "Edit";
 					editButton.id = "e" + current.ID;
-					//editButton.style.width = "8%";
-					// editButton.style.position = "absolute";
-					//editButton.style.left = "86%";
 					editButton.setAttribute("onclick","editContactStartUp("+current.ID+")");
 					document.getElementById(buttonContainer.id).appendChild(editButton);
 					
@@ -531,9 +505,6 @@ function searchContact()
 					deleteButton.innerHTML = "Delete";
 					deleteButton.id = "d" + current.ID;
 					deleteButton.style.width = "fit-content"
-					///deleteButton.style.width = "8%";
-					// deleteButton.style.position = "absolute";
-					//deleteButton.style.left = "95%";
 					deleteButton.setAttribute("onclick", "confirmDelete("+current.ID+")");
 					document.getElementById(buttonContainer.id).appendChild(deleteButton);
 
@@ -551,8 +522,6 @@ function searchContact()
 						ContactList += "<br />\r\n";
 					}
 				}
-				
-				//document.getElementsByTagName("p")[0].innerHTML = ContactList;
 			}
 		};
 		xhr.send(jsonPayload);
