@@ -109,13 +109,23 @@ function checkPhone()
 	return phoneFlag;
 }
 
-function clearResultModal()
+function clearContactAddResult()
 {
   const element = document.activeElement.tagName;
 
   if (element == "INPUT")
 	{
 		document.getElementById("contactAddResult").innerHTML = "";
+	}
+}
+
+function clearLoginResult()
+{
+  const element = document.activeElement.tagName;
+
+  if (element == "INPUT")
+	{
+		document.getElementById("loginResult").innerHTML = "";
 	}
 }
 

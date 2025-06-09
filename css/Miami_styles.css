@@ -123,13 +123,13 @@ button.navBorder:hover
     font-family: 'Poppins', sans-serif; 
     overflow: break-word;
 
-    position: fixed;
+    position: relative;
     background: #fcc0c5;
-    width: 12%;
-    height: 30%;
+    width: 14vw;
+    height: 16vw;
     text-align: center;
-    left: 23%;
-    bottom: 26%;
+    right: 45%;
+    bottom: 53%;
 }
 
 #textBox:before
@@ -538,8 +538,8 @@ img.aboutImage
     /*background-color: #fcc0c5;*/
     width: 25vw;
     height: 7.2vh;
-}
 
+}
 .centerInDiv 
 {
     /*width: 70%;*/
